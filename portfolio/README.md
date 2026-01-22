@@ -1,3 +1,12 @@
+<<<<<<< Updated upstream
+# Welcome to my portfolio
+
+This project was created for a CEF evaluation
+=======
+# PortfolioReact
+Creating a portfolio with react and bootstrap for a CEF project
+>>>>>>> Stashed changes
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
