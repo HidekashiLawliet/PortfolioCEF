@@ -8,12 +8,15 @@ function App() {
 				<a href={adressLocation} target="_blank" rel="noreferrer" className="text-white text-decoration-none">
 					<span className="topHeader right">France | Nouvelle-Aquitaine | Bordeaux </span>
 				</a>
-				<a href="phone:+33XXXXXXXXX" className="text-white text-decoration-none">
-					<span className="topHeader left"> +33 X XX XX XX XX |</span>
-				</a>
-				<a href="mailto:adressmail@proton.me" className="text-white text-decoration-none">
-					<span className="topHeader left">adressmail@proton.me</span>
-				</a>
+				<div>
+					<a href="phone:+33XXXXXXXXX" className="text-white text-decoration-none">
+						<span className="topHeader left"> +33 X XX XX XX XX </span>
+					</a>
+					<span> | </span>
+					<a href="mailto:adressmail@proton.me" className="text-white text-decoration-none">
+						<span className="topHeader left"> adressmail@proton.me</span>
+					</a>
+				</div>
 			</div>
 			<div className="divideLine col-md-10"></div>
 			<div className="content text-white p-4">
