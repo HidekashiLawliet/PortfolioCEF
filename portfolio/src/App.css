@@ -171,3 +171,13 @@ p {
 	width: 36px;
 	margin: 5px;
 }
+
+.card {
+	width: 100vh;
+}
+
+.doraemon {
+	height: 248px;
+	width: auto;
+	margin: 0px 15px;
+}

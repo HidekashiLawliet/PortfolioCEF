@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js";
 import { useEffect, useRef, useState } from "react";
 import './App.css';
+import doraemon from "./assets/img/doraemon.png";
 import githubFav from "./assets/img/github.png";
 import imageAboutMe from "./assets/img/john-doe-about.jpg";
 import linkedinFav from "./assets/img/linkedin.png";
@@ -51,12 +52,30 @@ function App() {
 						<div className="position-relative d-inline-block">
 							<button className="btn btn-danger d-block mx-auto mt-4" ref={popupRef} onClick={() => setOpen(!open)}>En savoir plus</button>
 							{open && (
-								<div className="card position-absolute top-50 start-50 translate-middle shadow mt-2">
-									<ul className="list-group list-group-flush">
-										<li className="list-group-item">Profile</li>
-										<li className="list-group-item">Settings</li>
-										<li className="list-group-item">Logout</li>
-									</ul>
+								<div className="mb-3 rounded-4 m-autocard position-absolute bg-dark text-white top-50 start-50 translate-middle mt-2 border border-secondary p-5 b-1">
+									<div>
+										<span className="fs-3"> Mon profil Github</span>
+									</div>
+									<div className="divideLine" />
+									<div className="d-flex flex-row ">
+										<div className='margin-top-2r'>
+											<img src={doraemon} className='doraemon '></img>
+										</div>
+										<div className='margin-top-2r'>
+											<ul className="list-group list-group-flush">
+												<li className="list-group-item">
+													<a href="https://www.github.com" target="_blank">
+														<span className='link'>John Doe</span>
+													</a>
+												</li>
+												<li className="list-group-item">Localisation</li>
+												<li className="list-group-item">short description</li>
+												<li className="list-group-item">Repositories: 1</li>
+												<li className="list-group-item">Followers: 16</li>
+												<li className="list-group-item">Following</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							)}
 						</div>
