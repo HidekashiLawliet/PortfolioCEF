@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+import imageAboutMe from "./assets/img/john-doe-about.jpg";
 
 function App() {
 	return (
@@ -12,24 +13,43 @@ function App() {
 						</a>
 						<div>
 							<a href="#home" data-bs-spy="scroll" className="nav-pills active text-white text-decoration-none">
-								<span className="customLink active"> HOME </span>
-								<span className="customLink"> SERVICES </span>
-								<span className="customLink "> PORTFOLIO </span>
-								<span className="customLink"> CONTACT </span>
-								<span className="customLink"> MENTIONS LÉGALES </span>
+								<span className="customLink active">HOME</span>
 							</a>
+							<span className="customLink">SERVICES</span>
+							<span className="customLink ">PORTFOLIO</span>
+							<span className="customLink">CONTACT</span>
+							<span className="customLink">MENTIONS LÉGALES</span>
 						</div>
 					</div>
 				</div>
 				<div id="home" className=" col-md-12 d-inline-block justify-content-center h-50">
 					<div className='d-flex justify-content-center flex-column align-items-center h-100'>
-						<p className="introduction color-black text-center fw-bold">Bonjour, je suis John Doe</p>
-						<h1 className="introduction color-black text-center fw-bold">Développeur Web Full Stack</h1>
+						<h1 className="introduction color-black text-center fw-bold">Bonjour, je suis John Doe</h1>
+						<h2 className="introduction color-black text-center fw-bold">Développeur Web Full Stack</h2>
 						<button className="btn btn-danger d-block mx-auto mt-4">Contactez-moi</button>
 					</div>
 				</div>
-				<div className="aboutMeAndMySkills  d-inline-block">
-					<h2 className="text-center mt-5">À propos de moi et mes compétences</h2>
+				<div className="aboutMeAndMySkills d-flex">
+					<div className="AboutMe d-inline-block col-md-7">
+						<h2 className="text-left pt-4">À propos de moi</h2>
+						<div className="underline blue"></div>
+						<img src={imageAboutMe} className="johnDoeImage d-block mx-auto img-fluid w-100 m-2" alt='picture of myself'></img>
+						<p className="mt-2r">
+							Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco
+						</p>
+						<p>
+							Laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non
+						</p>
+						<p>
+							Proident sunt in culpa qui officia deserunt mollit anim id est laborum Curabitur blandit tempus porttitor Maecenas faucibus mollis interdum Cras mattis consectetur purus sit amet fermentum
+						</p>
+					</div>
+					<div className="MySkills d-inline-block col-md-5">
+						<h2 className="text-center pt-4">Mes Compétences</h2>
+						<div className="underline blue"></div>
+
+
+					</div>
 				</div>
 			</section>
 
