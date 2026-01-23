@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js";
+import { useEffect, useRef, useState } from "react";
 import './App.css';
 import githubFav from "./assets/img/github.png";
 import imageAboutMe from "./assets/img/john-doe-about.jpg";
@@ -7,6 +8,23 @@ import linkedinFav from "./assets/img/linkedin.png";
 import twitterFav from "./assets/img/twitter.png";
 
 function App() {
+	const [open, setOpen] = useState(false);
+	const popupRef = useRef(null);
+
+	useEffect(() => {
+		function handleClickOutside(event) {
+			if (popupRef.current && !popupRef.current.contains(event.target)) {
+				setOpen(false);
+			}
+		}
+		if (open) {
+			document.addEventListener("mousedown", handleClickOutside);
+		}
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, [open]);
+
 	return (
 		<main className="content">
 			<section className="desktop">
@@ -30,7 +48,18 @@ function App() {
 					<div className='d-flex justify-content-center flex-column align-items-center h-100'>
 						<h1 className="introduction color-black text-center fw-bold">Bonjour, je suis John Doe</h1>
 						<h2 className="introduction color-black text-center fw-bold">Développeur Web Full Stack</h2>
-						<button className="btn btn-danger d-block mx-auto mt-4">Contactez-moi</button>
+						<div className="position-relative d-inline-block">
+							<button className="btn btn-danger d-block mx-auto mt-4" ref={popupRef} onClick={() => setOpen(!open)}>En savoir plus</button>
+							{open && (
+								<div className="card position-absolute top-50 start-50 translate-middle shadow mt-2">
+									<ul className="list-group list-group-flush">
+										<li className="list-group-item">Profile</li>
+										<li className="list-group-item">Settings</li>
+										<li className="list-group-item">Logout</li>
+									</ul>
+								</div>
+							)}
+						</div>
 					</div>
 				</div>
 				<div className="aboutMeAndMySkills d-flex">
