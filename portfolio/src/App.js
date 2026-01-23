@@ -1,7 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js";
 import './App.css';
+import githubFav from "./assets/img/github.png";
 import imageAboutMe from "./assets/img/john-doe-about.jpg";
+import linkedinFav from "./assets/img/linkedin.png";
+import twitterFav from "./assets/img/twitter.png";
 
 function App() {
 	return (
@@ -76,8 +79,8 @@ function App() {
 					</div>
 				</div>
 				<div className='footer bg-dark text-light '>
-					<div class="container">
-						<div class="row row-cols-3 ">
+					<div class="container ">
+						<div class="row row-cols-3 pb-5 m-auto">
 							<div class="columnTitle margin-top-2r"><span>John Doe</span></div>
 							<div class="columnTitle  margin-top-2r">Liens utiles</div>
 							<div class="columnTitle  margin-top-2r">Mes dernières réalisations</div>
@@ -86,8 +89,19 @@ function App() {
 								<span>69009 Lyon, France</span>
 								<span>10 20 30 40 50</span>
 								<span>john.doe@gmail.com</span>
+								<div className="socialLink">
+									<a>
+										<img className="faviconSocial" src={githubFav}></img>
+									</a>
+									<a>
+										<img className="faviconSocial" src={twitterFav}></img>
+									</a>
+									<a>
+										<img className="faviconSocial" src={linkedinFav}></img>
+									</a>
+								</div>
 							</div>
-							<div class="row row-cols-3l ">
+							<div class="d-flex flex-column ">
 								<a href="" className=" text-white text-decoration-none">
 									<span>Accueil</span>
 								</a>
@@ -104,7 +118,7 @@ function App() {
 									<span>Mentions légales</span>
 								</a>
 							</div>
-							<div class="row row-cols-3l justify-content-center">
+							<div class="d-flex flex-column">
 								<a href="" className=" text-white text-decoration-none">
 									<span>Fresh Food</span>
 								</a>
