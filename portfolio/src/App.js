@@ -35,7 +35,7 @@ function App() {
 						<h2 className="text-left pt-4">À propos de moi</h2>
 						<div className="underline blue"></div>
 						<img src={imageAboutMe} className="johnDoeImage d-block mx-auto img-fluid w-100 m-2" alt='picture of myself'></img>
-						<p className="mt-2r">
+						<p className="margin-top-2r">
 							Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco
 						</p>
 						<p>
@@ -68,9 +68,61 @@ function App() {
 								<div className="progress-bar bg-success" style={{ width: 60 * 5.5 }}></div>
 							</div>
 						</div>
-						<div className='SkillList col-md-5 w-100'><label>REACT</label>
+						<div className='SkillList col-md-5 w-100'><label>REACT 50%</label>
 							<div className="progress bg-dark-subtle" role="progressbar" aria-label="HTML5 " aria-valuemin="0" aria-valuemax="100">
 								<div className="progress-bar" style={{ width: 50 * 5.5 }}></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className='footer bg-dark text-light '>
+					<div class="container">
+						<div class="row row-cols-3 ">
+							<div class="columnTitle margin-top-2r"><span>John Doe</span></div>
+							<div class="columnTitle  margin-top-2r">Liens utiles</div>
+							<div class="columnTitle  margin-top-2r">Mes dernières réalisations</div>
+							<div class="d-flex flex-column mb-3">
+								<span>40 Rue Laure Diebold</span>
+								<span>69009 Lyon, France</span>
+								<span>10 20 30 40 50</span>
+								<span>john.doe@gmail.com</span>
+							</div>
+							<div class="row row-cols-3l ">
+								<a href="" className=" text-white text-decoration-none">
+									<span>Accueil</span>
+								</a>
+								<a href="" className=" text-white text-decoration-none">
+									<span>Services</span>
+								</a>
+								<a href="" className=" text-white text-decoration-none">
+									<span>Portfolio</span>
+								</a>
+								<a href="" className=" text-white text-decoration-none">
+									<span>Me contacter</span>
+								</a>
+								<a href="" className=" text-white text-decoration-none">
+									<span>Mentions légales</span>
+								</a>
+							</div>
+							<div class="row row-cols-3l justify-content-center">
+								<a href="" className=" text-white text-decoration-none">
+									<span>Fresh Food</span>
+								</a>
+								<a href="" className=" text-white text-decoration-none">
+									<span>Restaurant Akira</span>
+								</a>
+								<a href="" className=" text-white text-decoration-none">
+									<span>Espace bien-être</span>
+								</a>
+								<a href="" className=" text-white text-decoration-none">
+									<span>SEO</span>
+								</a>
+								<a href="" className=" text-white text-decoration-none">
+									<span>Création d'une API</span>
+								</a>
+								<a href="" className=" text-white text-decoration-none">
+									<span>Maquette d'un site</span>
+								</a>
 							</div>
 						</div>
 					</div>
