@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js";
 import './App.css';
 import imageAboutMe from "./assets/img/john-doe-about.jpg";
 
@@ -47,15 +48,38 @@ function App() {
 					<div className="MySkills d-inline-block col-md-5">
 						<h2 className="text-center pt-4">Mes Compétences</h2>
 						<div className="underline blue"></div>
-
-
+						<div className='SkillList col-md-5 w-100'><label>HTML5 90%</label>
+							<div className="progress bg-dark-subtle" role="progressbar" aria-label="HTML5" aria-valuemin="0" aria-valuemax="100">
+								<div className="progress-bar bg-danger" style={{ width: 90 * 5.5 }}></div>
+							</div>
+						</div>
+						<div className='SkillList col-md-5 w-100'><label>CSS 80%</label>
+							<div className="progress bg-dark-subtle" role="progressbar" aria-label="CSS  " aria-valuemin="0" aria-valuemax="100">
+								<div className="progress-bar bg-info" style={{ width: 80 * 5.5 }}></div>
+							</div>
+						</div>
+						<div className='SkillList col-md-5 w-100'><label>JAVASCRIPT 70%</label>
+							<div className="progress bg-dark-subtle" role="progressbar" aria-label="HTML5 " aria-valuemin="0" aria-valuemax="100">
+								<div className="progress-bar bg-warning" style={{ width: 70 * 5.5 }}></div>
+							</div>
+						</div>
+						<div className='SkillList col-md-5 w-100'><label>PHP 60%</label>
+							<div className="progress bg-dark-subtle" role="progressbar" aria-label="HTML5 " aria-valuemin="0" aria-valuemax="100">
+								<div className="progress-bar bg-success" style={{ width: 60 * 5.5 }}></div>
+							</div>
+						</div>
+						<div className='SkillList col-md-5 w-100'><label>REACT</label>
+							<div className="progress bg-dark-subtle" role="progressbar" aria-label="HTML5 " aria-valuemin="0" aria-valuemax="100">
+								<div className="progress-bar" style={{ width: 50 * 5.5 }}></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 
 			<section className="tablet">Tablet layout</section>
 			<section className="mobile">Mobile layout</section>
-		</main>
+		</main >
 	);
 
 }

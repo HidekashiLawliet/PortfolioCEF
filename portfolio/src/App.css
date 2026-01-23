@@ -131,6 +131,11 @@ p {
 	background-color: #0d6efd;
 }
 
+.red {
+	color: red;
+	background-color: red;
+}
+
 .AboutMe {
 	padding: 0rem 3rem;
 	text-align: left;
@@ -144,4 +149,8 @@ p {
 
 .mt-2r {
 	margin-top: 2rem;
+}
+
+.progressbar {
+	width: 95%;
 }
