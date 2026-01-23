@@ -9,7 +9,8 @@
 	.desktop {
 		display: flex;
 		height: 200vh;
-		background-color: red;
+		background-color: rgb(255, 255, 255);
+		flex-direction: column;
 
 		.header {
 			font-size: 20px;
@@ -20,12 +21,27 @@
 		#home {
 			background-color: rgb(255, 255, 255);
 			align-items: center;
+			background-image: url("./assets/img/hero-bg.jpg");
+			background-color: rgba(255, 255, 255, 1);
+		}
 
-			.introduction {
-				font-size: 5rem;
-			}
+		.introduction {
+			font-size: 4rem;
+			color: white;
+
 		}
 	}
+}
+
+.customLink {
+	margin-left: 15px;
+
+}
+
+.active {
+	font-weight: bold;
+	text-decoration: underline;
+
 }
 
 /* Tablet */
