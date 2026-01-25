@@ -186,3 +186,7 @@ p {
 	width: auto;
 	margin: 0px 15px;
 }
+
+.shortIcon {
+	height: 16px;
+}

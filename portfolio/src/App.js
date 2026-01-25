@@ -1,39 +1,50 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js";
 import { useState } from "react";
 import './App.css';
+import textIcon from "./assets/icon/file-text.svg";
+import pingIcon from "./assets/icon/map-pin.svg";
+import personIcon from "./assets/icon/person-16.svg";
+import repoIcon from "./assets/icon/repo-16.svg";
+import userPlusIcon from "./assets/icon/user-plus.svg";
+
+
+
 import doraemon from "./assets/img/doraemon.png";
 import githubFav from "./assets/img/github.png";
 import imageAboutMe from "./assets/img/john-doe-about.jpg";
 import linkedinFav from "./assets/img/linkedin.png";
 import twitterFav from "./assets/img/twitter.png";
 
+
 function CardMenu({ onClose }) {
 	return (
-		<div className="mb-3 col-md-7 rounded-4 m-autocard position-absolute bg-dark text-white top-50 start-50 translate-middle mt-2 border border-secondary p-5 b-1">
-			<div className="d-flex justify-space-between">
+		<div className="mb-3 w-fit-content rounded-4 m-autocard position-absolute bg-dark text-white top-50 start-50 translate-middle mt-2 border border-secondary p-3 b-1">
+			<div className="d-flex justify-content-between  ">
 				<span className="fs-3"> Mon profil Github</span>
 				<button type="button" class="btn-close" aria-label="Close" onClick={onClose}></button>
 			</div>
 			<div className="divideLine" />
-			<div className="d-flex flex-row ">
+			<div className="d-flex flex-row  d-flex justify-content-between ">
 				<div className='margin-top-2r'>
 					<img src={doraemon} className='doraemon '></img>
 				</div>
 				<div className='margin-top-2r'>
-					<ul className="list-group list-group-flush w-100">
-						<li className="list-group-item">
-							<a href="https://www.github.com" target="_blank">
-								<span className='link'>John Doe</span>
-							</a>
-						</li>
-						<li className="list-group-item"><i class="bi bi-geo-alt"></i></li>
-						<li className="list-group-item">short description</li>
-						<li className="list-group-item">Repositories: 1</li>
-						<li className="list-group-item">Followers: 16</li>
-						<li className="list-group-item">Following</li>
-					</ul>
+					<div className="list-group bg-dark rounded p-3">
+						<ul className='list-group-flush'>
+							<li className="bg-dark list-group-item text-light"> <img src={personIcon} className="margin-width-auto-2r" /> <a href="https://www.github.com">John Doe</a></li>
+							<li className="bg-dark list-group-item text-light"> <img src={pingIcon} className="margin-width-auto-2r" /></li>
+							<li className="bg-dark list-group-item text-light"> <img src={textIcon} className="margin-width-auto-2r" /><span> As we all know, John Doe's identity is unknown. I just wanted to contribute without being know.</span></li>
+							<li className="bg-dark list-group-item text-light"> <img src={repoIcon} className="margin-width-auto-2r" /><span>Repositories: 1</span></li>
+							<li className="bg-dark list-group-item text-light"> <img src={userPlusIcon} className="margin-width-auto-2r" /><span>Followers: 16</span></li>
+							<li className="bg-dark list-group-item text-light"> <img src={userPlusIcon} className="margin-width-auto-2r" /><span>Following: 0</span></li>
+						</ul>
+					</div>
 				</div>
+			</div>
+			<div className="divideLine" />
+			<div className="w-100 d-flex justify-content-end me-0">
+				<button type="button" class="rounded bg-secondary text-light me-0" aria-label="Close" onClick={onClose}> Fermer</button>
 			</div>
 		</div>
 	);
