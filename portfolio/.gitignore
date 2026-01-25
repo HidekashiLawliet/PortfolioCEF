@@ -10,7 +10,6 @@
 
 # production
 /build
-/.qodo
 
 # misc
 .DS_Store

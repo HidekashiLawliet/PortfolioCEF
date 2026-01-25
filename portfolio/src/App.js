@@ -10,7 +10,7 @@ import twitterFav from "./assets/img/twitter.png";
 
 function CardMenu({ onClose }) {
 	return (
-		<div className="mb-3 vw-100 rounded-4 m-autocard position-absolute bg-dark text-white top-50 start-50 translate-middle mt-2 border border-secondary p-5 b-1">
+		<div className="mb-3 col-md-7 rounded-4 m-autocard position-absolute bg-dark text-white top-50 start-50 translate-middle mt-2 border border-secondary p-5 b-1">
 			<div className="d-flex justify-space-between">
 				<span className="fs-3"> Mon profil Github</span>
 				<button type="button" class="btn-close" aria-label="Close" onClick={onClose}></button>
@@ -27,7 +27,7 @@ function CardMenu({ onClose }) {
 								<span className='link'>John Doe</span>
 							</a>
 						</li>
-						<li className="list-group-item">Localisation</li>
+						<li className="list-group-item"><i class="bi bi-geo-alt"></i></li>
 						<li className="list-group-item">short description</li>
 						<li className="list-group-item">Repositories: 1</li>
 						<li className="list-group-item">Followers: 16</li>
@@ -86,7 +86,7 @@ function Home() {
 
 function SkillsPart() {
 	return (
-		<div className="aboutMeAndMySkills d-flex margin-width-auto-2r margin-top-2r">
+		<div className="aboutMeAndMySkills d-flex margin-width-auto-2r margin-top-2r margin-bottom-2r">
 			<div className="AboutMe d-inline-block col-md-7">
 				<h2 className="text-left pt-4">À propos de moi</h2>
 				<div className="underline blue"></div>
@@ -136,7 +136,7 @@ function SkillsPart() {
 
 function Footer() {
 	return (
-		<div className='footer bg-dark text-light '>
+		<div className='footer bg-dark text-light'>
 			<div class="container ">
 				<div class="row row-cols-3 pb-5 m-auto">
 					<div class="columnTitle margin-top-2r"><span>John Doe</span></div>
@@ -202,17 +202,22 @@ function Footer() {
 	);
 }
 
+function DesktopDisplay() {
+	return (
+		<section className="desktop">
+			<Header />
+			<Home />
+			<SkillsPart />
+			<Footer />
+		</section>
+	);
+}
+
 function App() {
 
 	return (
 		<main className="content">
-			<section className="desktop">
-				<Header></Header>
-				<Home></Home>
-				<SkillsPart></SkillsPart>
-				<Footer></Footer>
-			</section>
-
+			<DesktopDisplay />
 			<section className="tablet">Tablet layout</section>
 			<section className="mobile">Mobile layout</section>
 		</main >
@@ -221,3 +226,5 @@ function App() {
 }
 
 export default App;
+
+
