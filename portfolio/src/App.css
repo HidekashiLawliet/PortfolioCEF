@@ -150,6 +150,11 @@ p {
 	margin-top: 2rem;
 }
 
+.margin-width-auto-2r {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .margin-bottom-2r {
 	margin-bottom: 2rem;
 }
