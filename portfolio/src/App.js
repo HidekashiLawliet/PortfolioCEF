@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js";
 import { useState } from "react";
-import './App.css';
+import './App.scss';
 import textIcon from "./assets/icon/file-text.svg";
 import pingIcon from "./assets/icon/map-pin.svg";
 import personIcon from "./assets/icon/person-16.svg";
@@ -14,8 +14,7 @@ import linkedinFav from "./assets/img/linkedin.png";
 import twitterFav from "./assets/img/twitter.png";
 
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
 import MentionLegales from "./pages/MentionLegales";
@@ -55,26 +54,26 @@ function CardMenu({ onClose }) {
 	);
 }
 
-function Header() {
-	return (
-		<div className="header d-flex justify-content-center bg-dark col-md-12">
-			<div className="d-flex justify-content-between col-md-11 text-white p-3">
-				<a className="text-white text-decoration-none">
-					<span> JOHN DOE</span>
-				</a>
-				<div>
-					<a href="#home" data-bs-spy="scroll" className="nav-pills active text-white text-decoration-none">
-						<span className="customLink active">HOME</span>
-					</a>
-					<Link to="/services" className='nav-pills text-white text-decoration-none'><span className="customLink" >SERVICES</span></Link>
-					<Link to="/portfolio" className='nav-pills text-white text-decoration-none'><span className="customLink ">PORTFOLIO</span></Link>
-					<Link to="/contact" className='nav-pills text-white text-decoration-none'><span className="customLink">CONTACT</span></Link>
-					<Link to="/mentionsLegales" className='nav-pills text-white text-decoration-none'><span className="customLink">MENTIONS LÉGALES</span></Link>
-				</div>
-			</div>
-		</div>
-	);
-}
+//function Header() {
+// return (
+// 	<div className="header d-flex justify-content-center bg-dark col-md-12">
+// 		<div className="d-flex justify-content-between col-md-11 text-white p-3">
+// 			<a className="text-white text-decoration-none">
+// 				<span> JOHN DOE</span>
+// 			</a>
+// 			<div>
+// 				<a href="#home" data-bs-spy="scroll" className="nav-pills active text-white text-decoration-none">
+// 					<span className="customLink active">HOME</span>
+// 				</a>
+// 				<Link to="/services" className='nav-pills text-white text-decoration-none'><span className="customLink" >SERVICES</span></Link>
+// 				<Link to="/portfolio" className='nav-pills text-white text-decoration-none'><span className="customLink ">PORTFOLIO</span></Link>
+// 				<Link to="/contact" className='nav-pills text-white text-decoration-none'><span className="customLink">CONTACT</span></Link>
+// 				<Link to="/mentionsLegales" className='nav-pills text-white text-decoration-none'><span className="customLink">MENTIONS LÉGALES</span></Link>
+// 			</div>
+// 		</div>
+// 	</div>
+// );
+//}
 
 function Home() {
 	const [isCardMenuOpen, setIsCardMenuOpen] = useState(false);
@@ -220,10 +219,9 @@ function Footer() {
 function Display() {
 	return (
 		<section className="desktop">
-			<Header />
+			{/* <Header /> */}
 			<Home />
 			<SkillsPart />
-			<Footer />
 		</section>
 	);
 }
@@ -231,8 +229,6 @@ function Display() {
 function App() {
 
 	return (
-
-
 		<BrowserRouter>
 			<Navbar />
 			<main className="content">
@@ -244,6 +240,7 @@ function App() {
 					<Route path="/MentionLegales" element={<MentionLegales />} />
 				</Routes>
 			</main >
+			<Footer />
 		</BrowserRouter>
 	);
 
