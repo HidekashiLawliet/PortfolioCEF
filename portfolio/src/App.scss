@@ -5,9 +5,21 @@
 .mobile {
 	display: none;
 }
-
+.header {
+	margin: auto;
+	margin-bottom: 25rem;
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+	position: fixed;
+	height: fit-content;
+}
 /* Desktop */
 @media (min-width: 1290px) {
+	#ContactTitle {
+		width: fit-content;
+		margin-bottom: 5vh;
+	}
 	.desktop {
 		font-family: "Nunito Sans", sans-serif;
 		display: flex;
@@ -15,21 +27,75 @@
 		background-color: rgb(255, 255, 255);
 		flex-direction: column;
 	}
-	.header {
-		margin: auto;
-		display: flex;
-		justify-content: space-between;
 
-		font-size: 20px;
-		position: fixed;
-		top: 0;
-		background-color: #0d6efd;
+	.line-height-5 {
+		height: 5px !important;
 	}
-	#home {
+	.line-height-3 {
+		height: 3px !important;
+	}
+
+	.introduction {
+		font-size: 4rem;
+		color: white;
+	}
+
+	.whiteBox {
+		width: 80%;
+		padding-bottom: 20px;
 		background-color: rgb(255, 255, 255);
-		align-items: center;
-		background-image: url("./assets/img/hero-bg.jpg");
-		background-color: rgba(255, 255, 255, 1);
+		margin: 5rem 15rem;
+		border-radius: 10px;
+		box-shadow: 0px 0px 30px 15px rgb(201, 201, 201);
+	}
+
+	.divideLine {
+		margin: auto;
+		height: 2px;
+		background-color: #697072;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+
+	.AboutMe {
+		padding: 0rem 3rem;
+		text-align: left;
+	}
+
+	.MySkills {
+		padding: 0rem 3rem;
+		text-align: left;
+	}
+
+	.columnTitle {
+		font-size: 24px;
+	}
+
+	.SkillList {
+		margin: 15px 0px;
+		font-size: 20px;
+	}
+
+	.doraemon {
+		height: 248px;
+		width: auto;
+		margin: 0px 15px;
+	}
+
+	.shortIcon {
+		height: 16px;
+	}
+
+	.contact {
+		.title {
+		}
+	}
+	.mainPart {
+		.whiteBox {
+			height: 5vh;
+			height: 100vh;
+			margin: 0% auto 0% auto;
+		}
 	}
 }
 
@@ -37,12 +103,6 @@
 	background-color: rgb(255, 255, 255);
 	align-items: center;
 	background-image: url("./assets/img/hero-bg.jpg");
-	background-color: rgba(255, 255, 255, 1);
-}
-
-.introduction {
-	font-size: 4rem;
-	color: white;
 }
 
 h1 {
@@ -61,15 +121,6 @@ p {
 	font-weight: 400;
 }
 
-.aboutMeAndMySkills {
-	width: 80%;
-	padding-bottom: 20px;
-	background-color: rgb(255, 255, 255);
-	margin: 5rem 15rem;
-	border-radius: 10px;
-	box-shadow: 0px 0px 30px 15px rgb(201, 201, 201);
-}
-
 .customLink {
 	margin-left: 15px;
 }
@@ -77,26 +128,6 @@ p {
 .active {
 	font-weight: bold;
 	text-decoration: underline;
-}
-
-.App {
-	display: flexbox;
-}
-
-.App-link {
-	color: #61dafb;
-}
-
-.root {
-	background-color: #f0efe9;
-}
-
-.divideLine {
-	margin: auto;
-	height: 2px;
-	background-color: #697072;
-	margin-top: 5px;
-	margin-bottom: 10px;
 }
 
 .underline {
@@ -118,40 +149,17 @@ p {
 	background-color: red;
 }
 
-.AboutMe {
-	padding: 0rem 3rem;
-	text-align: left;
-}
-
-.MySkills {
-	padding: 0rem 3rem;
-	text-align: left;
-}
-
 .margin-top-2r {
 	margin-top: 2rem;
 }
 
-.margin-width-auto-2r {
+.margin-width-auto {
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .margin-bottom-2r {
 	margin-bottom: 2rem;
-}
-
-.columnTitle {
-	font-size: 24px;
-}
-
-.progressbar {
-	width: 95%;
-}
-
-.SkillList {
-	margin: 15px 0px;
-	font-size: 20px;
 }
 
 .faviconSocial {
@@ -161,16 +169,6 @@ p {
 
 .card {
 	width: 100vh;
-}
-
-.doraemon {
-	height: 248px;
-	width: auto;
-	margin: 0px 15px;
-}
-
-.shortIcon {
-	height: 16px;
 }
 
 /* Tablet */

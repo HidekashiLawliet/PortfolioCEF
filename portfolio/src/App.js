@@ -36,12 +36,12 @@ function CardMenu({ onClose }) {
 				<div className='margin-top-2r'>
 					<div className="list-group bg-dark rounded p-3">
 						<ul className='list-group-flush'>
-							<li className="bg-dark list-group-item text-light"> <img src={personIcon} className="margin-width-auto-2r" /> <a href="https://www.github.com">John Doe</a></li>
-							<li className="bg-dark list-group-item text-light"> <img src={pingIcon} className="margin-width-auto-2r" /></li>
-							<li className="bg-dark list-group-item text-light"> <img src={textIcon} className="margin-width-auto-2r" /><span> As we all know, John Doe's identity is unknown. I just wanted to contribute without being know.</span></li>
-							<li className="bg-dark list-group-item text-light"> <img src={repoIcon} className="margin-width-auto-2r" /><span>Repositories: 1</span></li>
-							<li className="bg-dark list-group-item text-light"> <img src={userPlusIcon} className="margin-width-auto-2r" /><span>Followers: 16</span></li>
-							<li className="bg-dark list-group-item text-light"> <img src={userPlusIcon} className="margin-width-auto-2r" /><span>Following: 0</span></li>
+							<li className="bg-dark list-group-item text-light"> <img src={personIcon} className="margin-width-auto" /> <a href="https://www.github.com">John Doe</a></li>
+							<li className="bg-dark list-group-item text-light"> <img src={pingIcon} className="margin-width-auto" /></li>
+							<li className="bg-dark list-group-item text-light"> <img src={textIcon} className="margin-width-auto" /><span> As we all know, John Doe's identity is unknown. I just wanted to contribute without being know.</span></li>
+							<li className="bg-dark list-group-item text-light"> <img src={repoIcon} className="margin-width-auto" /><span>Repositories: 1</span></li>
+							<li className="bg-dark list-group-item text-light"> <img src={userPlusIcon} className="margin-width-auto" /><span>Followers: 16</span></li>
+							<li className="bg-dark list-group-item text-light"> <img src={userPlusIcon} className="margin-width-auto" /><span>Following: 0</span></li>
 						</ul>
 					</div>
 				</div>
@@ -53,27 +53,6 @@ function CardMenu({ onClose }) {
 		</div>
 	);
 }
-
-//function Header() {
-// return (
-// 	<div className="header d-flex justify-content-center bg-dark col-md-12">
-// 		<div className="d-flex justify-content-between col-md-11 text-white p-3">
-// 			<a className="text-white text-decoration-none">
-// 				<span> JOHN DOE</span>
-// 			</a>
-// 			<div>
-// 				<a href="#home" data-bs-spy="scroll" className="nav-pills active text-white text-decoration-none">
-// 					<span className="customLink active">HOME</span>
-// 				</a>
-// 				<Link to="/services" className='nav-pills text-white text-decoration-none'><span className="customLink" >SERVICES</span></Link>
-// 				<Link to="/portfolio" className='nav-pills text-white text-decoration-none'><span className="customLink ">PORTFOLIO</span></Link>
-// 				<Link to="/contact" className='nav-pills text-white text-decoration-none'><span className="customLink">CONTACT</span></Link>
-// 				<Link to="/mentionsLegales" className='nav-pills text-white text-decoration-none'><span className="customLink">MENTIONS LÉGALES</span></Link>
-// 			</div>
-// 		</div>
-// 	</div>
-// );
-//}
 
 function Home() {
 	const [isCardMenuOpen, setIsCardMenuOpen] = useState(false);
@@ -101,7 +80,7 @@ function Home() {
 
 function SkillsPart() {
 	return (
-		<div className="aboutMeAndMySkills d-flex margin-width-auto-2r margin-top-2r margin-bottom-2r">
+		<div className="whiteBox d-flex margin-width-auto">
 			<div className="AboutMe d-inline-block col-md-7">
 				<h2 className="text-left pt-4">À propos de moi</h2>
 				<div className="underline blue"></div>
@@ -216,10 +195,10 @@ function Footer() {
 		</div>
 	);
 }
+
 function Display() {
 	return (
 		<section className="desktop">
-			{/* <Header /> */}
 			<Home />
 			<SkillsPart />
 		</section>
@@ -230,8 +209,8 @@ function App() {
 
 	return (
 		<BrowserRouter>
-			<Navbar />
 			<main className="content">
+				<Navbar />
 				<Routes>
 					<Route path="/" element={<Display />} />
 					<Route path="/Services" element={<Services />} />
@@ -239,8 +218,8 @@ function App() {
 					<Route path="/Contact" element={<Contact />} />
 					<Route path="/MentionLegales" element={<MentionLegales />} />
 				</Routes>
+				<Footer />
 			</main >
-			<Footer />
 		</BrowserRouter>
 	);
 
