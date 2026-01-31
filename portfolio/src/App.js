@@ -7,15 +7,20 @@ import pingIcon from "./assets/icon/map-pin.svg";
 import personIcon from "./assets/icon/person-16.svg";
 import repoIcon from "./assets/icon/repo-16.svg";
 import userPlusIcon from "./assets/icon/user-plus.svg";
-
-
-
 import doraemon from "./assets/img/doraemon.png";
 import githubFav from "./assets/img/github.png";
 import imageAboutMe from "./assets/img/john-doe-about.jpg";
 import linkedinFav from "./assets/img/linkedin.png";
 import twitterFav from "./assets/img/twitter.png";
 
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Contact from "./pages/Contact";
+import MentionLegales from "./pages/MentionLegales";
+import Portfolio from "./pages/Portfolio";
+import Services from "./pages/Services";
 
 function CardMenu({ onClose }) {
 	return (
@@ -61,10 +66,10 @@ function Header() {
 					<a href="#home" data-bs-spy="scroll" className="nav-pills active text-white text-decoration-none">
 						<span className="customLink active">HOME</span>
 					</a>
-					<span className="customLink">SERVICES</span>
-					<span className="customLink ">PORTFOLIO</span>
-					<span className="customLink">CONTACT</span>
-					<span className="customLink">MENTIONS LÉGALES</span>
+					<Link to="/services" className='nav-pills text-white text-decoration-none'><span className="customLink" >SERVICES</span></Link>
+					<Link to="/portfolio" className='nav-pills text-white text-decoration-none'><span className="customLink ">PORTFOLIO</span></Link>
+					<Link to="/contact" className='nav-pills text-white text-decoration-none'><span className="customLink">CONTACT</span></Link>
+					<Link to="/mentionsLegales" className='nav-pills text-white text-decoration-none'><span className="customLink">MENTIONS LÉGALES</span></Link>
 				</div>
 			</div>
 		</div>
@@ -212,8 +217,7 @@ function Footer() {
 		</div>
 	);
 }
-
-function DesktopDisplay() {
+function Display() {
 	return (
 		<section className="desktop">
 			<Header />
@@ -227,11 +231,20 @@ function DesktopDisplay() {
 function App() {
 
 	return (
-		<main className="content">
-			<DesktopDisplay />
-			<section className="tablet">Tablet layout</section>
-			<section className="mobile">Mobile layout</section>
-		</main >
+
+
+		<BrowserRouter>
+			<Navbar />
+			<main className="content">
+				<Routes>
+					<Route path="/" element={<Display />} />
+					<Route path="/Services" element={<Services />} />
+					<Route path="/Portfolio" element={<Portfolio />} />
+					<Route path="/Contact" element={<Contact />} />
+					<Route path="/MentionLegales" element={<MentionLegales />} />
+				</Routes>
+			</main >
+		</BrowserRouter>
 	);
 
 }

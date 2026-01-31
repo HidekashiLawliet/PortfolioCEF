@@ -74,27 +74,6 @@ p {
 
 }
 
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1289px) {
-	.tablet {
-		display: block;
-
-		.header {
-			font-size: 18px;
-		}
-	}
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-	.mobile {
-		display: block;
-
-		.header {
-			font-size: 12px;
-		}
-	}
-}
 
 .App {
 	display: flexbox;
@@ -189,4 +168,28 @@ p {
 
 .shortIcon {
 	height: 16px;
+}
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1289px) {
+	.tablet {
+		display: block;
+
+		.header {
+			font-size: 18px;
+		}
+	}
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+	.mobile {
+		display: block;
+
+		.header {
+			font-size: 12px;
+		}
+	}
 }
