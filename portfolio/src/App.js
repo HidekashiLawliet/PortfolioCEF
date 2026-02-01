@@ -148,27 +148,27 @@ function Footer() {
 						</div>
 					</div>
 					<div class="d-flex flex-column ">
-						<a href="" className=" text-white text-decoration-none">
+						<a href="/" className=" text-white text-decoration-none">
 							<span>Accueil</span>
 						</a>
-						<a href="" className=" text-white text-decoration-none">
+						<a href="/Services" className=" text-white text-decoration-none">
 							<span>Services</span>
 						</a>
-						<a href="" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className=" text-white text-decoration-none">
 							<span>Portfolio</span>
 						</a>
-						<a href="" className=" text-white text-decoration-none">
+						<a href="/Contact" className=" text-white text-decoration-none">
 							<span>Me contacter</span>
 						</a>
-						<a href="" className=" text-white text-decoration-none">
+						<a href="/MentionLegales" className=" text-white text-decoration-none">
 							<span>Mentions légales</span>
 						</a>
 					</div>
 					<div class="d-flex flex-column">
-						<a href="" className=" text-white text-decoration-none">
+						<a href="#" className=" text-white text-decoration-none">
 							<span>Fresh Food</span>
 						</a>
-						<a href="" className=" text-white text-decoration-none">
+						<a href="#" className=" text-white text-decoration-none">
 							<span>Restaurant Akira</span>
 						</a>
 						<a href="" className=" text-white text-decoration-none">
