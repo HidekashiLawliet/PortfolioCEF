@@ -90,13 +90,17 @@
 		.title {
 		}
 	}
-	.mainPart {
+	.mainContact {
 		.whiteBox {
-			height: 5vh;
-			height: 100vh;
-			margin: 0% auto 0% auto;
+			margin: 0% auto 2rem auto;
 		}
 	}
+	#submitBtn {
+		width: fit-content;
+	}
+}
+form {
+	height: 85%;
 }
 
 #home {
