@@ -1,8 +1,78 @@
 export default function Home() {
     return (
-        <>
-            <h1>Home</h1>
-            <p>Welcome to the homepage.</p>
-        </>
+        <div className=" mainContact vh-100 col-md-12 d-inline-block justify-content-center content my-5 pt-5 ">
+            <div
+                id="ContactTitle"
+                className="d-flex flex-column mx-auto w-100">
+                <h1 className="margin-width-auto">
+                    Mentions légales
+                </h1>
+                <div className="divideLine line-height-5 blue my-4 col-md-4 "></div>
+            </div>
+            <div className="container my-4">
+                <div className="accordion shadow-sm rounded">
+                    <div className="siteEditor accordion-item border-0">
+                        <div className="accordion-header">
+                            <button className="accordion-button text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#editor"> Editeur du site
+                            </button>
+                        </div>
+                        <div
+                            id="editor"
+                            className="accordion-collapse collapse show"
+                            data-bs-parent="#legalAccordion">
+                            <div className="accordion-body">
+                                <p className="fw-bold mb-3"> John Doe </p>
+                                <div className="d-flex align-items-start gap-2 mb-2">
+                                    <i className="bi bi-house-door"></i><span> 40 rue Laure Diebold </span>
+                                </div>
+                                <div className="d-flex align-items-start gap-2 mb-2">
+                                    <i className="bi bi-geo-alt"></i>
+                                    <span> 69009 Lyon, France </span>
+                                </div>
+                                <div className="d-flex align-items-start gap-2 mb-2">
+                                    <i className="bi bi-telephone"></i>
+                                    <span> 10 20 30 40 50 </span>
+                                </div>
+                                <div className="d-flex align-items-start gap-2">
+                                    <i className="bi bi-envelope"></i>
+                                    <span> john.doe@gmail.com </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="host accordion-item border-top">
+                        <div className="accordion-header">
+                            <button className="accordion-button collapsed text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#host"> Hébergeur
+                            </button>
+                        </div>
+                        <div id="host" className="accordion-collapse collapse" data-bs-parent="#legalAccordion">
+                            <div className="accordion-body">
+                                <h2>akwaysdata</h2>
+                                <span>91 Rue du Faubourg Saint-Honoré, 75008 Paris</span>
+                                <a href="https://www.alwaysdata.com" target="_blank" rel="noopener noreferrer" className="d-block mt-2"><i className="bi bi-globe text-black"></i> www.alwaysdata.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="accordion-item border-top">
+                        <div className="accordion-header">
+                            <button className="accordion-button text-dark collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#credits"> Crédits
+                            </button>
+                        </div>
+
+                        <div id="credits" className="accordion-collapse collapse" data-bs-parent="#legalAccordion">
+                            <div className="accordion-body">
+                                <div className="d-flex flex-column gap-3">
+                                    <h2>Crédits</h2>
+                                    <span>Ce site a été réalisé par John Doe, étudiant au <a href="https://www.centre-europeen-formation.fr/" target="_blank" rel="noopener noreferrer">Centre Européen de Formation</a>.</span>
+                                    <span>Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site <a href="https://www.pixabay.com">Pixabay</a></span>
+                                    <span>La favicon de ce site a été fournie par <a href="https://www.flaticon.com/de/kostenlose-icons/john-doe" target="_blank" rel="nooperner noreferrer">John doe Icons ertellt von Freepik - Flaticon</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }
