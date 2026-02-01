@@ -1,3 +1,5 @@
+const mapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.627152462178!2d4.796403976928754!3d45.77866197108083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb65edac5b3f%3A0xe01c47049cb2e2b9!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon!5e0!3m2!1sfr!2sfr!4v1769943420950!5m2!1sfr!2sfr"
+
 export default function Contact() {
     return (
         <div className="height-100">
@@ -8,7 +10,7 @@ export default function Contact() {
                     <div className="divideLine line-height-5 blue my-4 col-8 ">
                     </div>
                 </div>
-                <div className="whiteBox h-75 d-flex flex-row margin-width-auto justify-content-between px-4 py-3">
+                <div className="whiteBox h-75 d-flex flex-row mx-auto justify-content-between px-4 py-3">
                     <div className=" d-inline-block col-md-6 h-100">
                         <h2>Formulaire de contact</h2>
                         <div className="divideLine line-height-3 blue my-4 mb-15 "> </div>
@@ -26,17 +28,19 @@ export default function Contact() {
                             <button type="submit" id="submitBtn" className="btn btn-primary mx-auto mt-3">Envoyer</button>
                         </form>
                     </div>
-                    <div className=" d-inline-block col-md-6 mx-3">
+                    <div className=" d-inline-block h-100 col-md-6 mx-3">
                         <h2>Mes coordonnées</h2>
-                        <div className="divideLine line-height-3 blue my-4">
-                            <div className="mt-2">
-                                <ul className='list-group-flush'>
-                                    <li className="list-group-item text-dark"><i className="bi bi-map me-1"></i><span> 40 Rue Laure Diebold</span></li>
-                                    <li className="list-group-item text-dark"><i className="bi bi-geo-alt me-1"></i><span> 69009 Lyon, France</span></li>
-                                    <li className="list-group-item text-dark"><i className="bi bi-phone me-1"></i><span> 10 20 30 40 50</span></li>
-                                    <li className="list-group-item text-dark"><i className="bi bi-envelope-at me-1"></i><span> john.doe@gmail.com</span></li>
-
-                                </ul>
+                        <div className="divideLine line-height-3 blue my-4"></div>
+                        <div className="mt-3 h-100 position-relative pb-5">
+                            <ul className='list-group-flush ps-0 mt-4 '>
+                                <p className="my-0 fs-4">John Doe</p>
+                                <li className="list-group-item text-dark"><i className="bi bi-map me-1"></i><span> 40 Rue Laure Diebold</span></li>
+                                <li className="list-group-item text-dark"><i className="bi bi-geo-alt me-1"></i><span> 69009 Lyon, France</span></li>
+                                <li className="list-group-item text-dark"><i className="bi bi-phone me-1"></i><span> 10 20 30 40 50</span></li>
+                                <li className="list-group-item text-dark"><i className="bi bi-envelope-at me-1"></i><span> john.doe@gmail.com</span></li>
+                            </ul>
+                            <div className="h-100 position-absolute w-100 bottom-10 start-0">
+                                <iframe src={mapLink} className="w-100 position-absolute" id="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
