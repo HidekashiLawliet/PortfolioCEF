@@ -1,12 +1,8 @@
+import "bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js";
 import { useState } from "react";
 import './App.scss';
-import textIcon from "./assets/icon/file-text.svg";
-import pingIcon from "./assets/icon/map-pin.svg";
-import personIcon from "./assets/icon/person-16.svg";
-import repoIcon from "./assets/icon/repo-16.svg";
-import userPlusIcon from "./assets/icon/user-plus.svg";
 import doraemon from "./assets/img/doraemon.png";
 import githubFav from "./assets/img/github.png";
 import imageAboutMe from "./assets/img/john-doe-about.jpg";
@@ -26,7 +22,7 @@ function CardMenu({ onClose }) {
 		<div className="mb-3 w-fit-content rounded-4 m-autocard position-absolute bg-dark text-white top-50 start-50 translate-middle mt-2 border border-secondary p-3 b-1">
 			<div className="d-flex justify-content-between  ">
 				<span className="fs-3"> Mon profil Github</span>
-				<button type="button" class="btn-close" aria-label="Close" onClick={onClose}></button>
+				<button type="button" className="btn-close" aria-label="Close" onClick={onClose}></button>
 			</div>
 			<div className="divideLine" />
 			<div className="d-flex flex-row  d-flex justify-content-between ">
@@ -36,19 +32,19 @@ function CardMenu({ onClose }) {
 				<div className='margin-top-2r'>
 					<div className="list-group bg-dark rounded p-3">
 						<ul className='list-group-flush'>
-							<li className="bg-dark list-group-item text-light"> <img src={personIcon} className="margin-width-auto" /> <a href="https://www.github.com">John Doe</a></li>
-							<li className="bg-dark list-group-item text-light"> <img src={pingIcon} className="margin-width-auto" /></li>
-							<li className="bg-dark list-group-item text-light"> <img src={textIcon} className="margin-width-auto" /><span> As we all know, John Doe's identity is unknown. I just wanted to contribute without being know.</span></li>
-							<li className="bg-dark list-group-item text-light"> <img src={repoIcon} className="margin-width-auto" /><span>Repositories: 1</span></li>
-							<li className="bg-dark list-group-item text-light"> <img src={userPlusIcon} className="margin-width-auto" /><span>Followers: 16</span></li>
-							<li className="bg-dark list-group-item text-light"> <img src={userPlusIcon} className="margin-width-auto" /><span>Following: 0</span></li>
+							<li className="bg-dark list-group-item text-light"><i className="bi bi-person me-1"></i><a href="https://www.github.com">John Doe</a></li>
+							<li className="bg-dark list-group-item text-light"><i className="bi bi-geo-alt"></i></li>
+							<li className="bg-dark list-group-item text-light"><i className="bi bi-card-text me-1"></i><span> As we all know, John Doe's identity is unknown. I just wanted to contribute without being know.</span></li>
+							<li className="bg-dark list-group-item text-light"><i className="bi bi-box me-1"></i><span> Repositories: 1</span></li>
+							<li className="bg-dark list-group-item text-light"><i className="bi bi-people me-1"></i><span> Followers: 16</span></li>
+							<li className="bg-dark list-group-item text-light"><i className="bi bi-people me-1"></i><span> Following: 0</span></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div className="divideLine" />
 			<div className="w-100 d-flex justify-content-end me-0">
-				<button type="button" class="rounded bg-secondary text-light me-0" aria-label="Close" onClick={onClose}> Fermer</button>
+				<button type="button" className="rounded bg-secondary text-light me-0 border-0" aria-label="Close" onClick={onClose}> Fermer</button>
 			</div>
 		</div>
 	);

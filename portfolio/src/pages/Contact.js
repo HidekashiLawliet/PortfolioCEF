@@ -24,12 +24,17 @@ export default function Contact() {
                             <label for="message" className="form-label" ></label>
                             <textarea className="form-control border border-secondary h-100" id="message" placeholder="Votre message" name="message"></textarea>
                             <button type="submit" id="submitBtn" className="btn btn-primary mx-auto mt-3">Envoyer</button>
-
                         </form>
                     </div>
                     <div className=" d-inline-block col-md-6 mx-3">
                         <h2>Mes coordonnées</h2>
                         <div className="divideLine line-height-3 blue my-4">
+                            <ul className='list-group-flush'>
+                                {/* <li className="bg-dark list-group-item text-light"> <img src={mapIcon} className="margin-width-auto" />40 rue de Laure Diebold<a href="https://www.github.com">John Doe</a></li>
+                                <li className="bg-dark list-group-item text-light"> <img src={pingIcon} className="margin-width-auto" />69009 Lyon, France</li>
+                                <li className="bg-dark list-group-item text-light"> <img src={phoneIcon} className="margin-width-auto" /><span>10 20 30 40 50</span></li>
+                                <li className="bg-dark list-group-item text-light"> <img src={mailIcon} className="margin-width-auto" /><span>john.doe@gmail.com</span></li> */}
+                            </ul>
                         </div>
                     </div>
 
