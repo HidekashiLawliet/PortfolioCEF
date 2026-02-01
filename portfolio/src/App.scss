@@ -120,6 +120,9 @@
 	.portfolioImage {
 		width: 100%;
 	}
+	.service {
+		height: 100vh;
+	}
 }
 
 #home {
@@ -192,6 +195,13 @@ p {
 		flex-direction: column;
 	}
 
+	h2 {
+		font-size: 1.5em;
+	}
+
+	.service {
+		height: 100vh;
+	}
 	.faviconSocial {
 		width: 36px;
 		margin: 5px;
@@ -205,7 +215,7 @@ p {
 	}
 
 	.introduction {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 
 	.whiteBox {
