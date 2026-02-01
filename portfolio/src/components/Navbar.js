@@ -23,7 +23,7 @@ export default function Navbar() {
                         CONTACT
                     </NavLink>
                     <NavLink className="nav-link mx-2 " to="/MentionLegales">
-                        MENTIONs LÉGALES
+                        MENTIONS LÉGALES
                     </NavLink>
                 </div>
             </div>
