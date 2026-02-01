@@ -7,13 +7,13 @@ export default function Contact() {
                 <div id="ContactTitle" className="d-flex flex-column margin-width-auto">
                     <h1 className="margin-width-auto"> Contact </h1>
                     <span>Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</span>
-                    <div className="divideLine line-height-5 blue my-4 col-8 ">
+                    <div className="divideLine line-height-5 blue my-4 col-8 bg-primary">
                     </div>
                 </div>
                 <div className="whiteBox h-75 d-flex flex-row mx-auto justify-content-between px-4 py-3">
                     <div className=" d-inline-block col-md-6 h-100">
                         <h2>Formulaire de contact</h2>
-                        <div className="divideLine line-height-3 blue my-4 mb-15 "> </div>
+                        <div className="divideLine line-height-3 blue my-4 mb-15 bg-primary"> </div>
                         <form action="#" method="post" className=" d-flex flex-column justify-content-between">
                             <label for="name" className="form-label" ></label>
                             <input className="form-control border border-secondary " type="text" id="name" placeholder="Votre nom" name="name" required></input>
@@ -30,7 +30,7 @@ export default function Contact() {
                     </div>
                     <div className=" d-inline-block h-100 col-md-6 mx-3">
                         <h2>Mes coordonnées</h2>
-                        <div className="divideLine line-height-3 blue my-4"></div>
+                        <div className="divideLine line-height-3 blue my-4 bg-primary"></div>
                         <div className="mt-3 h-100 position-relative pb-5">
                             <ul className='list-group-flush ps-0 mt-4 '>
                                 <p className="my-0 fs-4">John Doe</p>

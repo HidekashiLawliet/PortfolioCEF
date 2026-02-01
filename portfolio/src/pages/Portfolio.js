@@ -15,7 +15,7 @@ export default function About() {
             <div id="ServicesTitle" className="d-flex flex-column w-100">
                 <h1 className="margin-width-auto">Portfolio</h1>
                 <span className="subtitle text-center">Voici quelques-unes de mes réalisations </span>
-                <div className="divideLine line-height-5 blue my-4 col-md-3 mb-5"></div>
+                <div className="divideLine line-height-5 blue my-4 col-md-3 mb-5 bg-primary"></div>
             </div>
             <div className="ServiceList d-inline-block d-flex flex-row-grid mx-auto col-md-9 justify-content-center p-4 rounded">
                 <div className="container mt-4">

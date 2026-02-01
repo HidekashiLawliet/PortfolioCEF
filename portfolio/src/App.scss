@@ -20,6 +20,11 @@
 		width: fit-content;
 		margin-bottom: 5vh;
 	}
+	.faviconSocial {
+		width: 36px;
+		margin: 5px;
+	}
+
 	.desktop {
 		font-family: "Nunito Sans", sans-serif;
 		display: flex;
@@ -37,22 +42,19 @@
 
 	.introduction {
 		font-size: 4rem;
-		color: white;
 	}
 
 	.whiteBox {
 		width: 80%;
 		padding-bottom: 20px;
-		background-color: rgb(255, 255, 255);
 		margin: 5rem 15rem;
 		border-radius: 10px;
-		box-shadow: 0px 0px 30px 15px rgb(201, 201, 201);
+		box-shadow: 0px 0px 25px 0.5px;
 	}
 
 	.divideLine {
 		margin: auto;
 		height: 2px;
-		background-color: #697072;
 		margin-top: 5px;
 		margin-bottom: 10px;
 	}
@@ -86,10 +88,6 @@
 		height: 16px;
 	}
 
-	.contact {
-		.title {
-		}
-	}
 	.mainContact {
 		.whiteBox {
 			margin: 0% auto 2rem auto;
@@ -115,7 +113,6 @@
 		font-size: 48px;
 
 		padding-left: 40%;
-		color: #0d6efd;
 	}
 	.ServiceItem {
 		width: 33%;
@@ -126,9 +123,9 @@
 }
 
 #home {
-	background-color: rgb(255, 255, 255);
 	align-items: center;
 	background-image: url("./assets/img/hero-bg.jpg");
+	width: 100%;
 }
 
 h1 {
@@ -165,16 +162,6 @@ p {
 	border-radius: 5px;
 }
 
-.blue {
-	color: #0d6efd;
-	background-color: #0d6efd;
-}
-
-.red {
-	color: red;
-	background-color: red;
-}
-
 .margin-top-2r {
 	margin-top: 2rem;
 }
@@ -188,23 +175,111 @@ p {
 	margin-bottom: 2rem;
 }
 
-.faviconSocial {
-	width: 36px;
-	margin: 5px;
-}
-
 .card {
 	width: 100vh;
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1289px) {
-	.tablet {
-		display: block;
+	#ContactTitle {
+		width: fit-content;
+		margin-bottom: 5vh;
+	}
+	.desktop {
+		font-family: "Nunito Sans", sans-serif;
+		display: flex;
+		height: 150vh;
+		flex-direction: column;
+	}
 
-		.header {
-			font-size: 18px;
+	.faviconSocial {
+		width: 36px;
+		margin: 5px;
+	}
+
+	.line-height-5 {
+		height: 5px !important;
+	}
+	.line-height-3 {
+		height: 3px !important;
+	}
+
+	.introduction {
+		font-size: 4rem;
+	}
+
+	.whiteBox {
+		width: 60%;
+		padding-bottom: 20px;
+		margin: 5rem 15rem;
+		border-radius: 10px;
+		box-shadow: 0px 0px 25px 0.5px;
+	}
+
+	.divideLine {
+		margin: auto;
+		height: 2px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+
+	.AboutMe {
+		padding: 0rem 3rem;
+		text-align: left;
+	}
+
+	.MySkills {
+		padding: 0rem 3rem;
+		text-align: left;
+	}
+
+	.columnTitle {
+		font-size: 24px;
+	}
+
+	.SkillList {
+		margin: 15px 0px;
+		font-size: 20px;
+	}
+
+	.doraemon {
+		height: 248px;
+		width: auto;
+		margin: 0px 15px;
+	}
+
+	.shortIcon {
+		height: 16px;
+	}
+
+	.mainContact {
+		.whiteBox {
+			margin: 0% auto 2rem auto;
 		}
+	}
+
+	form {
+		height: 85%;
+	}
+
+	#map {
+		border: none;
+		width: 100%;
+		height: 60%;
+	}
+
+	.bi-code-slash,
+	.bi-brush,
+	.bi-search {
+		font-size: 48px;
+
+		padding-left: 40%;
+	}
+	.ServiceItem {
+		width: 33%;
+	}
+	.portfolioImage {
+		width: 100%;
 	}
 }
 

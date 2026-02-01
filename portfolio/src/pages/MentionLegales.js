@@ -5,7 +5,7 @@ export default function Home() {
                 <h1 className="margin-width-auto">
                     Mentions légales
                 </h1>
-                <div className="divideLine line-height-5 blue my-4 col-md-4 "></div>
+                <div className="divideLine line-height-5 blue my-4 col-md-4 bg-primary"></div>
             </div>
             <div className="container my-4">
                 <div className="d-flex flex-column accordion shadow-sm rounded">

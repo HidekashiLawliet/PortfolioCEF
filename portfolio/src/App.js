@@ -59,8 +59,8 @@ function Home() {
 	return (
 		<div id="home" className=" col-md-12 d-inline-block justify-content-center h-50">
 			<div className='d-flex justify-content-center flex-column align-items-center h-100'>
-				<h1 className="introduction color-black text-center fw-bold">Bonjour, je suis John Doe</h1>
-				<h2 className="introduction color-black text-center fw-bold">Développeur Web Full Stack</h2>
+				<h1 className="introduction color-black text-center fw-bold text-white">Bonjour, je suis John Doe</h1>
+				<h2 className="introduction color-black text-center fw-bold text-white">Développeur Web Full Stack</h2>
 				<div className="d-inline-block">
 					<div>
 						<button className="btn btn-danger" onClick={openCardMenu}>En savoir plus</button>
@@ -74,7 +74,7 @@ function Home() {
 
 function SkillsPart() {
 	return (
-		<div className="whiteBox d-flex margin-width-auto">
+		<div className="whiteBox d-flex margin-width-auto  ">
 			<div className="AboutMe d-inline-block col-md-7">
 				<h2 className="text-left pt-4">À propos de moi</h2>
 				<div className="underline blue"></div>
