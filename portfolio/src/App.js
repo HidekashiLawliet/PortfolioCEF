@@ -165,22 +165,22 @@ function Footer() {
 						</a>
 					</div>
 					<div class="d-flex flex-column">
-						<a href="#" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className=" text-white text-decoration-none">
 							<span>Fresh Food</span>
 						</a>
-						<a href="#" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className=" text-white text-decoration-none">
 							<span>Restaurant Akira</span>
 						</a>
-						<a href="" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className=" text-white text-decoration-none">
 							<span>Espace bien-être</span>
 						</a>
-						<a href="" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className=" text-white text-decoration-none">
 							<span>SEO</span>
 						</a>
-						<a href="" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className=" text-white text-decoration-none">
 							<span>Création d'une API</span>
 						</a>
-						<a href="" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className=" text-white text-decoration-none">
 							<span>Maquette d'un site</span>
 						</a>
 					</div>
