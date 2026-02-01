@@ -1,0 +1,10 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.addMissingImports.ts": "always",
+        "source.fixAll.eslint": "always",
+        "source.organizeImports": "always",
+        "source.sort.json": "always",
+        "source.sortImports": "always"
+    },
+    "editor.formatOnSave": true
+}
