@@ -1,16 +1,14 @@
 export default function Home() {
     return (
         <div className=" mainContact vh-100 col-md-12 d-inline-block justify-content-center content my-5 pt-5 ">
-            <div
-                id="ContactTitle"
-                className="d-flex flex-column mx-auto w-100">
+            <div id="ContactTitle" className="d-flex flex-column mx-auto w-100">
                 <h1 className="margin-width-auto">
                     Mentions légales
                 </h1>
                 <div className="divideLine line-height-5 blue my-4 col-md-4 "></div>
             </div>
             <div className="container my-4">
-                <div className="accordion shadow-sm rounded">
+                <div className="d-flex flex-column accordion shadow-sm rounded">
                     <div className="siteEditor accordion-item border-0">
                         <div className="accordion-header">
                             <button className="accordion-button text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#editor"> Editeur du site
@@ -53,8 +51,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-
-                    <div className="accordion-item border-top">
+                    <div className="credits accordion-item border-top">
                         <div className="accordion-header">
                             <button className="accordion-button text-dark collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#credits"> Crédits
                             </button>
@@ -65,7 +62,7 @@ export default function Home() {
                                 <div className="d-flex flex-column gap-3">
                                     <h2>Crédits</h2>
                                     <span>Ce site a été réalisé par John Doe, étudiant au <a href="https://www.centre-europeen-formation.fr/" target="_blank" rel="noopener noreferrer">Centre Européen de Formation</a>.</span>
-                                    <span>Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site <a href="https://www.pixabay.com">Pixabay</a></span>
+                                    <span>Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site <a href="https://www.pixabay.com" target="_blank">Pixabay</a></span>
                                     <span>La favicon de ce site a été fournie par <a href="https://www.flaticon.com/de/kostenlose-icons/john-doe" target="_blank" rel="nooperner noreferrer">John doe Icons ertellt von Freepik - Flaticon</a></span>
                                 </div>
                             </div>

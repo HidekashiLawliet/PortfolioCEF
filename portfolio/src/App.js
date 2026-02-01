@@ -2,15 +2,13 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js";
 import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.scss';
 import doraemon from "./assets/img/doraemon.png";
 import githubFav from "./assets/img/github.png";
 import imageAboutMe from "./assets/img/john-doe-about.jpg";
 import linkedinFav from "./assets/img/linkedin.png";
 import twitterFav from "./assets/img/twitter.png";
-
-
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
 import MentionLegales from "./pages/MentionLegales";
