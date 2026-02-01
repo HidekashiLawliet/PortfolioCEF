@@ -11,19 +11,19 @@ export default function Navbar() {
                 </a>
                 <div className="navbar-nav d-flex align-content-center flex-row">
                     <NavLink className="nav-link mx-2" to="/">
-                        Home
+                        HOME
                     </NavLink>
                     <NavLink className="nav-link margin mx-2" to="/Services">
-                        Services
+                        SERVICES
                     </NavLink>
                     <NavLink className="nav-link mx-2" to="/Portfolio">
-                        Portfolio
+                        PORTFOLIO
                     </NavLink>
                     <NavLink className="nav-link mx-2" to="/Contact">
-                        Contact
+                        CONTACT
                     </NavLink>
                     <NavLink className="nav-link mx-2 " to="/MentionLegales">
-                        MentionLegales
+                        MENTIONs LÉGALES
                     </NavLink>
                 </div>
             </div>

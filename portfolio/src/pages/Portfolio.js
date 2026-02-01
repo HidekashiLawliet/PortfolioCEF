@@ -1,4 +1,10 @@
 const banner = require('../assets/img/banner.jpg');
+const freshFood = "../assets/img/portfolio/fresh-food.jpg";
+const restaurantAkira = "../assets/img/portfolio/restaurant-akira.jpg";
+const espaceBienetre = "../assets/img/portfolio/espace-bienetre.jpg";
+const seo = "../assets/img/portfolio/seo.jpg";
+const coder = "../assets/img/portfolio/coder.jpg";
+const screens = "../assets/img/portfolio/screens.jpg";
 
 export default function About() {
     return (
@@ -17,73 +23,76 @@ export default function About() {
 
 
                         <div className="col-12 col-md-4">
-                            <div className="p-4 border text-center">
-                                <div className=" p-3 m-3 border border-secondary rounded ">
-                                    <i className="text-primary bi bi-brush"></i>
-                                    <h2 className="text-center">Fresh Food</h2>
-                                    <span>Site de vente de produits frais en ligne</span>
-                                    <button className="btn btn-primary mt-2">Voir le site</button>
+                            <div className="m-3 border border-secondary rounded ">
+                                <img src={freshFood} className="portfolioImage mx-auto mt-3 rounded"></img>
+                                <h2 className="text-center fs-3">Fresh Food</h2>
+                                <span>Site de vente de produits frais en ligne</span>
+                                <button className="portfolioButton btn btn-primary mt-2 mx-auto">Voir le site</button>
+                                <div className="bg-dark-subtle rounded-bottom border-top border-secondary py-2 ">
+                                    <span className="ms-5 ps-5 w-25">Réalisé avec FIGMA</span>
                                 </div>
                             </div>
                         </div>
 
 
                         <div className="col-12 col-md-4">
-                            <div className="p-4 border text-center">
-                                <div className=" p-3 m-3 border border-secondary rounded ">
-                                    <i className="text-primary bi bi-brush"></i>
-                                    <h2 className="text-center">Restaurant Akira</h2>
-                                    <span>Site de vente de produits frais en ligne</span>
-                                    <button className="btn btn-primary mt-2">Voir le site</button>
+                            <div className="m-3 border border-secondary rounded ">
+                                <img src={restaurantAkira} className="portfolioImage mx-auto mt-3 rounded"></img>
+                                <h2 className="text-center fs-3">Restaurant Akira</h2>
+                                <span>Site de vente de produits frais en ligne</span>
+                                <button className="portfolioButton btn btn-primary mt-2 mx-auto">Voir le site</button>
+                                <div className="bg-dark-subtle rounded-bottom border-top border-secondary py-2 ">
+                                    <span className="ms-5 ps-5 w-25">Réalisé avec FIGMA</span>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-12 col-md-4">
-                            <div className="p-4 border text-center">
-                                <div className=" p-3 m-3 border border-secondary rounded ">
-                                    <i className="text-primary bi bi-brush"></i>
-                                    <h2 className="text-center">Espace bien-êtr</h2>
-                                    <span>Site de vente de produits frais en ligne</span>
-                                    <button className="btn btn-primary mt-2">Voir le site</button>
+                            <div className=" m-3 border border-secondary rounded ">
+                                <img src={espaceBienetre} className="portfolioImage mx-auto mt-3 rounded"></img>
+                                <h2 className="text-center fs-3">Espace bien-être</h2>
+                                <span>Site de vente de produits frais en ligne</span>
+                                <button className="portfolioButton btn btn-primary mt-2 mx-auto">Voir le site</button>
+                                <div className="bg-dark-subtle rounded-bottom border-top border-secondary py-2 ">
+                                    <span className="ms-5 ps-5 w-25">Réalisé avec FIGMA</span>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-12 col-md-4">
-                            <div className="p-4 border text-center">
-                                <div className=" p-3 m-3 border border-secondary rounded ">
-                                    <i className="text-primary bi bi-brush"></i>
-                                    <h2 className="text-center">SEO</h2>
-                                    <span>Amélioration du référencement d'un site de e-commerce</span>
-                                    <button className="btn btn-primary mt-2">Voir le site</button>
+                            <div className=" m-3 border border-secondary rounded ">
+                                <img src={seo} className="portfolioImage mx-auto mt-3 rounded"></img>
+                                <h2 className="text-center fs-3">SEO</h2>
+                                <span>Amélioration du référencement d'un site de e-commerce</span>
+                                <button className="portfolioButton btn btn-primary mt-2 mx-auto">Voir le site</button>
+                                <div className="bg-dark-subtle rounded-bottom border-top border-secondary py-2 ">
+                                    <span className="ms-5 ps-5 w-25">Réalisé avec FIGMA</span>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-12 col-md-4">
-                            <div className="p-4 border text-center">
-                                <div className=" p-3 m-3 border border-secondary rounded ">
-                                    <i className="text-primary bi bi-brush"></i>
-                                    <h2 className="text-center">Création d'une API</h2>
-                                    <span>Création d'une API RESTFULL publique</span>
-                                    <button className="btn btn-primary mt-2">Voir le site</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-12 col-md-4">
-                            <div className="p-4 border text-center">
-                                <div className=" p-3 m-3 border border-secondary rounded ">
-                                    <i className="text-primary bi bi-brush"></i>
-                                    <h2 className="text-center">Maquette d'un site web</h2>
-                                    <span>Création du prototype d'un site</span>
-                                    <button className="btn btn-primary mt-2">Voir le site</button>
-                                    <div className="bg-light text-dark py-2 border-bottom">
-                                        <div className="container">
-                                            Bandeau gris clair
-                                        </div>
+                            <div className="m-3 border border-secondary rounded ">
+                                <img src={coder} className="portfolioImage mx-auto mt-3 rounded"></img>
+                                <h2 className="text-center fs-3">Création d'une API</h2>
+                                <span>Création d'une API RESTFULL publique</span>
+                                <button className="portfolioButton btn btn-primary mt-2 mx-auto">Voir le site</button>
+                                <div className="bg-dark-subtle rounded-bottom border-top border-secondary py-2 ">
+                                    <div className="container fs-6">
+                                        <span className="ms-5 ps-5 w-25">Réalisé avec FIGMA</span>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-12 col-md-4">
+                            <div className="m-3 border d-flex flex-column border-secondary rounded ">
+                                <img src={screens} className="portfolioImage mx-auto mt-3 rounded"></img>
+                                <h2 className="text-center fs-3">Maquette d'un site web</h2>
+                                <span className="mx-auto">Création du prototype d'un site</span>
+                                <button className="portfolioButton btn btn-primary mt-2 mx-auto">Voir le site</button>
+                                <div className="bg-dark-subtle rounded-bottom border-top border-secondary py-2 ">
+                                    <span className="ms-5 ps-5 w-25">Réalisé avec FIGMA</span>
                                 </div>
                             </div>
                         </div>
