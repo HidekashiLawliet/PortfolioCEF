@@ -10,14 +10,11 @@ export default function Home() {
             <div className="container my-4">
                 <div className="d-flex flex-column accordion shadow-sm rounded">
                     <div className="siteEditor accordion-item border-0">
-                        <div className="accordion-header">
+                        <div className="">
                             <button className="accordion-button text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#editor"> Editeur du site
                             </button>
                         </div>
-                        <div
-                            id="editor"
-                            className="accordion-collapse collapse show"
-                            data-bs-parent="#legalAccordion">
+                        <div id="editor" className="accordion-collapse collapse show" data-bs-parent="#legalAccordion">
                             <div className="accordion-body">
                                 <p className="fw-bold mb-3"> John Doe </p>
                                 <div className="d-flex align-items-start gap-2 mb-2">
@@ -39,7 +36,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="host accordion-item border-top">
-                        <div className="accordion-header">
+                        <div className="">
                             <button className="accordion-button collapsed text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#host"> Hébergeur
                             </button>
                         </div>
@@ -52,7 +49,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="credits accordion-item border-top">
-                        <div className="accordion-header">
+                        <div className="">
                             <button className="accordion-button text-dark collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#credits"> Crédits
                             </button>
                         </div>
@@ -61,7 +58,7 @@ export default function Home() {
                             <div className="accordion-body">
                                 <div className="d-flex flex-column gap-3">
                                     <h2>Crédits</h2>
-                                    <span>Ce site a été réalisé par John Doe, étudiant au <a href="https://www.centre-europeen-formation.fr/" target="_blank" rel="noopener noreferrer">Centre Européen de Formation</a>.</span>
+                                    <span>Ce site a été réalisé par John Doe, étudiant au <a href="https://www.centre-europeen-formation.fr/" target="_blank" rel="noopener noreferrer">Centre Européen de Formation.</a></span>
                                     <span>Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site <a href="https://www.pixabay.com" target="_blank">Pixabay</a></span>
                                     <span>La favicon de ce site a été fournie par <a href="https://www.flaticon.com/de/kostenlose-icons/john-doe" target="_blank" rel="nooperner noreferrer">John doe Icons ertellt von Freepik - Flaticon</a></span>
                                 </div>

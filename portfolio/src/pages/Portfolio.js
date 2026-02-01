@@ -63,7 +63,7 @@ export default function About() {
                             <div className="m-3 border d-flex flex-column border-secondary rounded">
                                 <img src={seo} className="portfolioImage mx-auto rounded-top" alt="image SEO"></img>
                                 <h2 className="text-center fs-3">SEO</h2>
-                                <span className="mx-auto">Amélioration du référencement d'un site de e-commerce</span>
+                                <span className="mx-auto">Amélioration du référencement d'un site de commerce</span>
                                 <button className="portfolioButton btn btn-primary my-3 mx-auto">Voir le site</button>
                                 <div className="bg-dark-subtle rounded-bottom border-top border-secondary py-2 ">
                                     <span className="ms-5 ps-5 w-25">Réalisé avec FIGMA</span>
