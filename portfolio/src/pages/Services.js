@@ -19,8 +19,8 @@ export default function About() {
                 </div>
                 <div className="ServiceItem p-3 m-3 border border-secondary rounded col-md-3">
                     <i className="text-primary bi bi-search"></i>
-                    <h2 className="text-center">SEO & Marketing Digital</h2>
-                    <p>Optimisation de votre présence en ligne pour attirer plus de visiteurs.</p>
+                    <h2 className="text-center">Référencement</h2>
+                    <p>Le référencement naturel (SEO) est une technique qui consiste à optimiser un site web pour le faire remonter dans les résultats des moteurs de recherche(Google, Bong, Yahoo, etc.) L'objectif est d'attirter un maximum de visiteurs qualifités sur le site.</p>
                 </div>
             </div>
         </div>
