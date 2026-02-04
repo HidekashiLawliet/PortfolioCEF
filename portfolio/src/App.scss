@@ -13,6 +13,7 @@
 	font-size: 20px;
 	position: fixed;
 	height: fit-content;
+	z-index: 1000;
 }
 /* Desktop */
 @media (min-width: 1290px) {
@@ -122,6 +123,16 @@
 	}
 	.service {
 		height: 100vh;
+	}
+
+	.whiteBox {
+		height: 86vh;
+	}
+	.map {
+		height: 100%;
+	}
+	.btn {
+		margin: 5px auto 5px auto;
 	}
 }
 
@@ -290,6 +301,13 @@ p {
 	}
 	.portfolioImage {
 		width: 100%;
+	}
+
+	.whiteBox {
+		height: 35vh;
+	}
+	.btn {
+		margin: 5px auto 5px auto;
 	}
 }
 
