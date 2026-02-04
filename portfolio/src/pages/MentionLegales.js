@@ -1,15 +1,16 @@
 export default function Home() {
     return (
-        <div className="col-md-12 d-inline-block justify-content-center content my-5 pt-5 ">
+        <div className="mentionsLégales col-md-12 d-inline-block justify-content-center content my-5 pt-5 ">
             <div id="ContactTitle" className="d-flex flex-column mx-auto w-100">
                 <h1 className="margin-width-auto">
                     Mentions légales
                 </h1>
                 <div className="divideLine line-height-5 blue my-4 col-md-4 bg-primary"></div>
             </div>
-            <div className="container my-4">
+            <div className="container h-50 my-4">
                 <div className="d-flex flex-column accordion shadow-sm rounded">
-                    <div className="siteEditor accordion-item border border-bottom-0">
+
+                    <div className=" accordion-item collapsed border border-bottom-0">
                         <div className="">
                             <button className="accordion-button text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#editor"> Editeur du site
                             </button>
@@ -35,9 +36,10 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="host accordion-item border-top">
+
+                    <div className="accordion-item border-top">
                         <div className="">
-                            <button className="accordion-button collapsed text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#host"> Hébergeur
+                            <button className="accordion-button collapsed text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#host "> Hébergeur
                             </button>
                         </div>
                         <div id="host" className="accordion-collapse collapse" data-bs-parent="#legalAccordion">
@@ -48,12 +50,12 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="credits accordion-item">
+
+                    <div className="accordion-item">
                         <div className="">
                             <button className="accordion-button text-dark collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#credits"> Crédits
                             </button>
                         </div>
-
                         <div id="credits" className="accordion-collapse collapse" data-bs-parent="#legalAccordion">
                             <div className="accordion-body">
                                 <div className="d-flex flex-column gap-3">
@@ -65,6 +67,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

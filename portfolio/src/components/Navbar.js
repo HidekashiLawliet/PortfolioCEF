@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
     return (
-        <nav className="header bg-dark d-flex align-items-center col-md-12">
-            <div className=" d-flex margin-width-auto-2r justify-content-between col-md-11 text-white p-3 text-white text-decoratio-none">
-                <a className="text-white text-decoration-none mx-2">
+        <nav className="header bg-dark mx-auto d-flex align-items-center col-md-12">
+            <div className=" d-flex mx-auto justify-content-between col-md-11 text-white p-3 text-white text-decoratio-none">
+                <a className="text-white text-decoration-none mx-2 my-auto">
                     <span>JOHN DOE</span>
                 </a>
                 <div className="navbar-nav d-flex align-content-center flex-row">

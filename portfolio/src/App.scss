@@ -1,22 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
+//custom boostrap overrides
+.lg {
+	min-width: 1290px;
+}
+
+.md {
+	min-width: 768px;
+	max-width: 1289px;
+}
+
+.sm {
+	max-width: 767px;
+}
+
+.footer {
+	z-index: 1000;
+}
+
 .desktop,
 .tablet,
 .mobile {
 	display: none;
 }
-.header {
-	margin: auto;
-	margin-bottom: 25rem;
-	display: flex;
-	justify-content: space-between;
-	font-size: 20px;
-	position: fixed;
-	height: fit-content;
-	z-index: 1000;
-}
+
 /* Desktop */
 @media (min-width: 1290px) {
+	.header {
+		font-size: 20px;
+		position: fixed;
+		margin-bottom: 100vh;
+		z-index: 1000;
+	}
+	.mentionsLégales {
+		height: calc(100vh - 46px - 324px);
+	}
 	#ContactTitle {
 		width: fit-content;
 		margin-bottom: 5vh;
@@ -141,65 +159,26 @@
 	}
 }
 
-#home {
-	align-items: center;
-	background-image: url("./assets/img/hero-bg.jpg");
-	width: 100%;
-}
-
-h1 {
-	font-weight: 600;
-}
-
-h2 {
-	font-weight: 600;
-}
-
-span {
-	font-weight: 400;
-}
-
-p {
-	font-weight: 400;
-}
-
-.customLink {
-	margin-left: 15px;
-}
-
-.active {
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-.underline {
-	margin: auto;
-	height: 3px;
-	margin-top: 10px;
-	margin-bottom: 3rem;
-	width: 100%;
-	border-radius: 5px;
-}
-
-.margin-top-2r {
-	margin-top: 2rem;
-}
-
-.margin-width-auto {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.margin-bottom-2r {
-	margin-bottom: 2rem;
-}
-
-.card {
-	width: 100vh;
-}
-
-/* Tablet */
 @media (min-width: 768px) and (max-width: 1289px) {
+	.header {
+		font-size: 15px;
+		position: fixed;
+		margin-bottom: 100vh;
+		z-index: 1000;
+		span {
+			margin-left: 10px;
+			align-items: center;
+		}
+	}
+
+	.projectCard {
+		width: 33.3%;
+		.portfolioButton {
+			.btn {
+				padding: 2px;
+			}
+		}
+	}
 	#ContactTitle {
 		width: fit-content;
 		margin-bottom: 5vh;
@@ -312,7 +291,7 @@ p {
 		height: 35vh;
 	}
 	.btn {
-		margin: 5px auto 5px auto;
+		margin: 2px auto 2px auto;
 	}
 }
 
@@ -326,3 +305,62 @@ p {
 		}
 	}
 }
+
+#home {
+	align-items: center;
+	background-image: url("./assets/img/hero-bg.jpg");
+	width: 100%;
+}
+
+h1 {
+	font-weight: 600;
+}
+
+h2 {
+	font-weight: 600;
+}
+
+span {
+	font-weight: 400;
+}
+
+p {
+	font-weight: 400;
+}
+
+.customLink {
+	margin-left: 15px;
+}
+
+.active {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.underline {
+	margin: auto;
+	height: 3px;
+	margin-top: 10px;
+	margin-bottom: 3rem;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.margin-top-2r {
+	margin-top: 2rem;
+}
+
+.margin-width-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.margin-bottom-2r {
+	margin-bottom: 2rem;
+}
+
+.card {
+	width: 100vh;
+}
+
+/* Tablet */
