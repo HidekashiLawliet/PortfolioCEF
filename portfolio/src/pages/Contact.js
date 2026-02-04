@@ -30,7 +30,7 @@ export default function Contact() {
                 <div className=" d-inline-block h-100 col-md-6 mx-3">
                     <h2>Mes coordonnées</h2>
                     <div className="divideLine line-height-3 blue my-4 bg-primary"></div>
-                    <div className="mt-3 position-relative pb-5">
+                    <div className="MyLocalisation mt-3 pb-5 d-flex flex-column">
                         <ul className='list-group-flush ps-0 mt-4 '>
                             <p className="my-0 fs-4">John Doe</p>
                             <li className="list-group-item text-dark"><i className="bi bi-map me-1"></i><span> 40 Rue Laure Diebold</span></li>
@@ -38,8 +38,8 @@ export default function Contact() {
                             <li className="list-group-item text-dark"><i className="bi bi-phone me-1"></i><span> 10 20 30 40 50</span></li>
                             <li className="list-group-item text-dark"><i className="bi bi-envelope-at me-1"></i><span> john.doe@gmail.com</span></li>
                         </ul>
-                        <div className="map h-100 position-absolute bottom-10 start-0">
-                            <iframe src={mapLink} className="w-100 h-100" id="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div className="map w-100 h-100 flex-grow-1 mt-3">
+                            <iframe src={mapLink} className="" id="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
