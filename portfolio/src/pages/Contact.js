@@ -9,7 +9,7 @@ export default function Contact() {
                 <div className="divideLine line-height-5 blue my-4 col-8 bg-primary">
                 </div>
             </div>
-            <div className="whiteBox d-flex col-md-6 flex-row mx-auto justify-content-between px-4 py-3">
+            <div className="whiteBox d-flex col-md-10 flex-row mx-auto justify-content-between px-4 py-3">
                 <div className=" d-inline-block col-md-6">
                     <h2>Formulaire de contact</h2>
                     <div className="divideLine line-height-3  my-4 mb-15 bg-primary"> </div>
@@ -24,14 +24,14 @@ export default function Contact() {
                         <input className="form-control border border-secondary " type="text" id="subject" placeholder="Sujet" name="subject" required></input>
                         <label for="message" className="form-label" ></label>
                         <textarea className="form-control border border-secondary h-100" id="message" placeholder="Votre message" name="message"></textarea>
-                        <button type="submit" id="submitBtn" className="btn btn-primary">Envoyer</button>
+                        <button type="submit" id="submitBtn" className="submitButton btn btn-primary">Envoyer</button>
                     </form>
                 </div>
                 <div className=" d-inline-block h-100 col-md-6 mx-3">
                     <h2>Mes coordonnées</h2>
                     <div className="divideLine line-height-3 blue my-4 bg-primary"></div>
                     <div className="MyLocalisation mt-3 pb-5 d-flex flex-column">
-                        <ul className='list-group-flush ps-0 mt-4 '>
+                        <ul className='list-group-flush '>
                             <p className="my-0 fs-4">John Doe</p>
                             <li className="list-group-item text-dark"><i className="bi bi-map me-1"></i><span> 40 Rue Laure Diebold</span></li>
                             <li className="list-group-item text-dark"><i className="bi bi-geo-alt me-1"></i><span> 69009 Lyon, France</span></li>
