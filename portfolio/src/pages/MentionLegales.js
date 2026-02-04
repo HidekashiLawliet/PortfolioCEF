@@ -1,6 +1,6 @@
 export default function Home() {
     return (
-        <div className=" mainContact vh-100 col-md-12 d-inline-block justify-content-center content my-5 pt-5 ">
+        <div className="col-md-12 d-inline-block justify-content-center content my-5 pt-5 ">
             <div id="ContactTitle" className="d-flex flex-column mx-auto w-100">
                 <h1 className="margin-width-auto">
                     Mentions légales
@@ -9,7 +9,7 @@ export default function Home() {
             </div>
             <div className="container my-4">
                 <div className="d-flex flex-column accordion shadow-sm rounded">
-                    <div className="siteEditor accordion-item border-0">
+                    <div className="siteEditor accordion-item border border-bottom-0">
                         <div className="">
                             <button className="accordion-button text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#editor"> Editeur du site
                             </button>
@@ -48,7 +48,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="credits accordion-item border-top">
+                    <div className="credits accordion-item">
                         <div className="">
                             <button className="accordion-button text-dark collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#credits"> Crédits
                             </button>
