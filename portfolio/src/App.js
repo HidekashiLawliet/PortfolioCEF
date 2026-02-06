@@ -74,7 +74,7 @@ function Home() {
 
 function SkillsPart() {
 	return (
-		<div className="whiteBox d-flex margin-width-auto  ">
+		<div className="whiteBox d-flex mx-auto col-md-10 h-auto mt-5 p-5">
 			<div className="AboutMe d-inline-block col-md-7">
 				<h2 className="text-left pt-4">À propos de moi</h2>
 				<div className="underline blue"></div>
