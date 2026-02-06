@@ -9,22 +9,54 @@ export default function Navbar() {
                 <a className="text-white text-decoration-none mx-2 my-auto">
                     <span>JOHN DOE</span>
                 </a>
-                <div className="navbar-nav d-flex align-content-center flex-row">
-                    <NavLink className="nav-link mx-2" to="/">
-                        HOME
-                    </NavLink>
-                    <NavLink className="nav-link  mx-2" to="/Services">
-                        SERVICES
-                    </NavLink>
-                    <NavLink className="nav-link mx-2" to="/Portfolio">
-                        PORTFOLIO
-                    </NavLink>
-                    <NavLink className="nav-link mx-2" to="/Contact">
-                        CONTACT
-                    </NavLink>
-                    <NavLink className="nav-link mx-2" to="/MentionLegales">
-                        MENTIONS LÉGALES
-                    </NavLink>
+
+
+                <div className=".d-none d-sm-none ">
+                    <button type="button" class="btn btn-secondary bg-dark  " data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark text-white">
+                        <li><NavLink className="nav-link mx-2" to="/">
+                            HOME
+                        </NavLink></li>
+                        <li><NavLink className="nav-link  mx-2" to="/Services">
+                            SERVICES
+                        </NavLink></li>
+                        <li><NavLink className="nav-link mx-2" to="/Portfolio">
+                            PORTFOLIO
+                        </NavLink></li>
+                        <li>
+                            <NavLink className="nav-link mx-2" to="/Contact">
+                                CONTACT
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink className="nav-link mx-2" to="/MentionLegales">
+                                MENTIONS LÉGALES
+                            </NavLink>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div className="d-none d-sm-block">
+                    <div className="navbar-nav d-flex d-flex align-content-center flex-row ">
+                        <NavLink className="nav-link mx-2" to="/">
+                            HOME
+                        </NavLink>
+                        <NavLink className="nav-link  mx-2" to="/Services">
+                            SERVICES
+                        </NavLink>
+                        <NavLink className="nav-link mx-2" to="/Portfolio">
+                            PORTFOLIO
+                        </NavLink>
+                        <NavLink className="nav-link mx-2" to="/Contact">
+                            CONTACT
+                        </NavLink>
+                        <NavLink className="nav-link mx-2" to="/MentionLegales">
+                            MENTIONS LÉGALES
+                        </NavLink>
+                    </div>
                 </div>
             </div>
         </nav>
