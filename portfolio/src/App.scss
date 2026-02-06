@@ -37,14 +37,6 @@
 	}
 }
 
-.parent {
-	--parent-width: 100%;
-}
-
-.child {
-	width: calc(var(--parent-width) / 2); /* Moitié de la largeur parent */
-}
-
 /* Desktop */
 @media (min-width: 1290px) {
 	.header {
@@ -204,7 +196,7 @@
 	.desktop {
 		font-family: "Nunito Sans", sans-serif;
 		display: flex;
-		height: 200vh;
+		height: 180vh;
 		flex-direction: column;
 	}
 
@@ -314,14 +306,166 @@
 	}
 }
 
-/* Mobile */
-@media (max-width: 767px) {
-	.mobile {
-		display: block;
+@media (min-width: 425px) and (max-width: 767px) {
+	.header {
+		position: fixed;
 
-		.header {
+		font-size: 12px;
+	}
+
+	.projectCard {
+		.portfolioButton {
+			.btn {
+				padding: 2px;
+			}
+		}
+	}
+	#ContactTitle {
+		width: fit-content;
+		margin-bottom: 5vh;
+	}
+
+	input {
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+	.desktop {
+		font-family: "Nunito Sans", sans-serif;
+		display: flex;
+		height: 180vh;
+		flex-direction: column;
+		width: 100%;
+		.whiteBox {
+			border-radius: 10px;
+			box-shadow: 0px 0px 25px 0.5px;
+			margin: 0% auto 2rem auto;
+		}
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+
+	.service {
+		height: 100vh;
+	}
+	.faviconSocial {
+		width: 36px;
+		margin: 5px;
+	}
+
+	.line-height-5 {
+		height: 5px !important;
+	}
+	.line-height-3 {
+		height: 3px !important;
+	}
+
+	.introduction {
+		font-size: 3rem;
+	}
+	.submitButton {
+		width: fit-content;
+		font-size: 12px;
+	}
+
+	.divideLine {
+		margin: auto;
+		height: 2px;
+	}
+
+	.AboutMe {
+		text-align: left;
+		.paragraphe {
+			font-size: 14px;
+		}
+	}
+
+	.progress {
+		height: 10px;
+		.progress-bar {
+			height: 10px;
+		}
+	}
+
+	.MySkills {
+		padding: 1rem 0rem;
+	}
+	.columnTitle {
+		font-size: 24px;
+	}
+
+	.SkillList {
+		margin: 15px 0px;
+		font-size: 20px;
+	}
+
+	.doraemon {
+		height: calc(25vw + 5vh);
+		width: auto;
+		margin: 0px 15px;
+	}
+	.myGithubProfile {
+		width: calc(80vw);
+		span {
 			font-size: 12px;
 		}
+	}
+
+	.shortIcon {
+		height: 16px;
+	}
+
+	form {
+		height: 85%;
+	}
+
+	#map {
+		border: none;
+		width: 100%;
+		height: 60%;
+	}
+
+	.bi-code-slash,
+	.bi-brush,
+	.bi-search {
+		font-size: 36px;
+	}
+	.ServiceItem {
+		height: auto;
+		p {
+			margin-top: 15px;
+		}
+	}
+	.portfolioImage {
+		width: 100%;
+	}
+
+	.btn {
+		margin: 10px auto 2px auto;
+	}
+}
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 425px) {
+	.header {
+		font-size: 12px;
+		position: fixed;
+	}
+	.desktop {
+		font-family: "Nunito Sans", sans-serif;
+		display: flex;
+		height: 180vh;
+		flex-direction: column;
+	}
+	#home {
+		height: 300vh;
+	}
+
+	.faviconSocial {
+		width: 36px;
+		margin: 5px;
 	}
 }
 

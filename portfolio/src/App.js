@@ -55,7 +55,7 @@ function Home() {
 		setIsCardMenuOpen(false);
 	};
 	return (
-		<div id="home" className=" col-md-12 d-inline-block justify-content-center h-50">
+		<div id="home" className=" col-md-12 col-sm-12 d-inline-block justify-content-center mx-auto h-50">
 			<div className='d-flex justify-content-center flex-column align-items-center h-100'>
 				<h1 className="introduction color-black text-center fw-bold text-white">Bonjour, je suis John Doe</h1>
 				<h2 className="introduction color-black text-center fw-bold text-white">Développeur Web Full Stack</h2>
@@ -74,10 +74,10 @@ function Home() {
 function SkillsPart() {
 
 	return (
-		<div className="whiteBox d-flex mx-auto col-md-10 h-auto mt-5 p-3" >
-			<div className="AboutMe px-3 d-inline-block col-md-7">
+		<div className="whiteBox d-flex mx-auto col-md-10 col-sm-10 col-10 h-auto mt-5 p-3" >
+			<div className="AboutMe px-3 d-inline-block col-md-7 col-sm-7 col-7">
 				<h2 className="text-left pt-3">À propos de moi</h2>
-				<div className="divideLine line-height-5 blue my-4 col-md-12 mb-1 bg-primary" />
+				<div className="divideLine line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
 				<div className="underline blue"></div>
 				<img src={imageAboutMe} className="johnDoeImage d-block mx-auto img-fluid w-100 m-2" alt='picture of myself'></img>
 				<p className="paragraphe margin-top-2r">
@@ -90,31 +90,31 @@ function SkillsPart() {
 					Proident sunt in culpa qui officia deserunt mollit anim id est laborum Curabitur blandit tempus porttitor Maecenas faucibus mollis interdum Cras mattis consectetur purus sit amet fermentum
 				</p >
 			</div>
-			<div className="MySkills d-inline-block col-md-5">
-				<h2 className="text-center">Mes Compétences</h2>
-				<div className="divideLine line-height-5 blue my-4 col-md-12 mb-1 bg-primary" />
+			<div className="MySkills d-inline-block col-md-5 col-sm-5 col-5">
+				<h2 >Mes Compétences</h2>
+				<div className="divideLine line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
 				<div className="underline blue"></div>
-				<div className='SkillList col-md-5 w-100'><label>HTML5 90%</label>
+				<div className='SkillList col-md-5 col-sm-5 col-5 w-100'><label>HTML5 90%</label>
 					<div className="progress bg-dark-subtle" role="progressbar" aria-label="HTML5" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
 						<div className="progress-bar bg-danger" style={{ width: "90%" }}></div>
 					</div>
 				</div>
-				<div className='SkillList col-md-5 w-100'><label>CSS 80%</label>
+				<div className='SkillList col-md-5 col-sm-5 col-5 w-100'><label>CSS 80%</label>
 					<div className="progress bg-dark-subtle" role="progressbar" aria-label="CSS " aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
 						<div className="progress-bar bg-info" style={{ width: "80%" }}></div>
 					</div>
 				</div>
-				<div className='SkillList col-md-5 w-100'><label>JAVASCRIPT 70%</label>
+				<div className='SkillList col-md-5 col-sm-5 col-5 w-100'><label>JAVASCRIPT 70%</label>
 					<div className="progress bg-dark-subtle" role="progressbar" aria-label="HTML5 " aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
 						<div className="progress-bar bg-warning" style={{ width: "70%" }}></div>
 					</div>
 				</div>
-				<div className='SkillList col-md-5 w-100'><label>PHP 60%</label>
+				<div className='SkillList col-md-5 col-sm-5 col-5 w-100'><label>PHP 60%</label>
 					<div className="progress bg-dark-subtle" role="progressbar" aria-label="HTML5" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
 						<div className="progress-bar bg-success" style={{ width: "60%" }}></div>
 					</div>
 				</div>
-				<div className='SkillList col-md-5 w-100'><label>REACT 50%</label>
+				<div className='SkillList col-md-5 col-sm-5 col-5 w-100'><label>REACT 50%</label>
 					<div className="progress bg-dark-subtle" role="progressbar" aria-label="HTML5" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
 						<div className="progress-bar" style={{ width: "50%" }}></div>
 					</div>
@@ -129,23 +129,23 @@ function Footer() {
 		<div className="footer bg-dark text-light">
 			<div className="container ">
 				<div className="row row-cols-3 pb-5 m-auto">
-					<div className="columnTitle margin-top-2r"><span>John Doe</span></div>
-					<div className="columnTitle  margin-top-2r">Liens utiles</div>
-					<div className="columnTitle  margin-top-2r">Mes dernières réalisations</div>
+					<div className="columnTitle mt-5 fs-3"><span>John Doe</span></div>
+					<div className="columnTitle  mt-5 fs-3">Liens utiles</div>
+					<div className="columnTitle  mt-5 fs-3">Mes dernières réalisations</div>
 					<div className="d-flex flex-column mb-3">
 						<span>40 Rue Laure Diebold</span>
 						<span>69009 Lyon, France</span>
 						<span>10 20 30 40 50</span>
 						<span>john.doe@gmail.com</span>
-						<div className="socialLink">
+						<div className="socialLink ">
 							<a>
-								<img className="faviconSocial" src={githubFav}></img>
+								<img className="faviconSocial mt-3" src={githubFav}></img>
 							</a>
 							<a>
-								<img className="faviconSocial" src={twitterFav}></img>
+								<img className="faviconSocial mt-3" src={twitterFav}></img>
 							</a>
 							<a>
-								<img className="faviconSocial" src={linkedinFav}></img>
+								<img className="faviconSocial mt-3" src={linkedinFav}></img>
 							</a>
 						</div>
 					</div>
