@@ -146,7 +146,7 @@ This project is private/personal. Modify the license section as needed.
 
 **John Doe**  
 Portfolio: [Your Website URL]  
-Email: [Your Email]
+Email: jphndoe@IbetYouDidn'tReadHere.com
 
 ---
 
