@@ -25,6 +25,12 @@
 	display: none;
 }
 
+.whiteBox {
+	border-radius: 10px;
+	box-shadow: 0px 0px 25px 0.5px;
+	margin: 0% auto 2rem auto;
+}
+
 /* Desktop */
 @media (min-width: 1290px) {
 	.header {
@@ -65,10 +71,7 @@
 	}
 
 	.whiteBox {
-		border-radius: 10px;
-		box-shadow: 0px 0px 25px 0.5px;
 		height: 100vh;
-		margin: 0% auto 2rem auto;
 	}
 	.mainContact {
 		.whiteBox {
@@ -175,6 +178,12 @@
 		width: fit-content;
 		margin-bottom: 5vh;
 	}
+
+	input {
+		font-size: 12px;
+		line-height: 14px;
+	}
+
 	.desktop {
 		font-family: "Nunito Sans", sans-serif;
 		display: flex;

@@ -15,14 +15,14 @@ export default function Contact() {
                     <div className="divideLine line-height-3  my-4 mb-15 bg-primary"> </div>
                     <form action="#" method="post" className=" d-flex flex-column justify-content-between">
                         <input className="form-control border border-secondary" type="text" id="name" placeholder="Votre nom" name="name" required></input>
-                        <input className="form-control border border-secondary " type="email" id="email" placeholder="Votre adresse email" name="email" required></input>
-                        <input className="form-control border border-secondary " type="tel" id="phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="Votre numéro de téléphone" name="phone" required></input>
-                        <input className="form-control border border-secondary " type="text" id="subject" placeholder="Sujet" name="subject" required></input>
-                        <textarea className="form-control border border-secondary h-50" id="message" placeholder="Votre message" name="message"></textarea>
+                        <input className="form-control border border-secondary my-2 " type="email" id="email" placeholder="Votre adresse email" name="email" required></input>
+                        <input className="form-control border border-secondary my-2 " type="tel" id="phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="Votre numéro de téléphone" name="phone" required></input>
+                        <input className="form-control border border-secondary my-2 " type="text" id="subject" placeholder="Sujet" name="subject" required></input>
+                        <textarea className="form-control border border-secondary my-2 h-50" id="message" placeholder="Votre message" name="message"></textarea>
                         <button type="submit" id="submitBtn" className="submitButton btn btn-primary">Envoyer</button>
                     </form>
                 </div>
-                <div className=" d-inline-block h-100 col-md-6 mx-3">
+                <div className="d-inline-block h-100 col-md-6 mx-3">
                     <h2>Mes coordonnées</h2>
                     <div className="divideLine line-height-3 blue my-4 bg-primary"></div>
                     <div className="MyLocalisation mt-3 pb-5 d-flex flex-column">
