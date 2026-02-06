@@ -11,8 +11,8 @@ export default function About() {
                 <span className="subtitle text-center">Voici les services que je propose</span>
                 <div className="divideLine line-height-5 blue my-4 col-md-6 mb-5 bg-primary"></div>
             </div>
-            <div className="col-md-10 mx-auto h-100">
-                <div className=" d-inline-block d-flex flex-row-grid mx-auto h-100 justify-content-center p-4 rounded">
+            <div className="col-md-10 mx-auto">
+                <div className=" d-inline-block d-flex flex-row-grid mx-auto justify-content-center p-4 rounded">
                     <div className="ServiceItem d-flex flex-column p-3 m-3 border border-secondary rounded col-md-4">
                         <i className="text-primary mx-auto bi bi-brush"></i>
                         <h2 className="text-center mx-1">UX Design</h2>
