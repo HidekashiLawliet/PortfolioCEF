@@ -14,16 +14,11 @@ export default function Contact() {
                     <h2>Formulaire de contact</h2>
                     <div className="divideLine line-height-3  my-4 mb-15 bg-primary"> </div>
                     <form action="#" method="post" className=" d-flex flex-column justify-content-between">
-                        <label for="name" className="form-label" ></label>
                         <input className="form-control border border-secondary" type="text" id="name" placeholder="Votre nom" name="name" required></input>
-                        <label for="email" className="form-label" ></label>
                         <input className="form-control border border-secondary " type="email" id="email" placeholder="Votre adresse email" name="email" required></input>
-                        <label for="phone" className="form-label" ></label>
                         <input className="form-control border border-secondary " type="tel" id="phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="Votre numéro de téléphone" name="phone" required></input>
-                        <label for="subject" className="form-label" ></label>
                         <input className="form-control border border-secondary " type="text" id="subject" placeholder="Sujet" name="subject" required></input>
-                        <label for="message" className="form-label" ></label>
-                        <textarea className="form-control border border-secondary h-100" id="message" placeholder="Votre message" name="message"></textarea>
+                        <textarea className="form-control border border-secondary h-50" id="message" placeholder="Votre message" name="message"></textarea>
                         <button type="submit" id="submitBtn" className="submitButton btn btn-primary">Envoyer</button>
                     </form>
                 </div>
