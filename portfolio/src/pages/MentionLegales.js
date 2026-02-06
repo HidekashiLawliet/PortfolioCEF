@@ -2,7 +2,7 @@ export default function Home() {
     return (
         <div className="mentionsLégales col-md-12 col-sm-12 col-12 d-inline-block justify-content-center content my-5 pt-5 ">
             <div id="ContactTitle" className="d-flex flex-column mx-auto w-100">
-                <h1 className="margin-width-auto">
+                <h1 className="mx-auto">
                     Mentions légales
                 </h1>
                 <div className="mx-auto line-height-5 blue my-4 col-md-8 col-sm-10 col-10 bg-primary"></div>

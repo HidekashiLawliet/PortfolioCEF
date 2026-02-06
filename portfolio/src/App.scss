@@ -49,6 +49,13 @@
 	z-index: 800;
 }
 
+.line-height-5 {
+	height: 5px !important;
+}
+.line-height-3 {
+	height: 3px !important;
+}
+
 /* Desktop */
 @media (min-width: 1290px) {
 	#map {
@@ -75,13 +82,6 @@
 		height: auto;
 		background-color: rgb(255, 255, 255);
 		flex-direction: column;
-	}
-
-	.line-height-5 {
-		height: 5px !important;
-	}
-	.line-height-3 {
-		height: 3px !important;
 	}
 
 	.introduction {
@@ -132,9 +132,7 @@
 	.bi-search {
 		font-size: 48px;
 	}
-	.portfolioImage {
-		width: 100%;
-	}
+
 	.service {
 		height: 100vh;
 	}
@@ -145,6 +143,10 @@
 	.btn {
 		margin: 5px auto 5px auto;
 	}
+}
+
+.portfolioImage {
+	width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 1289px) {
@@ -187,13 +189,6 @@
 	.faviconSocial {
 		width: 36px;
 		margin: 5px;
-	}
-
-	.line-height-5 {
-		height: 5px !important;
-	}
-	.line-height-3 {
-		height: 3px !important;
 	}
 
 	.introduction {
@@ -296,8 +291,7 @@
 		height: 20vh;
 	}
 	.banner {
-		margin-top: calc(var(--header-height) / 3.5);
-		object-fit: cover;
+		margin-top: 20px;
 	}
 	.projectCard {
 		.portfolioButton {
@@ -333,13 +327,6 @@
 	.faviconSocial {
 		width: 36px;
 		margin: 5px;
-	}
-
-	.line-height-5 {
-		height: 5px !important;
-	}
-	.line-height-3 {
-		height: 3px !important;
 	}
 
 	.introduction {
@@ -417,13 +404,18 @@
 	.header {
 		position: fixed;
 	}
-	.line-height-5 {
-		height: 5px !important;
+	.bi-code-slash,
+	.bi-brush,
+	.bi-search {
+		font-size: 36px;
 	}
 	#map {
 		border: none;
 		height: 25vh;
 		width: 100%;
+	}
+	.banner {
+		margin-top: 20px;
 	}
 	textarea {
 		height: 20vh;

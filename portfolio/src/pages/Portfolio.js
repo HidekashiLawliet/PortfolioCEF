@@ -12,9 +12,9 @@ export default function About() {
         <div className="services vh-150 col-md-12 col-sm-12 col-12 d-inline-block justify-content-center content my-5">
             <img src={banner} className="banner w-100 mb-5"></img>
             <div id="ServicesTitle" className="d-flex flex-column w-100">
-                <h1 className="margin-width-auto">Portfolio</h1>
+                <h1 className="mx-auto">Portfolio</h1>
                 <span className="subtitle text-center">Voici quelques-unes de mes réalisations </span>
-                <div className="divideLine line-height-5 blue my-4 col-md-5 col-sm-5 col-5 mb-5 bg-primary"></div>
+                <div className=" line-height-5 mx-auto blue my-4 col-md-8 col-sm-8 col-5 col-8 bg-primary"></div>
             </div>
             <div className="ServiceList d-inline-block d-flex flex-row-grid mx-auto col-md-12 col-sm-12 col-12 justify-content-center p-4 rounded">
                 <div className="container mt-3">
@@ -83,7 +83,7 @@ export default function About() {
                         </div>
 
                         <div className="col-12 col-md-4 col-sm-4 col-10">
-                            <div className="border d-flex flex-column border-secondary rounded ">
+                            <div className="border d-flex flex-column border-secondary rounded w-100">
                                 <img src={screens} className="portfolioImage mx-auto rounded-top" alt="image d' illustration d'une conception maquette"></img>
                                 <h2 className="text-center fs-3">Maquette d'un site web</h2>
                                 <span className="mx-auto text-center">Création du prototype d'un site</span>

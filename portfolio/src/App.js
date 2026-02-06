@@ -125,12 +125,10 @@ function SkillsPart() {
 
 function Footer() {
 	return (
-		<div className="footer bg-dark text-light">
-			<div className="container ">
-				<div className="row row-cols-3 pb-5 m-auto">
-					<div className="columnTitle mt-5 fs-3"><span>John Doe</span></div>
-					<div className="columnTitle  mt-5 fs-3">Liens utiles</div>
-					<div className="columnTitle  mt-5 fs-3 ">Mes dernières réalisations</div>
+		<div className="footer bg-dark  text-light col-md-12 col-sm-12 col-12">
+			<div className="row row-cols-3 d-flex flex-column flex-sm-row col-md-10 col-sm-10 col-10 pb-5 m-auto">
+				<div className="columnTitle mt-5 fs-3"><span>John Doe</span>
+
 					<div className="d-flex flex-column mb-3">
 						<span>40 Rue Laure Diebold</span>
 						<span>69009 Lyon, France</span>
@@ -148,6 +146,8 @@ function Footer() {
 							</a>
 						</div>
 					</div>
+				</div>
+				<div className="columnTitle  mt-5 fs-3">Liens utiles
 					<div className="d-flex flex-column ">
 						<a href="/" className=" text-white text-decoration-none">
 							<span>Accueil</span>
@@ -165,6 +165,8 @@ function Footer() {
 							<span>Mentions légales</span>
 						</a>
 					</div>
+				</div>
+				<div className="columnTitle  mt-5 fs-3 ">Mes dernières réalisations
 					<div className="d-flex flex-column">
 						<a href="/Portfolio" className=" text-white text-decoration-none">
 							<span>Fresh Food</span>
