@@ -1,7 +1,7 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.scss';
 import doraemon from "./assets/img/doraemon.png";
@@ -14,19 +14,6 @@ import Contact from "./pages/Contact";
 import MentionLegales from "./pages/MentionLegales";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
-
-
-
-
-const SkillBar60 = {
-	width: `${60}vw`,
-	SassColor: 'bg-primary'
-};
-
-const SkillBar50 = {
-	width: `${50 * 1}px`,
-	SassColor: 'bg-primary'
-};
 
 
 function CardMenu({ onClose }) {
@@ -85,23 +72,9 @@ function Home() {
 
 
 function SkillsPart() {
-	const [parentWidth, setParentWidth] = useState(0);
-	const parentRef = useRef(null);
-
-	useEffect(() => {
-		const handleResize = () => {
-			if (parentRef.current) {
-				setParentWidth(parentRef.current.offsetWidth / 2);
-			}
-		};
-
-		handleResize();
-		window.addEventListener('resize', handleResize);
-		return () => window.removeEventListener('resize', handleResize);
-	}, []);
 
 	return (
-		<div className="whiteBox d-flex mx-auto col-md-10 h-auto mt-5 p-5" ref={parentRef}>
+		<div className="whiteBox d-flex mx-auto col-md-10 h-auto mt-5 p-3" >
 			<div className="AboutMe d-inline-block col-md-7">
 				<h2 className="text-left pt-4">À propos de moi</h2>
 				<div className="underline blue"></div>
