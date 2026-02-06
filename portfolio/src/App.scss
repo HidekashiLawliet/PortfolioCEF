@@ -32,8 +32,34 @@
 	position: fixed;
 }
 
+.doraemon {
+	height: 100%;
+	width: 100%;
+}
+
+.githubCard {
+	z-index: 900;
+}
+
+.backdropBlur {
+	position: fixed;
+	inset: 0;
+	background: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(6px);
+	z-index: 800;
+}
+
 /* Desktop */
 @media (min-width: 1290px) {
+	#map {
+		border: none;
+		height: 34vh;
+		width: 100%;
+	}
+	textarea {
+		height: 30vh;
+	}
+
 	#ContactTitle {
 		width: fit-content;
 		margin-bottom: 5vh;
@@ -64,18 +90,7 @@
 
 	.whiteBox {
 		height: auto;
-	}
-	.mainContact {
-		.whiteBox {
-			height: auto;
-		}
-	}
-
-	.divideLine {
-		margin: auto;
-		height: 2px;
-		margin-top: 5px;
-		margin-bottom: 10px;
+		min-height: 70vh;
 	}
 
 	.AboutMe {
@@ -100,12 +115,6 @@
 		font-size: 20px;
 	}
 
-	.doraemon {
-		height: calc(20vw + 5vh);
-		width: auto;
-		margin: 0px 15px;
-	}
-
 	.shortIcon {
 		height: 16px;
 	}
@@ -116,12 +125,6 @@
 
 	form {
 		height: 85%;
-	}
-
-	#map {
-		border: none;
-		width: 100%;
-		height: 60%;
 	}
 
 	.bi-code-slash,
@@ -139,11 +142,6 @@
 	.MyLocalisation {
 		height: 85%;
 	}
-	#map {
-		border: none;
-		width: 100%;
-		height: 100%;
-	}
 	.btn {
 		margin: 5px auto 5px auto;
 	}
@@ -152,8 +150,7 @@
 @media (min-width: 768px) and (max-width: 1289px) {
 	.header {
 		position: fixed;
-
-		z-index: 1000;
+		z-index: 100;
 		span {
 			margin-left: 10px;
 			align-items: center;
@@ -166,6 +163,7 @@
 			}
 		}
 	}
+
 	#ContactTitle {
 		width: fit-content;
 		margin-bottom: 5vh;
@@ -181,10 +179,6 @@
 		display: flex;
 		height: auto;
 		flex-direction: column;
-	}
-
-	h2 {
-		font-size: 1.2em;
 	}
 
 	.service {
@@ -205,11 +199,6 @@
 	.introduction {
 		font-size: 3rem;
 	}
-	.submitButton {
-		width: fit-content;
-		font-size: 12px;
-	}
-
 	.divideLine {
 		margin: auto;
 		height: 2px;
@@ -230,7 +219,6 @@
 	}
 
 	.MySkills {
-		padding: 1rem 0rem;
 		text-align: left;
 	}
 
@@ -243,13 +231,7 @@
 		font-size: 20px;
 	}
 
-	.doraemon {
-		height: calc(25vw + 5vh);
-		width: auto;
-		margin: 0px 15px;
-	}
 	.myGithubProfile {
-		width: calc(80vw);
 		span {
 			font-size: 12px;
 		}
@@ -265,8 +247,11 @@
 
 	#map {
 		border: none;
+		height: 34vh;
 		width: 100%;
-		height: 60%;
+	}
+	textarea {
+		height: 30vh;
 	}
 
 	.bi-code-slash,
@@ -287,14 +272,29 @@
 	.btn {
 		margin: 10px auto 2px auto;
 	}
+	h2 {
+		font-size: 1.5em;
+	}
 }
 
-@media (min-width: 500px) and (max-width: 767px) {
+@media (min-width: 578px) and (max-width: 767px) {
 	.header {
 		position: fixed;
 		font-size: 14px;
 	}
-
+	.myGithubProfile {
+		span {
+			font-size: 12px;
+		}
+	}
+	#map {
+		border: none;
+		height: 25vh;
+		width: 100%;
+	}
+	textarea {
+		height: 20vh;
+	}
 	.banner {
 		margin-top: calc(var(--header-height) / 3.5);
 		object-fit: cover;
@@ -307,7 +307,6 @@
 		}
 	}
 	#ContactTitle {
-		width: fit-content;
 		margin-bottom: 5vh;
 	}
 
@@ -370,9 +369,6 @@
 		}
 	}
 
-	.MySkills {
-		padding: 1rem 0rem;
-	}
 	.columnTitle {
 		font-size: 24px;
 	}
@@ -382,13 +378,7 @@
 		font-size: 20px;
 	}
 
-	.doraemon {
-		height: calc(25vw + 5vh);
-		width: auto;
-		margin: 0px 15px;
-	}
 	.myGithubProfile {
-		width: calc(80vw);
 		span {
 			font-size: 12px;
 		}
@@ -400,12 +390,6 @@
 
 	form {
 		height: 85%;
-	}
-
-	#map {
-		border: none;
-		width: 100%;
-		height: 60%;
 	}
 
 	.bi-code-slash,
@@ -433,6 +417,17 @@
 	.header {
 		position: fixed;
 	}
+	.line-height-5 {
+		height: 5px !important;
+	}
+	#map {
+		border: none;
+		height: 25vh;
+		width: 100%;
+	}
+	textarea {
+		height: 20vh;
+	}
 	.desktop {
 		font-family: "Nunito Sans", sans-serif;
 		display: flex;
@@ -446,6 +441,10 @@
 
 	.whiteBox {
 		height: auto;
+		.MySkills {
+			margin-top: 25px;
+			min-height: 35vh;
+		}
 	}
 }
 
@@ -488,19 +487,6 @@ p {
 	margin-bottom: 3rem;
 	width: 100%;
 	border-radius: 5px;
-}
-
-.margin-top-2r {
-	margin-top: 2rem;
-}
-
-.margin-width-auto {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.margin-bottom-2r {
-	margin-bottom: 2rem;
 }
 
 .card {

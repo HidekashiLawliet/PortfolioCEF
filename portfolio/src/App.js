@@ -15,19 +15,18 @@ import MentionLegales from "./pages/MentionLegales";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
 
-
 function CardMenu({ onClose }) {
 	return (
-		<div className="mb-3 w-fit-content rounded-4 m-autocard  position-absolute bg-dark text-white top-50 start-50 translate-middle mt-2 border border-secondary p-3 b-1">
+		<div className="githubCard mb-3 col-md-7 col-sm-7 col-7 w-fit-content rounded-4 m-autocard position-absolute bg-dark text-white top-50 start-50 translate-middle mt-2 border border-secondary p-3 b-1">
 			<div className="d-flex justify-content-between  ">
 				<span className="fs-3"> Mon profil Github</span>
 				<button type="button" className="btn-close" aria-label="Close" onClick={onClose}></button>
 			</div>
-			<div className="myGithubProfile d-flex flex-row d-flex justify-content-between ">
+			<div className="myGithubProfile col-row d-flex flex-column flex-sm-row justify-content-between ">
 				<div className='margin-top-2r'>
-					<img src={doraemon} className='doraemon '></img>
+					<img src={doraemon} className="doraemon col-md-5 col-sm-5 col-5 mb-3"></img>
 				</div>
-				<div className="list-group bg-dark rounded p-3">
+				<div className="list-group bg-dark col-md-7 col-sm-7 col-12  rounded ">
 					<ul className='list-group-flush'>
 						<li className="bg-dark list-group-item text-light"><i className="bi bi-person me-1"></i><a href="https://www.github.com">John Doe</a></li>
 						<li className="bg-dark list-group-item text-light"><i className="bi bi-geo-alt"></i></li>
@@ -62,6 +61,7 @@ function Home() {
 				<div className="d-inline-block">
 					<div>
 						<button className="btn btn-danger" onClick={openCardMenu}>En savoir plus</button>
+						{isCardMenuOpen && <div className="backdropBlur" onClick={closeCardMenu} />}
 						{isCardMenuOpen && <CardMenu onClose={closeCardMenu} />}
 					</div>
 				</div>
@@ -76,8 +76,8 @@ function SkillsPart() {
 	return (
 		<div className="whiteBox col-row d-flex flex-column flex-sm-row mx-auto col-md-10 col-sm-10 col-10 mt-5 p-3" >
 			<div className="AboutMe px-3 d-inline-block col-md-7 col-sm-7 col-12">
-				<h2 className="text-left pt-3">À propos de moi</h2>
-				<div className="line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
+				<h2 className="text-left">À propos de moi</h2>
+				<div className=" line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
 				<div className="underline blue"></div>
 				<img src={imageAboutMe} className="johnDoeImage d-block mx-auto img-fluid w-100 m-2" alt='picture of myself'></img>
 				<p className="paragraphe margin-top-2r">
