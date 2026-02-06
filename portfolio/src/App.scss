@@ -69,7 +69,7 @@
 	.desktop {
 		font-family: "Nunito Sans", sans-serif;
 		display: flex;
-		height: 200vh;
+		height: 220vh;
 		background-color: rgb(255, 255, 255);
 		flex-direction: column;
 	}
@@ -104,6 +104,9 @@
 	.AboutMe {
 		padding: 0rem 3rem;
 		text-align: left;
+		.paragraphe {
+			font-size: 20px;
+		}
 	}
 
 	.MySkills {
@@ -182,7 +185,6 @@
 	}
 
 	.projectCard {
-		width: 33.3%;
 		.portfolioButton {
 			.btn {
 				padding: 2px;
@@ -202,7 +204,7 @@
 	.desktop {
 		font-family: "Nunito Sans", sans-serif;
 		display: flex;
-
+		height: 200vh;
 		flex-direction: column;
 	}
 
@@ -236,17 +238,24 @@
 	.divideLine {
 		margin: auto;
 		height: 2px;
-		margin-top: 5px;
-		margin-bottom: 10px;
 	}
 
 	.AboutMe {
-		padding: 0rem 3rem;
 		text-align: left;
+		.paragraphe {
+			font-size: 14px;
+		}
+	}
+
+	.progress {
+		height: 10px;
+		.progress-bar {
+			height: 10px;
+		}
 	}
 
 	.MySkills {
-		padding: 0rem 3rem;
+		padding: 1rem 0rem;
 		text-align: left;
 	}
 

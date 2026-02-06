@@ -75,22 +75,24 @@ function SkillsPart() {
 
 	return (
 		<div className="whiteBox d-flex mx-auto col-md-10 h-auto mt-5 p-3" >
-			<div className="AboutMe d-inline-block col-md-7">
-				<h2 className="text-left pt-4">À propos de moi</h2>
+			<div className="AboutMe px-3 d-inline-block col-md-7">
+				<h2 className="text-left pt-3">À propos de moi</h2>
+				<div className="divideLine line-height-5 blue my-4 col-md-12 mb-1 bg-primary" />
 				<div className="underline blue"></div>
 				<img src={imageAboutMe} className="johnDoeImage d-block mx-auto img-fluid w-100 m-2" alt='picture of myself'></img>
-				<p className="margin-top-2r">
+				<p className="paragraphe margin-top-2r">
 					Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco
 				</p>
-				<p>
+				<p className="paragraphe">
 					Laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non
 				</p>
-				<p>
+				<p className="paragraphe">
 					Proident sunt in culpa qui officia deserunt mollit anim id est laborum Curabitur blandit tempus porttitor Maecenas faucibus mollis interdum Cras mattis consectetur purus sit amet fermentum
-				</p>
+				</p >
 			</div>
 			<div className="MySkills d-inline-block col-md-5">
-				<h2 className="text-center pt-4">Mes Compétences</h2>
+				<h2 className="text-center">Mes Compétences</h2>
+				<div className="divideLine line-height-5 blue my-4 col-md-12 mb-1 bg-primary" />
 				<div className="underline blue"></div>
 				<div className='SkillList col-md-5 w-100'><label>HTML5 90%</label>
 					<div className="progress bg-dark-subtle" role="progressbar" aria-label="HTML5" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
