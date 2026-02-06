@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
-//custom boostrap overrides
-.lg {
-	min-width: 1290px;
-}
-
-.md {
-	min-width: 768px;
-	max-width: 1289px;
-}
-
-.sm {
-	max-width: 767px;
-}
-
 .footer {
 	z-index: 1000;
 	height: auto;
@@ -23,6 +9,10 @@
 .tablet,
 .mobile {
 	display: none;
+}
+
+.legalesMention {
+	height: auto;
 }
 
 .whiteBox {
@@ -45,9 +35,6 @@
 		margin-bottom: 100vh;
 		z-index: 1000;
 	}
-	.mentionsLégales {
-		height: calc(100vh - 46px - 324px);
-	}
 
 	#ContactTitle {
 		width: fit-content;
@@ -61,7 +48,7 @@
 	.desktop {
 		font-family: "Nunito Sans", sans-serif;
 		display: flex;
-		height: 220vh;
+		height: auto;
 		background-color: rgb(255, 255, 255);
 		flex-direction: column;
 	}
@@ -78,11 +65,11 @@
 	}
 
 	.whiteBox {
-		height: 100vh;
+		height: auto;
 	}
 	.mainContact {
 		.whiteBox {
-			height: 80vh;
+			height: auto;
 		}
 	}
 
@@ -196,7 +183,7 @@
 	.desktop {
 		font-family: "Nunito Sans", sans-serif;
 		display: flex;
-		height: 180vh;
+		height: auto;
 		flex-direction: column;
 	}
 
@@ -306,7 +293,7 @@
 	}
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 500px) and (max-width: 767px) {
 	.header {
 		position: fixed;
 
@@ -333,14 +320,9 @@
 	.desktop {
 		font-family: "Nunito Sans", sans-serif;
 		display: flex;
-		height: 180vh;
+		height: auto;
 		flex-direction: column;
 		width: 100%;
-		.whiteBox {
-			border-radius: 10px;
-			box-shadow: 0px 0px 25px 0.5px;
-			margin: 0% auto 2rem auto;
-		}
 	}
 
 	h2 {
@@ -448,7 +430,7 @@
 }
 
 /* Mobile */
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 576px) {
 	.header {
 		font-size: 12px;
 		position: fixed;
@@ -456,23 +438,24 @@
 	.desktop {
 		font-family: "Nunito Sans", sans-serif;
 		display: flex;
-		height: 180vh;
 		flex-direction: column;
-	}
-	#home {
-		height: 300vh;
 	}
 
 	.faviconSocial {
 		width: 36px;
 		margin: 5px;
 	}
+
+	.whiteBox {
+		height: auto;
+	}
 }
 
 #home {
-	align-items: center;
 	background-image: url("./assets/img/hero-bg.jpg");
 	width: 100%;
+	height: 100vh;
+	align-content: center;
 }
 
 h1 {

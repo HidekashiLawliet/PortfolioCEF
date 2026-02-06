@@ -23,7 +23,7 @@ function CardMenu({ onClose }) {
 				<span className="fs-3"> Mon profil Github</span>
 				<button type="button" className="btn-close" aria-label="Close" onClick={onClose}></button>
 			</div>
-			<div className="myGithubProfile d-flex flex-row  d-flex justify-content-between ">
+			<div className="myGithubProfile d-flex flex-row d-flex justify-content-between ">
 				<div className='margin-top-2r'>
 					<img src={doraemon} className='doraemon '></img>
 				</div>
@@ -55,7 +55,7 @@ function Home() {
 		setIsCardMenuOpen(false);
 	};
 	return (
-		<div id="home" className=" col-md-12 col-sm-12 d-inline-block justify-content-center mx-auto h-50">
+		<div id="home" className=" col-md-12 col-sm-12 col-12 d-inline-block justify-content-center mx-auto">
 			<div className='d-flex justify-content-center flex-column align-items-center h-100'>
 				<h1 className="introduction color-black text-center fw-bold text-white">Bonjour, je suis John Doe</h1>
 				<h2 className="introduction color-black text-center fw-bold text-white">Développeur Web Full Stack</h2>
@@ -74,10 +74,10 @@ function Home() {
 function SkillsPart() {
 
 	return (
-		<div className="whiteBox d-flex mx-auto col-md-10 col-sm-10 col-10 h-auto mt-5 p-3" >
-			<div className="AboutMe px-3 d-inline-block col-md-7 col-sm-7 col-7">
+		<div className="whiteBox col-row d-flex flex-column flex-sm-row mx-auto col-md-10 col-sm-10 col-10 mt-5 p-3" >
+			<div className="AboutMe px-3 d-inline-block col-md-7 col-sm-7 col-12">
 				<h2 className="text-left pt-3">À propos de moi</h2>
-				<div className="divideLine line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
+				<div className="line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
 				<div className="underline blue"></div>
 				<img src={imageAboutMe} className="johnDoeImage d-block mx-auto img-fluid w-100 m-2" alt='picture of myself'></img>
 				<p className="paragraphe margin-top-2r">
@@ -90,10 +90,9 @@ function SkillsPart() {
 					Proident sunt in culpa qui officia deserunt mollit anim id est laborum Curabitur blandit tempus porttitor Maecenas faucibus mollis interdum Cras mattis consectetur purus sit amet fermentum
 				</p >
 			</div>
-			<div className="MySkills d-inline-block col-md-5 col-sm-5 col-5">
+			<div className="MySkills d-inline-block col-md-5 col-sm-5 col-12">
 				<h2 >Mes Compétences</h2>
-				<div className="divideLine line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
-				<div className="underline blue"></div>
+				<div className="line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
 				<div className='SkillList col-md-5 col-sm-5 col-5 w-100'><label>HTML5 90%</label>
 					<div className="progress bg-dark-subtle" role="progressbar" aria-label="HTML5" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
 						<div className="progress-bar bg-danger" style={{ width: "90%" }}></div>
@@ -131,7 +130,7 @@ function Footer() {
 				<div className="row row-cols-3 pb-5 m-auto">
 					<div className="columnTitle mt-5 fs-3"><span>John Doe</span></div>
 					<div className="columnTitle  mt-5 fs-3">Liens utiles</div>
-					<div className="columnTitle  mt-5 fs-3">Mes dernières réalisations</div>
+					<div className="columnTitle  mt-5 fs-3 ">Mes dernières réalisations</div>
 					<div className="d-flex flex-column mb-3">
 						<span>40 Rue Laure Diebold</span>
 						<span>69009 Lyon, France</span>
@@ -214,8 +213,8 @@ function App() {
 					<Route path="/Contact" element={<Contact />} />
 					<Route path="/MentionLegales" element={<MentionLegales />} />
 				</Routes>
-				<Footer />
 			</main >
+			<Footer />
 		</BrowserRouter>
 	);
 

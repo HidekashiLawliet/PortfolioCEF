@@ -9,8 +9,8 @@ export default function Contact() {
                 <div className="divideLine line-height-5 blue my-4 col-8 bg-primary">
                 </div>
             </div>
-            <div className="whiteBox d-flex col-md-10 flex-row mx-auto justify-content-between px-4 py-3">
-                <div className=" d-inline-block col-md-6">
+            <div className="whiteBox flex-sm-row d-flex col-row d-flex col-md-10 col-sm-10 col-10 flex-row mx-auto justify-content-between px-4 py-3">
+                <div className=" d-inline-block col-md-6 col-sm-6 col-12">
                     <h2>Formulaire de contact</h2>
                     <div className="divideLine line-height-3  my-4 mb-15 bg-primary"> </div>
                     <form action="#" method="post" className=" d-flex flex-column justify-content-between">
@@ -22,7 +22,7 @@ export default function Contact() {
                         <button type="submit" id="submitBtn" className="submitButton btn btn-primary">Envoyer</button>
                     </form>
                 </div>
-                <div className="d-inline-block h-100 col-md-6 mx-3">
+                <div className="d-inline-block h-100  col-md-6 col-sm-6 col-12 mx-3">
                     <h2>Mes coordonnées</h2>
                     <div className="divideLine line-height-3 blue my-4 bg-primary"></div>
                     <div className="MyLocalisation mt-3 pb-5 d-flex flex-column">
