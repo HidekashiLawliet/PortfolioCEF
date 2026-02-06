@@ -121,7 +121,7 @@
 	}
 
 	.doraemon {
-		height: 248px;
+		height: calc(20vw + 5vh);
 		width: auto;
 		margin: 0px 15px;
 	}
@@ -260,9 +260,15 @@
 	}
 
 	.doraemon {
-		height: 248px;
+		height: calc(15vw + 5vh);
 		width: auto;
 		margin: 0px 15px;
+	}
+	.myGithubProfile {
+		width: calc(80vw);
+		span {
+			font-size: 12px;
+		}
 	}
 
 	.shortIcon {

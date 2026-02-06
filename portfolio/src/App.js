@@ -31,27 +31,24 @@ const SkillBar50 = {
 
 function CardMenu({ onClose }) {
 	return (
-		<div className="mb-3 w-fit-content rounded-4 m-autocard position-absolute bg-dark text-white top-50 start-50 translate-middle mt-2 border border-secondary p-3 b-1">
+		<div className="mb-3 w-fit-content rounded-4 m-autocard  position-absolute bg-dark text-white top-50 start-50 translate-middle mt-2 border border-secondary p-3 b-1">
 			<div className="d-flex justify-content-between  ">
 				<span className="fs-3"> Mon profil Github</span>
 				<button type="button" className="btn-close" aria-label="Close" onClick={onClose}></button>
 			</div>
-			<div className="divideLine" />
-			<div className="d-flex flex-row  d-flex justify-content-between ">
+			<div className="myGithubProfile d-flex flex-row  d-flex justify-content-between ">
 				<div className='margin-top-2r'>
 					<img src={doraemon} className='doraemon '></img>
 				</div>
-				<div className='margin-top-2r'>
-					<div className="list-group bg-dark rounded p-3">
-						<ul className='list-group-flush'>
-							<li className="bg-dark list-group-item text-light"><i className="bi bi-person me-1"></i><a href="https://www.github.com">John Doe</a></li>
-							<li className="bg-dark list-group-item text-light"><i className="bi bi-geo-alt"></i></li>
-							<li className="bg-dark list-group-item text-light"><i className="bi bi-card-text me-1"></i><span> As we all know, John Doe's identity is unknown. I just wanted to contribute without being know.</span></li>
-							<li className="bg-dark list-group-item text-light"><i className="bi bi-box me-1"></i><span> Repositories: 1</span></li>
-							<li className="bg-dark list-group-item text-light"><i className="bi bi-people me-1"></i><span> Followers: 16</span></li>
-							<li className="bg-dark list-group-item text-light"><i className="bi bi-people me-1"></i><span> Following: 0</span></li>
-						</ul>
-					</div>
+				<div className="list-group bg-dark rounded p-3">
+					<ul className='list-group-flush'>
+						<li className="bg-dark list-group-item text-light"><i className="bi bi-person me-1"></i><a href="https://www.github.com">John Doe</a></li>
+						<li className="bg-dark list-group-item text-light"><i className="bi bi-geo-alt"></i></li>
+						<li className="bg-dark list-group-item text-light"><i className="bi bi-card-text me-1"></i><span > As we all know, John Doe's identity is unknown. I just wanted to contribute without being know.</span></li>
+						<li className="bg-dark list-group-item text-light"><i className="bi bi-box me-1"></i><span> Repositories: 1</span></li>
+						<li className="bg-dark list-group-item text-light"><i className="bi bi-people me-1"></i><span> Followers: 16</span></li>
+						<li className="bg-dark list-group-item text-light"><i className="bi bi-people me-1"></i><span> Following: 0</span></li>
+					</ul>
 				</div>
 			</div>
 			<div className="divideLine" />
