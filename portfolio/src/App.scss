@@ -31,6 +31,20 @@
 	margin: 0% auto 2rem auto;
 }
 
+.ServiceItem {
+	p {
+		font-size: calc(0.7rem + 0.5vw);
+	}
+}
+
+.parent {
+	--parent-width: 100%;
+}
+
+.child {
+	width: calc(var(--parent-width) / 2); /* Moitié de la largeur parent */
+}
+
 /* Desktop */
 @media (min-width: 1290px) {
 	.header {
@@ -41,10 +55,6 @@
 	}
 	.mentionsLégales {
 		height: calc(100vh - 46px - 324px);
-	}
-
-	.ServiceItem {
-		height: 30vh;
 	}
 
 	#ContactTitle {
@@ -192,7 +202,7 @@
 	.desktop {
 		font-family: "Nunito Sans", sans-serif;
 		display: flex;
-		height: 150vh;
+		height: 220vh;
 		flex-direction: column;
 	}
 
