@@ -27,15 +27,13 @@
 	}
 }
 
+.header {
+	z-index: 1000;
+	position: fixed;
+}
+
 /* Desktop */
 @media (min-width: 1290px) {
-	.header {
-		font-size: 20px;
-		position: fixed;
-		margin-bottom: 100vh;
-		z-index: 1000;
-	}
-
 	#ContactTitle {
 		width: fit-content;
 		margin-bottom: 5vh;
@@ -153,16 +151,14 @@
 
 @media (min-width: 768px) and (max-width: 1289px) {
 	.header {
-		font-size: 15px;
 		position: fixed;
-		margin-bottom: 100vh;
+
 		z-index: 1000;
 		span {
 			margin-left: 10px;
 			align-items: center;
 		}
 	}
-
 	.projectCard {
 		.portfolioButton {
 			.btn {
@@ -296,10 +292,13 @@
 @media (min-width: 500px) and (max-width: 767px) {
 	.header {
 		position: fixed;
-
-		font-size: 12px;
+		font-size: 14px;
 	}
 
+	.banner {
+		margin-top: calc(var(--header-height) / 3.5);
+		object-fit: cover;
+	}
 	.projectCard {
 		.portfolioButton {
 			.btn {
@@ -432,7 +431,6 @@
 /* Mobile */
 @media (min-width: 320px) and (max-width: 576px) {
 	.header {
-		font-size: 12px;
 		position: fixed;
 	}
 	.desktop {

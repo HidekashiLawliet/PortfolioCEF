@@ -13,7 +13,7 @@ export default function Navbar() {
                     <NavLink className="nav-link mx-2" to="/">
                         HOME
                     </NavLink>
-                    <NavLink className="nav-link margin mx-2" to="/Services">
+                    <NavLink className="nav-link  mx-2" to="/Services">
                         SERVICES
                     </NavLink>
                     <NavLink className="nav-link mx-2" to="/Portfolio">
@@ -22,7 +22,7 @@ export default function Navbar() {
                     <NavLink className="nav-link mx-2" to="/Contact">
                         CONTACT
                     </NavLink>
-                    <NavLink className="nav-link mx-2 " to="/MentionLegales">
+                    <NavLink className="nav-link mx-2" to="/MentionLegales">
                         MENTIONS LÉGALES
                     </NavLink>
                 </div>
