@@ -61,6 +61,16 @@
 	.menuBurgerSmallScreen {
 		display: none;
 	}
+
+	.header {
+		span {
+			font-size: 32px;
+		}
+		.navbar {
+			font-size: 20px;
+		}
+	}
+
 	#map {
 		border: none;
 		height: 34vh;
@@ -154,11 +164,13 @@
 
 @media (min-width: 768px) and (max-width: 1289px) {
 	.header {
-		position: fixed;
-		z-index: 100;
 		span {
 			margin-left: 10px;
 			align-items: center;
+			font-size: 28px;
+		}
+		.navbar {
+			font-size: 18px;
 		}
 	}
 	.projectCard {
@@ -277,8 +289,14 @@
 
 @media (min-width: 578px) and (max-width: 767px) {
 	.header {
-		position: fixed;
-		font-size: 14px;
+		span {
+			margin-left: 10px;
+			align-items: center;
+			font-size: 15px;
+		}
+		.navbar {
+			font-size: 12px;
+		}
 	}
 	.myGithubProfile {
 		span {
@@ -446,6 +464,12 @@
 	}
 }
 
+@media (max-width: 320px) {
+	root {
+		display: none;
+	}
+}
+
 #home {
 	background-image: url("./assets/img/hero-bg.jpg");
 	width: 100%;
@@ -490,5 +514,3 @@ p {
 .card {
 	width: 100vh;
 }
-
-/* Tablet */

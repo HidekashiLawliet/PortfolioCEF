@@ -9,8 +9,6 @@ export default function Navbar() {
                 <a className="text-white text-decoration-none mx-2 my-auto">
                     <span>JOHN DOE</span>
                 </a>
-
-
                 <div className=".d-none d-sm-none ">
                     <button type="button" class="btn btn-secondary bg-dark  " data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-list"></i>
@@ -38,9 +36,8 @@ export default function Navbar() {
                     </ul>
                 </div>
 
-
                 <div className="d-none d-sm-block">
-                    <div className="navbar-nav d-flex d-flex align-content-center flex-row ">
+                    <div className="navbar d-flex d-flex align-content-center flex-row ">
                         <NavLink className="nav-link mx-2" to="/">
                             HOME
                         </NavLink>
