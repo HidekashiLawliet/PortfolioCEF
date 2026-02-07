@@ -6,7 +6,7 @@ export default function Services() {
     return (
 
         //Div pour gérer l'affichage de toute la page
-        <div className="w-100 d-inline-block  my-5">
+        <div className="w-100 d-inline-block my-5">
             {/* afficher l'image sous header ainsi  que le titre de la pages*/}
             <img src={banner} className="banner w-100 mb-5"></img>
             <div className="d-flex flex-column col-md-12 col-sm-12 col-12">
