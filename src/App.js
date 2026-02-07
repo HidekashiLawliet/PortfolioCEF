@@ -1,7 +1,7 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.scss';
 import doraemon from "./assets/img/doraemon.png";
@@ -202,6 +202,62 @@ function Display() {
 }
 
 function App() {
+	const [screenWidthError, setscreenWidthError] = useState(false);
+	const [screenHeightError, setscreenHeightError] = useState(false);
+
+	useEffect(() => {
+		const screenWidth = window.matchMedia("(max-width: 319px)");
+
+		const updateWidth = () => setscreenWidthError(screenWidth.matches);
+		if (screenWidth.addEventListener) {
+			screenWidth.addEventListener("change", updateWidth);
+			return () => screenWidth.removeEventListener("change", updateWidth);
+		}
+
+	}, []);
+
+	useEffect(() => {
+		const screenHeight = window.matchMedia("(max-height: 399px)");
+		const updateHeight = () => setscreenHeightError(screenHeight.matches);
+		if (screenHeight.addEventListener) {
+			screenHeight.addEventListener("change", updateHeight);
+			return () => screenHeight.removeEventListener("change", updateHeight);
+		}
+	})
+
+	if (screenWidthError || screenHeightError) {
+		if (screenWidthError) {
+			return (
+				<div className="min-vh-100 d-flex align-items-center justify-content-center bg-dark text-white px-3">
+					<div className="text-center">
+						<i className="bi bi-phone text-warning fs-1" aria-hidden="true"></i>
+						<h1 className="h4 mt-3">Écran trop petit</h1>
+						<p className="mb-2">
+							Pour afficher ce site correctement, utilisez un écran d’au moins 320 pixels de large.
+						</p>
+						<p className="small text-secondary mb-0">
+							Astuce : passez votre téléphone en mode paysage.
+						</p>
+					</div>
+				</div>
+			);
+		} else if (screenHeightError) {
+			return (
+				<div className="min-vh-100 d-flex align-items-center justify-content-center bg-dark text-white px-3">
+					<div className="text-center">
+						<i className="bi bi-phone text-warning fs-1" aria-hidden="true"></i>
+						<h1 className="h4 mt-3">Écran trop petit</h1>
+						<p className="mb-2">
+							Pour afficher ce site correctement, utilisez un écran d’au moins 400 pixel de hauteur.
+						</p>
+						<p className="small text-secondary mb-0">
+							Astuce : passez votre téléphone en mode portrait.
+						</p>
+					</div>
+				</div>
+			);
+		}
+	}
 
 	return (
 		<BrowserRouter>
