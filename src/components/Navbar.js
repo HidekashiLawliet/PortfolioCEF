@@ -15,7 +15,7 @@ export default function Navbar() {
                     <button type="button" class="btn btn-secondary bg-dark  " data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-list"></i>
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-end bg-dark text-white">
+                    <ul class="dropdown-menu col-12 px-3 dropdown-menu-end bg-dark text-white">
                         <li><NavLink className="nav-link mx-2" to="/">
                             HOME
                         </NavLink></li>
