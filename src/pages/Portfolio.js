@@ -21,10 +21,12 @@ export default function Portfolio() {
                 <div className=" line-height-5 mx-auto blue my-4 col-md-8 col-sm-8 col-5 col-8 bg-primary"></div>
             </div>
 
+            {/* gerer l'affichage de la partie des cartes de projets */}
             <div className="ServiceList d-inline-block d-flex flex-row-grid mx-auto col-md-12 col-sm-12 col-12 justify-content-center p-4 rounded">
                 <div className="container mt-3">
                     <div className="row g-3">
 
+                        {/* carte Fresh food */}
                         <div className="card border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className="card-body p-0 border d-flex flex-column border-secondary rounded">
                                 <img src={freshFood} className="portfolioImage mx-auto card-img-top rounded-top" alt="Panier légumes fresh food" />
@@ -37,7 +39,7 @@ export default function Portfolio() {
                             </div>
                         </div>
 
-
+                        {/* carte restaurant Akira */}
                         <div className="card border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className="card-body p-0 border d-flex flex-column border-secondary rounded">
                                 <img src={restaurantAkira} className="portfolioImage mx-auto card-img-top rounded-top" alt="image restaurant akira" />
@@ -50,6 +52,7 @@ export default function Portfolio() {
                             </div>
                         </div>
 
+                        {/* carte espace bien-etre */}
                         <div className="card border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className="card-body p-0 border d-flex flex-column border-secondary rounded ">
                                 <img src={espaceBienetre} className="portfolioImage mx-auto card-img-top rounded-top" alt="Espace bien-être photo d'illustration" />
@@ -62,6 +65,7 @@ export default function Portfolio() {
                             </div>
                         </div>
 
+                        {/* carte SEO */}
                         <div className=" card border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className=" border card-body p-0 d-flex flex-column border-secondary rounded">
                                 <img src={seo} className="portfolioImage mx-auto rounded-top card-img-top" alt="image SEO" />
@@ -74,6 +78,7 @@ export default function Portfolio() {
                             </div>
                         </div>
 
+                        {/* carte création d'une api*/}
                         <div className=" card border-0 col-10 mx-auto col-md-4 col-sm-4 ">
                             <div className=" border card-body p-0 d-flex flex-column border-secondary rounded">
                                 <img src={coder} className="portfolioImage mx-auto card-img-top rounded-top" alt="image code informatique" />
@@ -86,6 +91,7 @@ export default function Portfolio() {
                             </div>
                         </div>
 
+                        {/* carte création de maquette*/}
                         <div className="card border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className="border card-body p-0 d-flex flex-column border-secondary rounded w-100">
                                 <img src={screens} className="portfolioImage mx-auto card-img-top rounded-top" alt="image d' illustration d'une conception maquette" />
@@ -100,7 +106,6 @@ export default function Portfolio() {
 
                     </div>
                 </div>
-
             </div>
         </div>
     );
