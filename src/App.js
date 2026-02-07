@@ -15,18 +15,24 @@ import MentionLegales from "./pages/MentionLegales";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
 
+// function pour la carte du profile github
 function CardMenu({ onClose }) {
 	return (
+		// gere l'affichage globale de la carte
 		<div className="githubCard mb-3 col-md-7 col-sm-7 col-7 w-fit-content rounded-4 m-autocard position-absolute bg-dark text-white top-50 start-50 translate-middle mt-2 border border-secondary p-3 b-1">
+			{/* gere le header de la carte */}
 			<div className="d-flex justify-content-between  ">
 				<span className="fs-3"> Mon profil Github</span>
 				<button type="button" className="btn-close" aria-label="Close" onClick={onClose}></button>
 			</div>
+			{/* affichage de la partie centrale de la carte */}
 			<div className="myGithubProfile col-row d-flex flex-column flex-sm-row justify-content-between ">
+				{/* affichage de gauche pour l'image */}
 				<div className='margin-top-2r'>
-					<img src={doraemon} className="doraemon col-md-5 col-sm-5 col-5 mb-3"></img>
+					<img src={doraemon} className="doraemon col-md-5 col-sm-5 col-5 mb-3" />
 				</div>
-				<div className="list-group bg-dark col-md-7 col-sm-7 col-12  rounded ">
+				{/* affichage de droite pour les informations du profil */}
+				<div className="list-group bg-dark col-md-7 mx-auto col-sm-7 col-12  rounded ">
 					<ul className='list-group-flush'>
 						<li className="bg-dark list-group-item text-light"><i className="bi bi-person me-1"></i><a href="https://www.github.com">John Doe</a></li>
 						<li className="bg-dark list-group-item text-light"><i className="bi bi-geo-alt"></i></li>
@@ -37,7 +43,6 @@ function CardMenu({ onClose }) {
 					</ul>
 				</div>
 			</div>
-			<div className="divideLine" />
 			<div className="w-100 d-flex justify-content-end me-0">
 				<button type="button" className="rounded bg-secondary text-light me-0 border-0" aria-label="Close" onClick={onClose}> Fermer</button>
 			</div>
@@ -45,7 +50,11 @@ function CardMenu({ onClose }) {
 	);
 }
 
+// function pour la partie surpérieur de la page d'acceuil
 function Home() {
+
+	// sert a déclarer le menu comme fermer
+	// et donc à l'ouvrir si la constante openCardMenu est appelé dans la page
 	const [isCardMenuOpen, setIsCardMenuOpen] = useState(false);
 	const openCardMenu = () => {
 		setIsCardMenuOpen(true);
@@ -53,13 +62,16 @@ function Home() {
 	const closeCardMenu = () => {
 		setIsCardMenuOpen(false);
 	};
+
 	return (
+		// sert à gérer l'affichage global de la premiere partie de la page d'acceuil
 		<div id="home" className=" col-md-12 col-sm-12 col-12 d-inline-block justify-content-center mx-auto">
 			<div className='d-flex justify-content-center flex-column align-items-center h-100'>
 				<h1 className="introduction color-black text-center fw-bold text-white">Bonjour, je suis John Doe</h1>
 				<h2 className="introduction color-black text-center fw-bold text-white">Développeur Web Full Stack</h2>
 				<div className="d-inline-block">
 					<div>
+						{/* bouton pour ouvrir le menu d'information github */}
 						<button className="btn btn-danger" onClick={openCardMenu}>En savoir plus</button>
 						{isCardMenuOpen && <div className="backdropBlur" onClick={closeCardMenu} />}
 						{isCardMenuOpen && <CardMenu onClose={closeCardMenu} />}
@@ -71,15 +83,15 @@ function Home() {
 }
 
 
+//affiche la deuxieme partie de la page d'acceuil
 function SkillsPart() {
-
 	return (
 		<div className="whiteBox col-row d-flex flex-column flex-sm-row mx-auto col-md-10 col-sm-10 col-10 mt-5 p-3" >
 			<div className="AboutMe px-3 d-inline-block col-md-7 col-sm-7 col-12">
 				<h2 className="text-left">À propos de moi</h2>
 				<div className=" line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
 				<div className="underline blue"></div>
-				<img src={imageAboutMe} className="johnDoeImage d-block mx-auto img-fluid w-100 m-2" alt='picture of myself'></img>
+				<img src={imageAboutMe} className="johnDoeImage d-block mx-auto img-fluid w-100 m-2" alt='picture of myself' />
 				<p className="paragraphe margin-top-2r">
 					Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco
 				</p>
@@ -135,13 +147,13 @@ function Footer() {
 						<span className="fs-5">john.doe@gmail.com</span>
 						<div className="socialLink ">
 							<a>
-								<img className="faviconSocial mt-3" src={githubFav}></img>
+								<img className="faviconSocial mt-3" src={githubFav} />
 							</a>
 							<a>
-								<img className="faviconSocial mt-3" src={twitterFav}></img>
+								<img className="faviconSocial mt-3" src={twitterFav} />
 							</a>
 							<a>
-								<img className="faviconSocial mt-3" src={linkedinFav}></img>
+								<img className="faviconSocial mt-3" src={linkedinFav} />
 							</a>
 						</div>
 					</div>
