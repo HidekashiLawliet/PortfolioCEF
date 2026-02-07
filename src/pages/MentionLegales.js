@@ -1,15 +1,22 @@
-export default function Home() {
+
+// fonction pour afficher la page mention légales
+
+export default function mentionLegales() {
     return (
-        <div className="mentionsLégales col-md-12 col-sm-12 col-12 d-inline-block justify-content-center content my-5 pt-5 ">
+
+        // Gérer l'affichage globale de la page + le titre
+        <div className="mentionsLégales col-md-12 col-sm-12 col-12  d-inline-block justify-content-center content my-5 pt-5 ">
             <div id="ContactTitle" className="d-flex flex-column mx-auto w-100">
                 <h1 className="mx-auto">
                     Mentions légales
                 </h1>
                 <div className="mx-auto line-height-5 blue my-4 col-md-8 col-sm-10 col-10 bg-primary"></div>
             </div>
-            <div className="legalesMention col-md-10 col-sm-10 col-10 mx-auto my-4">
-                <div className="d-flex flex-column accordion shadow-sm rounded">
 
+            {/* gérer l'affiche des boites  */}
+            <div className="legalesMention col-md-10 col-sm-10 col-10 mx-auto my-4">
+                <div className="d-flex flex-column my-auto accordion shadow-sm rounded">
+                    {/* boites accordéons pour le site creator */}
                     <div className=" accordion-item collapsed border border-bottom-0">
                         <button className="accordion-button text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#editor"> Editeur du site
                         </button>
@@ -35,11 +42,10 @@ export default function Home() {
                         </div>
                     </div>
 
+                    {/* boites accordéons pour l'hote du site*/}
                     <div className="accordion-item border-top">
-                        <div className="">
-                            <button className="accordion-button collapsed text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#host "> Hébergeur
-                            </button>
-                        </div>
+                        <button className="accordion-button collapsed text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#host "> Hébergeur
+                        </button>
                         <div id="host" className="accordion-collapse collapse" data-bs-parent="#legalAccordion">
                             <div className="accordion-body">
                                 <h2>akwaysdata</h2>
@@ -49,6 +55,9 @@ export default function Home() {
                         </div>
                     </div>
 
+                    {/* boites accordéons pour les crédits pour les images utilisées
+                    
+                    */}
                     <div className="accordion-item">
                         <div className="">
                             <button className="accordion-button text-dark collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#credits"> Crédits
