@@ -86,7 +86,10 @@ function Home() {
 //affiche la deuxieme partie de la page d'acceuil
 function SkillsPart() {
 	return (
+		// gerer l'affiche de la boite avec les éléments intérieurs
 		<div className="whiteBox col-row d-flex flex-column flex-sm-row mx-auto col-md-10 col-sm-10 col-10 mt-5 p-3" >
+
+			{/* gérer la partie d'introduction */}
 			<div className="AboutMe px-3 d-inline-block col-md-7 col-sm-7 col-12">
 				<h2 className="text-left">À propos de moi</h2>
 				<div className=" line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
@@ -102,6 +105,8 @@ function SkillsPart() {
 					Proident sunt in culpa qui officia deserunt mollit anim id est laborum Curabitur blandit tempus porttitor Maecenas faucibus mollis interdum Cras mattis consectetur purus sit amet fermentum
 				</p >
 			</div>
+
+			{/* gérer la partie montrant mes compétences */}
 			<div className="MySkills d-inline-block col-md-5 col-sm-5 col-12">
 				<h2 >Mes Compétences</h2>
 				<div className="line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
@@ -131,15 +136,22 @@ function SkillsPart() {
 					</div>
 				</div>
 			</div>
+
 		</div>
 	);
 }
 
+//affichage du footer
 function Footer() {
 	return (
+		// gérer l'affichage globale de la partie footer
 		<div className="footer bg-dark text-light col-md-12 col-sm-12 col-12">
 			<div className="col-row d-flex flex-column flex-sm-row col-md-10 col-sm-10 col-10 pb-5 m-auto">
-				<div className="col-md-4 col-sm-3 col-12 mt-5 fs-3"><h2 className="columnTitle">John Doe</h2>
+
+				{/* gestion  de la partie contact et lien vers autres réseaux*/}
+
+				<div className="col-md-4 col-sm-3 col-12 mx-auto mt-5 fs-3">
+					<h2 className="columnTitle">John Doe</h2>
 					<div className="d-flex mx-auto flex-column mb-3">
 						<span className="fs-5">40 Rue Laure Diebold</span>
 						<span className="fs-5">69009 Lyon, France</span>
@@ -158,43 +170,44 @@ function Footer() {
 						</div>
 					</div>
 				</div>
+
 				<div className="col-md-4 col-sm-3 mx-auto col-12 mt-5 fs-3"><h2 className="columnTitle">Liens Utilse</h2>
 					<div className="d-flex flex-column ">
-						<a href="/" className=" text-white text-decoration-none">
+						<a href="/" className=" text-white w-fit text-decoration-none">
 							<span className="fs-5">Accueil</span>
 						</a>
-						<a href="/Services" className=" text-white text-decoration-none">
+						<a href="/Services" className="w-fit text-white text-decoration-none">
 							<span className="fs-5">Services</span>
 						</a>
-						<a href="/Portfolio" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className="  w-fit text-white text-decoration-none">
 							<span className="fs-5">Portfolio</span>
 						</a>
-						<a href="/Contact" className=" text-white text-decoration-none">
+						<a href="/Contact" className="w-fit text-white text-decoration-none">
 							<span className="fs-5">Me contacter</span>
 						</a>
-						<a href="/MentionLegales" className=" text-white text-decoration-none">
+						<a href="/MentionLegales" className="w-fit text-white text-decoration-none">
 							<span className="fs-5">Mentions légales</span>
 						</a>
 					</div>
 				</div>
 				<div className=" col-md-4 col-sm-3 col-12 mx-auto mt-5 fs-3 "><h2 className="columnTitle">Mes dernières réalisations</h2>
 					<div className="d-flex flex-column">
-						<a href="/Portfolio" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className="w-fit text-white text-decoration-none">
 							<span className="fs-5">Fresh Food</span>
 						</a>
-						<a href="/Portfolio" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className="w-fit text-white text-decoration-none">
 							<span className="fs-5">Restaurant Akira</span>
 						</a>
-						<a href="/Portfolio" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className="w-fit text-white text-decoration-none">
 							<span className="fs-5">Espace bien-être</span>
 						</a>
-						<a href="/Portfolio" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className="w-fit text-white text-decoration-none">
 							<span className="fs-5">SEO</span>
 						</a>
-						<a href="/Portfolio" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className="w-fit text-white text-decoration-none">
 							<span className="fs-5">Création d'une API</span>
 						</a>
-						<a href="/Portfolio" className=" text-white text-decoration-none">
+						<a href="/Portfolio" className="w-fit text-white text-decoration-none">
 							<span className="fs-5">Maquette d'un site</span>
 						</a>
 					</div>
