@@ -55,9 +55,7 @@ export default function mentionLegales() {
                         </div>
                     </div>
 
-                    {/* boites accordéons pour les crédits pour les images utilisées
-                    
-                    */}
+                    {/* boites accordéons pour les crédits pour les images utilisées*/}
                     <div className="accordion-item">
                         <div className="">
                             <button className="accordion-button text-dark collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#credits"> Crédits

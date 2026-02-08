@@ -149,7 +149,6 @@ function Footer() {
 			<div className="col-row d-flex flex-column flex-sm-row col-md-10 col-sm-10 col-10 pb-5 m-auto">
 
 				{/* gestion  de la partie contact et lien vers autres réseaux*/}
-
 				<div className="col-md-4 col-sm-3 col-12 mx-auto mt-5 fs-3">
 					<h2 className="columnTitle">John Doe</h2>
 					<div className="d-flex mx-auto flex-column mb-3">
@@ -158,19 +157,20 @@ function Footer() {
 						<span className="fs-5">10 20 30 40 50</span>
 						<span className="fs-5">john.doe@gmail.com</span>
 						<div className="socialLink ">
-							<a>
+							<a href="https://github.com/github-john-doe" target="_blank">
 								<img className="faviconSocial mt-3" src={githubFav} />
 							</a>
-							<a>
+							<a href="https://x.com/" target="_blank">
 								<img className="faviconSocial mt-3" src={twitterFav} />
 							</a>
-							<a>
+							<a href="https://fr.linkedin.com/" target="_blank">
 								<img className="faviconSocial mt-3" src={linkedinFav} />
 							</a>
 						</div>
 					</div>
 				</div>
 
+				{/* gestion de la partie contenant tout les liens du site */}
 				<div className="col-md-4 col-sm-3 mx-auto col-12 mt-5 fs-3"><h2 className="columnTitle">Liens Utilse</h2>
 					<div className="d-flex flex-column ">
 						<a href="/" className=" text-white w-fit text-decoration-none">
@@ -190,6 +190,8 @@ function Footer() {
 						</a>
 					</div>
 				</div>
+
+				{/* gestion de la partie contenant tout les liens de mes derniers projet */}
 				<div className=" col-md-4 col-sm-3 col-12 mx-auto mt-5 fs-3 "><h2 className="columnTitle">Mes dernières réalisations</h2>
 					<div className="d-flex flex-column">
 						<a href="/Portfolio" className="w-fit text-white text-decoration-none">
@@ -217,6 +219,7 @@ function Footer() {
 	);
 }
 
+//affiche de l'écran principale
 function Display() {
 	return (
 		<section className="desktop">
@@ -226,21 +229,25 @@ function Display() {
 	);
 }
 
+
+// function servant a gérér la navigation et la gestion d'erreurs de tailles d'écran
 function App() {
+
+	{/* variable pour la gestion de heuteur et l'argeur de l'écran*/ }
 	const [screenWidthError, setscreenWidthError] = useState(false);
 	const [screenHeightError, setscreenHeightError] = useState(false);
 
+	{/* fonction pour récupérer la largeur de l'écran*/ }
 	useEffect(() => {
 		const screenWidth = window.matchMedia("(max-width: 319px)");
-
 		const updateWidth = () => setscreenWidthError(screenWidth.matches);
 		if (screenWidth.addEventListener) {
 			screenWidth.addEventListener("change", updateWidth);
 			return () => screenWidth.removeEventListener("change", updateWidth);
 		}
-
 	}, []);
 
+	{/* fonction pour récupérer la hauteur de l'écran*/ }
 	useEffect(() => {
 		const screenHeight = window.matchMedia("(max-height: 399px)");
 		const updateHeight = () => setscreenHeightError(screenHeight.matches);
@@ -250,7 +257,9 @@ function App() {
 		}
 	})
 
+	{/* si l'écran est trop petit en largeur ou hauter*/ }
 	if (screenWidthError || screenHeightError) {
+		{/* si l'écran est pas assez large affiche un message d'erreur aproprié */ }
 		if (screenWidthError) {
 			return (
 				<div className="min-vh-100 d-flex align-items-center justify-content-center bg-dark text-white px-3">
@@ -267,6 +276,7 @@ function App() {
 				</div>
 			);
 		} else if (screenHeightError) {
+			{/* si l'écran est pas assez haut affiche un message d'erreur aproprié */ }
 			return (
 				<div className="min-vh-100 d-flex align-items-center justify-content-center bg-dark text-white px-3">
 					<div className="text-center">
@@ -284,6 +294,8 @@ function App() {
 		}
 	}
 
+
+	{ /* sert à afficher la page active */ }
 	return (
 		<BrowserRouter>
 			<main className="content">

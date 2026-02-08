@@ -22,6 +22,7 @@ export default function Contact() {
                 <div className=" d-inline-block col-md-6 col-sm-6 col-12">
                     <h2>Formulaire de contact</h2>
                     <div className="mx-auto line-height-3 my-4 mb-15 bg-primary " />
+
                     {/* formulaire de contacte */}
                     <form action="#" method="post" className=" d-flex flex-column justify-content-between">
                         <input className="form-control border border-secondary" type="text" id="name" placeholder="Votre nom" name="name" required></input>
@@ -32,10 +33,12 @@ export default function Contact() {
                         <button type="submit" id="submitBtn" className="submitButton btn btn-primary mb-5">Envoyer</button>
                     </form>
                 </div>
+
+                {/* affichage de la partie map */}
                 <div className="d-inline-block h-100 col-md-6 col-sm-6 col-12 mx-3">
                     <h2>Mes coordonnées</h2>
                     <div className=" line-height-3 blue col-md-12 col-sm-12 col-12  my-4 mx-auto bg-primary "></div>
-                    {/* information de contacte */}
+                    {/* map et informations personnel */}
                     <div className="MyLocalisation mt-3 pb-5 d-flex flex-column">
                         <ul className='list-group-flush '>
                             <p className="my-0 fs-4">John Doe</p>
