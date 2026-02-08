@@ -15,14 +15,14 @@ export default function Portfolio() {
 
             {/* affichage de tete de page */}
             <img src={banner} className="banner w-100 mb-5" />
-            <div id="ServicesTitle" className="d-flex flex-column w-100">
+            <div className="d-flex flex-column w-100">
                 <h1 className="mx-auto">Portfolio</h1>
-                <span className="subtitle text-center">Voici quelques-unes de mes réalisations </span>
+                <span className="text-center">Voici quelques-unes de mes réalisations </span>
                 <div className=" line-height-5 mx-auto blue my-4 col-md-8 col-sm-8 col-5 col-8 bg-primary"></div>
             </div>
 
             {/* gerer l'affichage de la partie des cartes de projets */}
-            <div className="ServiceList d-inline-block d-flex flex-row-grid mx-auto col-md-12 col-sm-12 col-12 justify-content-center p-4 rounded">
+            <div className="d-inline-block d-flex flex-row-grid mx-auto col-md-12 col-sm-12 col-12 justify-content-center p-4 rounded">
                 <div className="container mt-3">
                     <div className="row g-3">
 
