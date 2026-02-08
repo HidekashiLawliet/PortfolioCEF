@@ -14,11 +14,11 @@ export default function mentionLegales() {
             </div>
 
             {/* gérer l'affiche des boites  */}
-            <div className="legalesMention col-md-10 col-sm-10 col-10 mx-auto my-4">
+            <div className="legalesMention col-md-10 col-sm-10 col-10 border  border-2  mx-auto my-4">
                 <div className="d-flex flex-column my-auto accordion shadow-sm rounded">
                     {/* boites accordéons pour le site creator */}
-                    <div className=" accordion-item collapsed border border-bottom-0">
-                        <button className="accordion-button text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#editor"> Editeur du site
+                    <div className=" accordion-item collapsed">
+                        <button className="accordion-button text-dark fw-semibold  border-bottom border-secondary-subtle " type="button" data-bs-toggle="collapse" data-bs-target="#editor"> Editeur du site
                         </button>
                         <div id="editor" className="accordion-collapse show" data-bs-parent="#legalAccordion">
                             <div className="accordion-body">
@@ -43,8 +43,8 @@ export default function mentionLegales() {
                     </div>
 
                     {/* boites accordéons pour l'hote du site*/}
-                    <div className="accordion-item border-top">
-                        <button className="accordion-button collapsed text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#host "> Hébergeur
+                    <div className="accordion-item">
+                        <button className="accordion-button collapsed text-dark fw-semibold border-bottom border-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#host "> Hébergeur
                         </button>
                         <div id="host" className="accordion-collapse collapse" data-bs-parent="#legalAccordion">
                             <div className="accordion-body">

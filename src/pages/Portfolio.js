@@ -27,7 +27,7 @@ export default function Portfolio() {
                     <div className="row g-3">
 
                         {/* carte Fresh food */}
-                        <div className="card border-0 col-10 mx-auto col-md-4 col-sm-4">
+                        <div className="card cardHoverBackground border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className="card-body p-0 border d-flex flex-column border-secondary rounded">
                                 <img src={freshFood} className="portfolioImage mx-auto card-img-top rounded-top" alt="Panier légumes fresh food" />
                                 <h2 className="text-center fs-3 card-title">Fresh Food</h2>
@@ -40,7 +40,7 @@ export default function Portfolio() {
                         </div>
 
                         {/* carte restaurant Akira */}
-                        <div className="card border-0 col-10 mx-auto col-md-4 col-sm-4">
+                        <div className="card cardHoverBackground border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className="card-body p-0 border d-flex flex-column border-secondary rounded">
                                 <img src={restaurantAkira} className="portfolioImage mx-auto card-img-top rounded-top" alt="image restaurant akira" />
                                 <h2 className="text-center fs-3 card-title">Restaurant Akira</h2>
@@ -53,7 +53,7 @@ export default function Portfolio() {
                         </div>
 
                         {/* carte espace bien-etre */}
-                        <div className="card border-0 col-10 mx-auto col-md-4 col-sm-4">
+                        <div className="card cardHoverBackground border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className="card-body p-0 border d-flex flex-column border-secondary rounded ">
                                 <img src={espaceBienetre} className="portfolioImage mx-auto card-img-top rounded-top" alt="Espace bien-être photo d'illustration" />
                                 <h2 className="text-center fs-3 card-title">Espace bien-être</h2>
@@ -66,7 +66,7 @@ export default function Portfolio() {
                         </div>
 
                         {/* carte SEO */}
-                        <div className=" card border-0 col-10 mx-auto col-md-4 col-sm-4">
+                        <div className=" card cardHoverBackground border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className=" border card-body p-0 d-flex flex-column border-secondary rounded">
                                 <img src={seo} className="portfolioImage mx-auto rounded-top card-img-top" alt="image SEO" />
                                 <h2 className="text-center fs-3 card-title">SEO</h2>
@@ -79,7 +79,7 @@ export default function Portfolio() {
                         </div>
 
                         {/* carte création d'une api*/}
-                        <div className=" card border-0 col-10 mx-auto col-md-4 col-sm-4 ">
+                        <div className=" card cardHoverBackground border-0 col-10 mx-auto col-md-4 col-sm-4 ">
                             <div className=" border card-body p-0 d-flex flex-column border-secondary rounded">
                                 <img src={coder} className="portfolioImage mx-auto card-img-top rounded-top" alt="image code informatique" />
                                 <h2 className="text-center fs-3 card-title">Création d'une API</h2>
@@ -92,7 +92,7 @@ export default function Portfolio() {
                         </div>
 
                         {/* carte création de maquette*/}
-                        <div className="card border-0 col-10 mx-auto col-md-4 col-sm-4">
+                        <div className="card cardHoverBackground border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className="border card-body p-0 d-flex flex-column border-secondary rounded w-100">
                                 <img src={screens} className="portfolioImage mx-auto card-img-top rounded-top" alt="image d' illustration d'une conception maquette" />
                                 <h2 className="text-center fs-3 card-title">Maquette d'un site web</h2>

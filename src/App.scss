@@ -40,6 +40,16 @@
 	z-index: 900;
 }
 
+.cardHoverBackground :hover {
+	background-color: rgba(216, 216, 216, 0.87);
+	transition:
+		background-color 0.3s ease-out,
+		transform 0.3s ease;
+	* {
+		pointer-events: none;
+	}
+}
+
 .backdropBlur {
 	position: fixed;
 	inset: 0;

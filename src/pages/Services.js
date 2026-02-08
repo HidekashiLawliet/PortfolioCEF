@@ -19,7 +19,7 @@ export default function Services() {
             <div className="col-md-10 col-sm-12 col-12 py-4 mx-auto col-row d-flex flex-column flex-sm-row mx-auto">
 
                 {/* premiere card */}
-                <div className="card border-secondary mt-3 mx-auto col-md-4 col-sm-3 col-10 ">
+                <div className="card cardHoverBackground border-secondary mt-3 mx-auto col-md-4 col-sm-3 col-10 ">
                     <div className="card border-0 ServiceItem d-flex flex-column p-3">
                         <i className="text-primary mx-auto bi bi-brush" />
                         <h2 className="card-title text-center mx-1">UX Design</h2>
@@ -28,8 +28,8 @@ export default function Services() {
                 </div>
 
                 {/* deuxieme card */}
-                <div className="card border-secondary mt-3 mx-auto mx-sm-3 col-md-4 col-sm-3 col-10">
-                    <div className="card border-0 ServiceItem d-flex flex-column p-3">
+                <div className="card cardHoverBackground border-secondary mt-3 mx-auto mx-sm-3 col-md-4 col-sm-3 col-10">
+                    <div className="card h-100 border-0 ServiceItem d-flex flex-column p-3">
                         <i className="text-primary mx-auto bi bi-code-slash" />
                         <h2 className="card-title text-center mx-1">Développement web</h2>
                         <p className="card-text text-center lh-sm ">Le développement de sites web consistes à créer des sites internet en utilisant des langages de programmation (HTML, CSS, JavaScript, PHP, etc.) et des frameworks (Bootstrap, React, Angular, etc.)</p>
@@ -37,7 +37,7 @@ export default function Services() {
                 </div>
 
                 {/* troisieme card */}
-                <div className="card border-secondary mt-3 mx-auto col-md-4 col-sm-3 col-10">
+                <div className="card cardHoverBackground border-secondary mt-3 mx-auto col-md-4 col-sm-3 col-10">
                     <div className="card border-0 ServiceItem d-flex flex-column p-3">
                         <i className="text-primary mx-auto bi bi-search" />
                         <h2 className="card-title text-center mx-1">Référencement</h2>
