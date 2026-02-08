@@ -29,7 +29,7 @@ function CardMenu({ onClose }) {
 			<div className="myGithubProfile col-row d-flex flex-column flex-sm-row justify-content-between ">
 				{/* affichage de gauche pour l'image */}
 				<div className='margin-top-2r'>
-					<img src={doraemon} className="doraemon col-md-5 col-sm-5 col-5 mb-3" />
+					<img src={doraemon} className="doraemon w-100 h-100 col-md-5 col-sm-5 col-5 mb-3" />
 				</div>
 				{/* affichage de droite pour les informations du profil */}
 				<div className="list-group bg-dark col-md-7 mx-auto col-sm-7 col-12  rounded ">
@@ -91,9 +91,9 @@ function SkillsPart() {
 
 			{/* gérer la partie d'introduction */}
 			<div className="AboutMe px-3 d-inline-block col-md-7 col-sm-7 col-12">
-				<h2 className="text-left">À propos de moi</h2>
+				<h2 className="mt-3">À propos de moi</h2>
 				<div className=" line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
-				<div className="underline blue"></div>
+				<div className="blue"></div>
 				<img src={imageAboutMe} className="johnDoeImage d-block mx-auto img-fluid w-100 m-2" alt='picture of myself' />
 				<p className="paragraphe margin-top-2r">
 					Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco
@@ -108,7 +108,7 @@ function SkillsPart() {
 
 			{/* gérer la partie montrant mes compétences */}
 			<div className="MySkills d-inline-block col-md-5 col-sm-5 col-12">
-				<h2 >Mes Compétences</h2>
+				<h2 className="mt-3">Mes Compétences</h2>
 				<div className="line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
 				<div className='SkillList col-md-5 col-sm-5 col-5 w-100'><label>HTML5 90%</label>
 					<div className="progress bg-dark-subtle" role="progressbar" aria-label="HTML5" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
@@ -150,7 +150,7 @@ function Footer() {
 
 				{/* gestion  de la partie contact et lien vers autres réseaux*/}
 				<div className="col-md-4 col-sm-3 col-12 mx-auto mt-5 fs-3">
-					<h2 className="columnTitle">John Doe</h2>
+					<h2 className="fs-2">John Doe</h2>
 					<div className="d-flex mx-auto flex-column mb-3">
 						<span className="fs-5">40 Rue Laure Diebold</span>
 						<span className="fs-5">69009 Lyon, France</span>
@@ -171,7 +171,7 @@ function Footer() {
 				</div>
 
 				{/* gestion de la partie contenant tout les liens du site */}
-				<div className="col-md-4 col-sm-3 mx-auto col-12 mt-5 fs-3"><h2 className="columnTitle">Liens Utilse</h2>
+				<div className="col-md-4 col-sm-3 mx-auto col-12 mt-5 fs-3"><h2 className="fs-2">Liens Utilse</h2>
 					<div className="d-flex flex-column ">
 						<a href="/" className=" text-white w-fit text-decoration-none">
 							<span className="fs-5">Accueil</span>
@@ -192,7 +192,7 @@ function Footer() {
 				</div>
 
 				{/* gestion de la partie contenant tout les liens de mes derniers projet */}
-				<div className=" col-md-4 col-sm-3 col-12 mx-auto mt-5 fs-3 "><h2 className="columnTitle">Mes dernières réalisations</h2>
+				<div className=" col-md-4 col-sm-3 col-12 mx-auto mt-5 fs-3 "><h2 className="fs-2">Mes dernières réalisations</h2>
 					<div className="d-flex flex-column">
 						<a href="/Portfolio" className="w-fit text-white text-decoration-none">
 							<span className="fs-5">Fresh Food</span>

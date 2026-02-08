@@ -1,17 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
+// Les éléments css qui resteront les mêmes peut importe l'affichage
+.desktop {
+	font-family: "Nunito Sans", sans-serif;
+	display: flex;
+	height: auto;
+	background-color: rgb(255, 255, 255);
+	flex-direction: column;
+}
 .footer {
 	z-index: 700;
-	height: auto;
-}
-
-.desktop,
-.tablet,
-.mobile {
-	display: none;
-}
-
-.legalesMention {
 	height: auto;
 }
 .whiteBox {
@@ -19,27 +17,13 @@
 	box-shadow: 0px 0px 25px 0.5px;
 	margin: 0% auto 2rem auto;
 }
-
-.ServiceItem {
-	p {
-		font-size: calc(0.7rem + 0.5vw);
-	}
-}
-
 .header {
 	z-index: 700;
 	position: fixed;
 }
-
-.doraemon {
-	height: 100%;
-	width: 100%;
-}
-
 .githubCard {
 	z-index: 900;
 }
-
 .cardHoverBackground :hover {
 	background-color: rgba(216, 216, 216, 0.87);
 	transition:
@@ -49,7 +33,6 @@
 		pointer-events: none;
 	}
 }
-
 .backdropBlur {
 	position: fixed;
 	inset: 0;
@@ -57,27 +40,46 @@
 	backdrop-filter: blur(6px);
 	z-index: 800;
 }
-
 .line-height-5 {
 	height: 5px !important;
 }
 .line-height-3 {
 	height: 3px !important;
 }
-
 .w-fit {
 	width: fit-content;
 }
+.portfolioImage {
+	width: 100%;
+}
+#home {
+	background-image: url("./assets/img/hero-bg.jpg");
+	width: 100%;
+	height: 100vh;
+	align-content: center;
+}
+h1 {
+	font-weight: 600;
+}
+h2 {
+	font-weight: 600;
+}
+span {
+	font-weight: 400;
+}
+p {
+	font-weight: 400;
+}
+.active {
+	font-weight: bold;
+	text-decoration: underline;
+}
 
-/* Desktop */
+/* CSS pour écran plus large que 1290px */
 @media (min-width: 1290px) {
-	.menuBurgerSmallScreen {
-		display: none;
-	}
 	.mentionsLégales {
 		min-height: 51.6vh;
 	}
-
 	.header {
 		span {
 			font-size: 32px;
@@ -86,7 +88,6 @@
 			font-size: 20px;
 		}
 	}
-
 	#map {
 		border: none;
 		height: 34vh;
@@ -95,87 +96,38 @@
 	textarea {
 		height: 30vh;
 	}
-
-	#ContactTitle {
-		width: fit-content;
-		margin-bottom: 5vh;
-	}
 	.faviconSocial {
 		width: 36px;
 		margin: 5px;
 	}
-
-	.desktop {
-		font-family: "Nunito Sans", sans-serif;
-		display: flex;
-		height: auto;
-		background-color: rgb(255, 255, 255);
-		flex-direction: column;
-	}
-
 	.introduction {
 		font-size: 4rem;
 	}
-
 	.whiteBox {
 		height: auto;
 		min-height: 70vh;
 	}
-
 	.AboutMe {
 		padding: 0rem 3rem;
-		text-align: left;
 		.paragraphe {
 			font-size: 20px;
 		}
 	}
-
 	.MySkills {
 		padding: 0rem 3rem;
-		text-align: left;
 	}
-
-	.columnTitle {
-		font-size: 24px;
-	}
-
 	.SkillList {
 		margin: 15px 0px;
-		font-size: 20px;
+		font-size: 32px;
 	}
-
-	.shortIcon {
-		height: 16px;
-	}
-
-	#submitBtn {
-		width: fit-content;
-	}
-
-	form {
-		height: 85%;
-	}
-
 	.bi-code-slash,
 	.bi-brush,
 	.bi-search {
 		font-size: 48px;
 	}
-
-	.service {
-		height: 100vh;
-	}
-
-	.MyLocalisation {
-		height: 85%;
-	}
 	.btn {
 		margin: 5px auto 5px auto;
 	}
-}
-
-.portfolioImage {
-	width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 1289px) {
@@ -231,7 +183,7 @@
 
 	.AboutMe {
 		text-align: left;
-		.paragraphe {
+		p {
 			font-size: 14px;
 		}
 	}
@@ -241,10 +193,6 @@
 		.progress-bar {
 			height: 10px;
 		}
-	}
-
-	.MySkills {
-		text-align: left;
 	}
 
 	.columnTitle {
@@ -261,11 +209,6 @@
 			font-size: 12px;
 		}
 	}
-
-	.shortIcon {
-		height: 16px;
-	}
-
 	form {
 		height: 85%;
 	}
@@ -374,7 +317,6 @@
 	}
 
 	.AboutMe {
-		text-align: left;
 		.paragraphe {
 			font-size: 14px;
 		}
@@ -400,10 +342,6 @@
 		span {
 			font-size: 12px;
 		}
-	}
-
-	.shortIcon {
-		height: 16px;
 	}
 
 	form {
@@ -468,49 +406,7 @@
 	.whiteBox {
 		height: auto;
 		.MySkills {
-			margin-top: 25px;
 			min-height: 35vh;
 		}
 	}
-}
-
-#home {
-	background-image: url("./assets/img/hero-bg.jpg");
-	width: 100%;
-	height: 100vh;
-	align-content: center;
-}
-
-h1 {
-	font-weight: 600;
-}
-
-h2 {
-	font-weight: 600;
-}
-
-span {
-	font-weight: 400;
-}
-
-p {
-	font-weight: 400;
-}
-
-.customLink {
-	margin-left: 15px;
-}
-
-.active {
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-.underline {
-	margin: auto;
-	height: 3px;
-	margin-top: 10px;
-	margin-bottom: 3rem;
-	width: 100%;
-	border-radius: 5px;
 }

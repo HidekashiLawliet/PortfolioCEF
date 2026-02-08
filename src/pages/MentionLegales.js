@@ -14,7 +14,7 @@ export default function mentionLegales() {
             </div>
 
             {/* gérer l'affiche des boites  */}
-            <div className="legalesMention col-md-10 col-sm-10 col-10 border  border-2  mx-auto my-4">
+            <div className="col-md-10 col-sm-10 col-10 border  border-2  mx-auto my-4">
                 <div className="d-flex flex-column my-auto accordion shadow-sm rounded">
                     {/* boites accordéons pour le site creator */}
                     <div className=" accordion-item collapsed">

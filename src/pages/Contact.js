@@ -8,7 +8,7 @@ export default function Contact() {
     return (
         // affichage global de la page ainsi que le titre et sous titre
         <div className=" col-md-12 d-inline-block justify-content-center content my-5 pt-5 ">
-            <div id="ContactTitle" className="d-flex flex-column col-md-10 col-sm-10 col-10 mx-auto">
+            <div className="d-flex flex-column col-md-10 col-sm-10 col-10 mx-auto">
                 <h1 className="mx-auto"> Contact </h1>
                 <span className="text-center">Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</span>
                 <div className="mx-auto line-height-5 blue my-4 col-8 bg-primary">
@@ -30,7 +30,7 @@ export default function Contact() {
                         <input className="form-control border border-secondary my-2 " type="tel" id="phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="Votre numéro de téléphone" name="phone" required></input>
                         <input className="form-control border border-secondary my-2 " type="text" id="subject" placeholder="Sujet" name="subject" required></input>
                         <textarea className="form-control border border-secondary my-2" id="message" placeholder="Votre message" name="message"></textarea>
-                        <button type="submit" id="submitBtn" className="submitButton btn btn-primary mb-5">Envoyer</button>
+                        <button type="submit" className="submitButton btn btn-primary mb-5">Envoyer</button>
                     </form>
                 </div>
 
@@ -39,7 +39,7 @@ export default function Contact() {
                     <h2>Mes coordonnées</h2>
                     <div className=" line-height-3 blue col-md-12 col-sm-12 col-12  my-4 mx-auto bg-primary "></div>
                     {/* map et informations personnel */}
-                    <div className="MyLocalisation mt-3 pb-5 d-flex flex-column">
+                    <div className="mt-3 pb-5 d-flex flex-column">
                         <ul className='list-group-flush '>
                             <p className="my-0 fs-4">John Doe</p>
                             <li className="list-group-item text-dark"><i className="bi bi-map me-1"></i><span> 40 Rue Laure Diebold</span></li>
