@@ -9,12 +9,12 @@ export default function Navbar() {
         <nav className="header bg-dark mx-auto d-flex align-items-center col-md-12 col-sm-12 col-12">
 
             {/* si la largeur de l'écran est trop faible les boutons cliquable vont passer dans un menu burger */}
-            <div className=" d-flex mx-auto justify-content-between col-md-11 col-sm-11 col-11 ext-white m-3 text-white text-decoratio-none">
+            <div className="d-flex mx-auto justify-content-between col-md-11 col-sm-11 col-11 ext-white m-3 text-white text-decoratio-none">
                 <a className="text-white text-decoration-none mx-2 my-auto">
                     <span>JOHN DOE</span>
                 </a>
-                <div className=".d-none d-sm-none ">
-                    <button type="button" class="btn btn-secondary bg-dark  " data-bs-toggle="dropdown" aria-expanded="false">
+                <div className=".d-none d-sm-none">
+                    <button type="button" class="btn btn-secondary bg-dark" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-list"></i>
                     </button>
                     <ul class="dropdown-menu col-12 px-3 dropdown-menu-end bg-dark text-white">
@@ -42,7 +42,7 @@ export default function Navbar() {
 
                 {/* header avec des text servant de boutons pour changer de pages */}
                 <div className="d-none d-sm-block">
-                    <div className="navbar d-flex d-flex align-content-center flex-row ">
+                    <div className="navbar d-flex align-content-center flex-row ">
                         <NavLink className="nav-link mx-2" to="/">
                             HOME
                         </NavLink>

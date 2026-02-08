@@ -5,8 +5,8 @@ export default function mentionLegales() {
     return (
 
         // Gérer l'affichage globale de la page + le titre
-        <div className="mentionsLégales col-md-12 col-sm-12 col-12  d-inline-block justify-content-center content my-5 pt-5 ">
-            <div id="legalTitle" className="d-flex flex-column mx-auto w-100">
+        <div className="mentionsLégales col-md-12 col-sm-12 col-12 d-inline-block justify-content-center content my-5 pt-5 ">
+            <div className="d-flex flex-column mx-auto w-100">
                 <h1 className="mx-auto">
                     Mentions légales
                 </h1>
@@ -14,13 +14,14 @@ export default function mentionLegales() {
             </div>
 
             {/* gérer l'affiche des boites  */}
-            <div className="col-md-10 col-sm-10 col-10 border  border-2  mx-auto my-4">
+            <div className="col-md-10 col-sm-10 col-10 border border-2 mx-auto my-4">
                 <div className="d-flex flex-column my-auto accordion shadow-sm rounded">
+
                     {/* boites accordéons pour le site creator */}
                     <div className=" accordion-item collapsed">
-                        <button className="accordion-button text-dark fw-semibold  border-bottom border-secondary-subtle " type="button" data-bs-toggle="collapse" data-bs-target="#editor"> Editeur du site
+                        <button className="accordion-button text-dark fw-semibold  border-bottom border-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#editor"> Editeur du site
                         </button>
-                        <div id="editor" className="accordion-collapse show" data-bs-parent="#legalAccordion">
+                        <div id="editor" className="accordion-collapse" data-bs-parent="#legalAccordion">
                             <div className="accordion-body">
                                 <p className="fw-bold mb-3"> John Doe </p>
                                 <div className="d-flex align-items-start gap-2 mb-2">
@@ -44,7 +45,7 @@ export default function mentionLegales() {
 
                     {/* boites accordéons pour l'hote du site*/}
                     <div className="accordion-item">
-                        <button className="accordion-button collapsed text-dark fw-semibold border-bottom border-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#host "> Hébergeur
+                        <button className="accordion-button text-dark fw-semibold collapsed border-bottom border-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#host "> Hébergeur
                         </button>
                         <div id="host" className="accordion-collapse collapse" data-bs-parent="#legalAccordion">
                             <div className="accordion-body">
@@ -57,10 +58,8 @@ export default function mentionLegales() {
 
                     {/* boites accordéons pour les crédits pour les images utilisées*/}
                     <div className="accordion-item">
-                        <div className="">
-                            <button className="accordion-button text-dark collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#credits"> Crédits
-                            </button>
-                        </div>
+                        <button className="accordion-button text-dark collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#credits"> Crédits
+                        </button>
                         <div id="credits" className="accordion-collapse collapse" data-bs-parent="#legalAccordion">
                             <div className="accordion-body">
                                 <div className="d-flex flex-column gap-3">
