@@ -20,7 +20,7 @@ export default function Services() {
 
                 {/* premiere carte */}
                 <div className="card cardHoverBackground border-secondary mt-3 mx-auto col-md-4 col-sm-3 col-10 ">
-                    <div className="card border-0 ServiceItem d-flex flex-column p-3">
+                    <div className="card border-0 mt-2 d-flex flex-column p-3">
                         <i className="text-primary mx-auto bi bi-brush" />
                         <h2 className="card-title text-center mx-1">UX Design</h2>
                         <p className="card-text text-center lh-sm">L'UX Design est une discipline qui consiste à concevoir des produits (sites web, applications mobiles, logicielsn, objets connectés, etc) en placant l'utilisateur au centre des préoccupations. L'objectif est de rendre l'expérience utilisateur la plus fluide et agréable possible.</p>
@@ -29,7 +29,7 @@ export default function Services() {
 
                 {/* deuxieme carte */}
                 <div className="card cardHoverBackground border-secondary mt-3 mx-auto mx-sm-3 col-md-4 col-sm-3 col-10">
-                    <div className="card  border-0 ServiceItem d-flex flex-column p-3">
+                    <div className="card  border-0 mt-2 d-flex flex-column p-3">
                         <i className="text-primary mx-auto bi bi-code-slash" />
                         <h2 className="card-title text-center mx-1">Développement web</h2>
                         <p className="card-text text-center lh-sm ">Le développement de sites web consistes à créer des sites internet en utilisant des langages de programmation (HTML, CSS, JavaScript, PHP, etc.) et des frameworks (Bootstrap, React, Angular, etc.)</p>
@@ -38,7 +38,7 @@ export default function Services() {
 
                 {/* troisieme carte */}
                 <div className="card cardHoverBackground border-secondary mt-3 mx-auto col-md-4 col-sm-3 col-10">
-                    <div className="card border-0 ServiceItem d-flex flex-column p-3">
+                    <div className="card border-0 mt-2 d-flex flex-column p-3">
                         <i className="text-primary mx-auto bi bi-search" />
                         <h2 className="card-title text-center mx-1">Référencement</h2>
                         <p className="card-text text-center lh-sm ">Le référencement naturel (SEO) est une technique qui consiste à optimiser un site web pour le faire remonter dans les résultats des moteurs de recherche(Google, Bong, Yahoo, etc.) L'objectif est d'attirter un maximum de visiteurs qualifités sur le site.</p>

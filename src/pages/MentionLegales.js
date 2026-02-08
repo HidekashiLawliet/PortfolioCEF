@@ -6,7 +6,7 @@ export default function mentionLegales() {
 
         // Gérer l'affichage globale de la page + le titre
         <div className="mentionsLégales col-md-12 col-sm-12 col-12  d-inline-block justify-content-center content my-5 pt-5 ">
-            <div id="ContactTitle" className="d-flex flex-column mx-auto w-100">
+            <div id="legalTitle" className="d-flex flex-column mx-auto w-100">
                 <h1 className="mx-auto">
                     Mentions légales
                 </h1>

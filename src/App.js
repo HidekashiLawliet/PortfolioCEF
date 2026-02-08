@@ -95,15 +95,15 @@ function SkillsPart() {
 				<div className=" line-height-5 blue my-4 col-md-12 col-sm-12 col-12 mb-1 bg-primary" />
 				<div className="blue"></div>
 				<img src={imageAboutMe} className="johnDoeImage d-block mx-auto img-fluid w-100 m-2" alt='picture of myself' />
-				<p className="paragraphe margin-top-2r">
+				<p className=" mt-4">
 					Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco
 				</p>
-				<p className="paragraphe">
+				<p>
 					Laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non
 				</p>
-				<p className="paragraphe">
+				<p>
 					Proident sunt in culpa qui officia deserunt mollit anim id est laborum Curabitur blandit tempus porttitor Maecenas faucibus mollis interdum Cras mattis consectetur purus sit amet fermentum
-				</p >
+				</p>
 			</div>
 
 			{/* gérer la partie montrant mes compétences */}

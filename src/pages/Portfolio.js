@@ -29,10 +29,10 @@ export default function Portfolio() {
                         {/* carte Fresh food */}
                         <div className="card cardHoverBackground border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className="card-body p-0 border d-flex flex-column border-secondary rounded">
-                                <img src={freshFood} className="portfolioImage mx-auto card-img-top rounded-top" alt="Panier légumes fresh food" />
+                                <img src={freshFood} className=" mx-auto card-img-top rounded-top" alt="Panier légumes fresh food" />
                                 <h2 className="text-center fs-3 card-title">Fresh Food</h2>
                                 <span className="card-text mx-auto my-auto text-center">Site de vente de produits frais en ligne</span>
-                                <button className="portfolioButton btn btn-primary my-3 mx-auto">Voir le site</button>
+                                <button className=" btn btn-primary my-3 mx-auto">Voir le site</button>
                                 <div className="bg-dark-subtle rounded-bottom border-top border-secondary py-2 w-100 d-flex justify-content-center">
                                     <span className=" fs-6">Réalisé avec FIGMA</span>
                                 </div>
@@ -42,10 +42,10 @@ export default function Portfolio() {
                         {/* carte restaurant Akira */}
                         <div className="card cardHoverBackground border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className="card-body p-0 border d-flex flex-column border-secondary rounded">
-                                <img src={restaurantAkira} className="portfolioImage mx-auto card-img-top rounded-top" alt="image restaurant akira" />
+                                <img src={restaurantAkira} className=" mx-auto card-img-top rounded-top" alt="image restaurant akira" />
                                 <h2 className="text-center fs-3 card-title">Restaurant Akira</h2>
                                 <span className="mx-autoard-text card-text my-auto text-center">Site de vente de produits frais en ligne</span>
-                                <button className="portfolioButton btn btn-primary my-3 mx-auto">Voir le site</button>
+                                <button className=" btn btn-primary my-3 mx-auto">Voir le site</button>
                                 <div className="bg-dark-subtle rounded-bottom border-top border-secondary py-2 w-100 d-flex justify-content-center">
                                     <span className=" fs-6">Réalisé avec FIGMA</span>
                                 </div>
@@ -55,10 +55,10 @@ export default function Portfolio() {
                         {/* carte espace bien-etre */}
                         <div className="card cardHoverBackground border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className="card-body p-0 border d-flex flex-column border-secondary rounded ">
-                                <img src={espaceBienetre} className="portfolioImage mx-auto card-img-top rounded-top" alt="Espace bien-être photo d'illustration" />
+                                <img src={espaceBienetre} className=" mx-auto card-img-top rounded-top" alt="Espace bien-être photo d'illustration" />
                                 <h2 className="text-center fs-3 card-title">Espace bien-être</h2>
                                 <span className="mx-auto card-text my-auto text-center">Site de vente de produits frais en ligne</span>
-                                <button className="portfolioButton btn btn-primary my-3 mx-auto">Voir le site</button>
+                                <button className=" btn btn-primary my-3 mx-auto">Voir le site</button>
                                 <div className="bg-dark-subtle rounded-bottom border-top border-secondary py-2 w-100 d-flex justify-content-center">
                                     <span className=" fs-6">Réalisé avec FIGMA</span>
                                 </div>
@@ -68,10 +68,10 @@ export default function Portfolio() {
                         {/* carte SEO */}
                         <div className=" card cardHoverBackground border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className=" border card-body p-0 d-flex flex-column border-secondary rounded">
-                                <img src={seo} className="portfolioImage mx-auto rounded-top card-img-top" alt="image SEO" />
+                                <img src={seo} className=" mx-auto rounded-top card-img-top" alt="image SEO" />
                                 <h2 className="text-center fs-3 card-title">SEO</h2>
                                 <span className="mx-auto card-text my-auto text-center">Amélioration du référencement d'un site de commerce</span>
-                                <button className="portfolioButton btn btn-primary my-3 mx-auto">Voir le site</button>
+                                <button className=" btn btn-primary my-3 mx-auto">Voir le site</button>
                                 <div className="bg-dark-subtle rounded-bottom border-top border-secondary py-2 w-100 d-flex justify-content-center">
                                     <span className=" fs-6">Réalisé avec FIGMA</span>
                                 </div>
@@ -81,10 +81,10 @@ export default function Portfolio() {
                         {/* carte création d'une api*/}
                         <div className=" card cardHoverBackground border-0 col-10 mx-auto col-md-4 col-sm-4 ">
                             <div className=" border card-body p-0 d-flex flex-column border-secondary rounded">
-                                <img src={coder} className="portfolioImage mx-auto card-img-top rounded-top" alt="image code informatique" />
+                                <img src={coder} className=" mx-auto card-img-top rounded-top" alt="image code informatique" />
                                 <h2 className="text-center fs-3 card-title">Création d'une API</h2>
                                 <span className="mx-auto card-text my-auto text-center">Création d'une API RESTFULL publique</span>
-                                <button className="portfolioButton btn btn-primary my-3 mx-auto">Voir le site</button>
+                                <button className=" btn btn-primary my-3 mx-auto">Voir le site</button>
                                 <div className="bg-dark-subtle rounded-bottom border-top border-secondary py-2 w-100 d-flex justify-content-center">
                                     <span className=" fs-6">Réalisé avec FIGMA</span>
                                 </div>
@@ -94,10 +94,10 @@ export default function Portfolio() {
                         {/* carte création de maquette*/}
                         <div className="card cardHoverBackground border-0 col-10 mx-auto col-md-4 col-sm-4">
                             <div className="border card-body p-0 d-flex flex-column border-secondary rounded w-100">
-                                <img src={screens} className="portfolioImage mx-auto card-img-top rounded-top" alt="image d' illustration d'une conception maquette" />
+                                <img src={screens} className=" mx-auto card-img-top rounded-top" alt="image d' illustration d'une conception maquette" />
                                 <h2 className="text-center fs-3 card-title">Maquette d'un site web</h2>
                                 <span className="mx-auto card-text my-auto text-center">Création du prototype d'un site</span>
-                                <button className="portfolioButton btn btn-primary my-3 mx-auto">Voir le site</button>
+                                <button className=" btn btn-primary my-3 mx-auto">Voir le site</button>
                                 <div className="bg-dark-subtle rounded-bottom border-top border-secondary py-2 w-100 d-flex justify-content-center">
                                     <span className=" fs-6">Réalisé avec FIGMA</span>
                                 </div>

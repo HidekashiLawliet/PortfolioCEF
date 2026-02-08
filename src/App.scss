@@ -5,7 +5,6 @@
 	font-family: "Nunito Sans", sans-serif;
 	display: flex;
 	height: auto;
-	background-color: rgb(255, 255, 255);
 	flex-direction: column;
 }
 .footer {
@@ -15,7 +14,7 @@
 .whiteBox {
 	border-radius: 10px;
 	box-shadow: 0px 0px 25px 0.5px;
-	margin: 0% auto 2rem auto;
+	margin: 2rem auto 2rem auto;
 }
 .header {
 	z-index: 700;
@@ -48,9 +47,6 @@
 }
 .w-fit {
 	width: fit-content;
-}
-.portfolioImage {
-	width: 100%;
 }
 #home {
 	background-image: url("./assets/img/hero-bg.jpg");
@@ -108,13 +104,12 @@ p {
 		min-height: 70vh;
 	}
 	.AboutMe {
-		padding: 0rem 3rem;
-		.paragraphe {
+		p {
 			font-size: 20px;
 		}
 	}
 	.MySkills {
-		padding: 0rem 3rem;
+		padding: 0rem 2rem;
 	}
 	.SkillList {
 		margin: 15px 0px;
@@ -130,89 +125,28 @@ p {
 	}
 }
 
+// css pour les écran d'une larger entre 768px et 1289px
 @media (min-width: 768px) and (max-width: 1289px) {
 	.header {
 		span {
 			margin-left: 10px;
-			align-items: center;
 			font-size: 28px;
-		}
-		.navbar {
-			font-size: 18px;
 		}
 	}
 	.mentionsLégales {
 		min-height: 56.4vh;
 	}
-	.projectCard {
-		.portfolioButton {
-			.btn {
-				padding: 2px;
-			}
-		}
-	}
-
-	#ContactTitle {
-		width: fit-content;
-		margin-bottom: 5vh;
-	}
-
-	input {
-		font-size: 12px;
-		line-height: 14px;
-	}
-
-	.desktop {
-		font-family: "Nunito Sans", sans-serif;
-		display: flex;
-		height: auto;
-		flex-direction: column;
-	}
-
-	.service {
-		height: 100vh;
-	}
 	.faviconSocial {
 		width: 36px;
 		margin: 5px;
 	}
-
 	.introduction {
 		font-size: 3rem;
 	}
-
-	.AboutMe {
-		text-align: left;
-		p {
-			font-size: 14px;
-		}
-	}
-
-	.progress {
-		height: 10px;
-		.progress-bar {
-			height: 10px;
-		}
-	}
-
-	.columnTitle {
-		font-size: 24px;
-	}
-
 	.SkillList {
 		margin: 15px 0px;
 		font-size: 20px;
 	}
-
-	.myGithubProfile {
-		span {
-			font-size: 12px;
-		}
-	}
-	form {
-		height: 85%;
-	}
-
 	#map {
 		border: none;
 		height: 34vh;
@@ -221,48 +155,28 @@ p {
 	textarea {
 		height: 30vh;
 	}
-
 	.bi-code-slash,
 	.bi-brush,
 	.bi-search {
 		font-size: 36px;
 	}
-	.ServiceItem {
-		height: auto;
-		p {
-			margin-top: 15px;
-		}
-	}
-	.portfolioImage {
-		width: 100%;
-	}
-
 	.btn {
 		margin: 10px auto 2px auto;
 	}
-	h2 {
-		font-size: 1.5em;
-	}
 }
 
-@media (min-width: 578px) and (max-width: 767px) {
+@media (min-width: 577px) and (max-width: 767px) {
 	.header {
 		span {
 			margin-left: 10px;
-			align-items: center;
 			font-size: 15px;
 		}
 		.navbar {
-			font-size: 12px;
+			font-size: 13px;
 		}
 	}
 	.mentionsLégales {
 		min-height: 56.4vh;
-	}
-	.myGithubProfile {
-		span {
-			font-size: 12px;
-		}
 	}
 	#map {
 		border: none;
@@ -272,107 +186,37 @@ p {
 	textarea {
 		height: 20vh;
 	}
-	.projectCard {
-		.portfolioButton {
-			.btn {
-				padding: 2px;
-			}
-		}
-	}
-	#ContactTitle {
-		margin-bottom: 5vh;
-	}
-
-	input {
-		font-size: 12px;
-		line-height: 14px;
-	}
-
-	.desktop {
-		font-family: "Nunito Sans", sans-serif;
-		display: flex;
-		height: auto;
-		flex-direction: column;
-		width: 100%;
-	}
-
 	h2 {
-		font-size: 1.2em;
-	}
-
-	.service {
-		height: 100vh;
+		font-size: 1.35em;
 	}
 	.faviconSocial {
 		width: 36px;
 		margin: 5px;
 	}
-
 	.introduction {
 		font-size: 3rem;
 	}
-	.submitButton {
-		width: fit-content;
-		font-size: 12px;
-	}
-
 	.AboutMe {
 		.paragraphe {
 			font-size: 14px;
 		}
 	}
-
-	.progress {
-		height: 10px;
-		.progress-bar {
-			height: 10px;
-		}
-	}
-
-	.columnTitle {
-		font-size: 24px;
-	}
-
 	.SkillList {
 		margin: 15px 0px;
-		font-size: 20px;
+		font-size: 18px;
 	}
-
-	.myGithubProfile {
-		span {
-			font-size: 12px;
-		}
-	}
-
-	form {
-		height: 85%;
-	}
-
 	.bi-code-slash,
 	.bi-brush,
 	.bi-search {
 		font-size: 36px;
 	}
-	.ServiceItem {
-		height: auto;
-		p {
-			margin-top: 15px;
-		}
-	}
-	.portfolioImage {
-		width: 100%;
-	}
-
 	.btn {
 		margin: 10px auto 2px auto;
 	}
 }
 
 /* Mobile */
-@media (min-width: 320px) and (max-width: 576px) {
-	.header {
-		position: fixed;
-	}
+@media (min-width: 320px) and (max-width: 577px) {
 	.bi-code-slash,
 	.bi-brush,
 	.bi-search {
@@ -392,17 +236,10 @@ p {
 	textarea {
 		height: 20vh;
 	}
-	.desktop {
-		font-family: "Nunito Sans", sans-serif;
-		display: flex;
-		flex-direction: column;
-	}
-
 	.faviconSocial {
 		width: 36px;
 		margin: 5px;
 	}
-
 	.whiteBox {
 		height: auto;
 		.MySkills {

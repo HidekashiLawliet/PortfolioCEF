@@ -30,7 +30,7 @@ export default function Contact() {
                         <input className="form-control border border-secondary my-2 " type="tel" id="phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="Votre numéro de téléphone" name="phone" required></input>
                         <input className="form-control border border-secondary my-2 " type="text" id="subject" placeholder="Sujet" name="subject" required></input>
                         <textarea className="form-control border border-secondary my-2" id="message" placeholder="Votre message" name="message"></textarea>
-                        <button type="submit" className="submitButton btn btn-primary mb-5">Envoyer</button>
+                        <button type="submit" className=" btn btn-primary mb-5">Envoyer</button>
                     </form>
                 </div>
 
